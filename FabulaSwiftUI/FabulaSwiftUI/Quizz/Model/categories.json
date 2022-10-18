@@ -1,0 +1,34 @@
+{
+    "categories": [{
+            "categorieName": "Histoire",
+            "themes": [
+                "Rois"
+            ]
+        },{
+            "categorieName": "Géographie",
+            "themes": []
+        },{
+            "categorieName": "Science",
+            "themes": [
+                "Volcan"
+            ]
+        },{
+            "categorieName": "Nature",
+            "themes": []
+        },{
+            "categorieName": "Art",
+            "themes": [
+                "Picasso"
+            ]
+        },{
+            "categorieName": "Loisirs",
+            "themes": []
+        },{
+            "categorieName": "Littérature",
+            "themes": ["Hugo"]
+        },{
+            "categorieName": "Sport",
+            "themes": []
+        }
+    ]
+}

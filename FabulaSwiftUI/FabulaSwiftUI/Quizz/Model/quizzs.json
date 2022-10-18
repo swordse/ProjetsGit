@@ -1,0 +1,341 @@
+{
+        "Hugo": {
+            "quizzs": [{
+                    "question": "Le premier titre des Misérables était",
+                    "answer": "Les Misères",
+                    "propositions": [
+                        "Les Malheurs",
+                        "Les Misères",
+                        "Les Galères"
+                    ]
+                },{
+                    "question": "Où se trouve la tombe de Victor Hugo",
+                    "answer": "A Paris, face à Zola",
+                    "propositions": [
+                        "A Saint-Malo, face à l’océan",
+                        "A Paris, face à Zola",
+                        "A Rouen, face aux îles anglo-Normandes"
+                    ]
+                },{
+                    "question": "Il partit en exil pour marquer son opposition à Napoléon III qu’il surnommait",
+                    "answer": "Napoléon-le-petit",
+                    "propositions": [
+                        "Napoléon-le-petit",
+                        "Napoléon-le-mini",
+                        "Napoléon-le-maudit"
+                    ]
+                },{
+                    "question": "Il s'est marié avec son amie d'enfance :",
+                    "answer": "Adèle Foucher",
+                    "propositions": [
+                        "Adèle Boucher",
+                        "Adèle Bouler",
+                        "Adèle Foucher"
+                    ]
+                },{
+                    "question": "Elle l'a aimé toute sa vie. Sa maîtresse s'appelait :",
+                    "answer": "Juliette Drouet",
+                    "propositions": [
+                        "Juliette Drouet",
+                        "Julienne Drouet",
+                        "Julie Drouet"
+                    ]
+                },{
+                    "question": "Hugo a eu très tôt de l’ambition. Il affirma à 17 ans vouloir être:",
+                    "answer": "ChateauBriand ou rien",
+                    "propositions": [
+                        "Napoléon ou rien",
+                        "Chateaubriand ou rien",
+                        "Écrivain ou rien"
+                    ]
+                },{
+                    "question": "Qu’aurait déclaré Charles Baudelaire au sujet des Misérables?",
+                    "answer": "Ce livre est immonde et inepte",
+                    "propositions": [
+                        "Ce livre est immonde et inepte",
+                        "Ce livre est horripilant et inepte",
+                        "Ce livre est abject et inepte"
+                    ]
+                },{
+                    "question": "La création des Misérables dura:",
+                    "answer": "30 ans",
+                    "propositions": [
+                        "30 ans",
+                        "30 semaines",
+                        "30 mois"
+                    ]
+                },{
+                    "question": "En 1845, il est nommé: ",
+                    "answer": "Pair de France",
+                    "propositions": [
+                        "Pair de France",
+                        "Maire de France",
+                        "Père de France"
+                    ]
+                },{
+                    "question": "Grâce à son théâtre il devient le chef de file de:",
+                    "answer": "L’école romantique",
+                    "propositions": [
+                        "L’école dramatique",
+                        "L’école drolatique",
+                        "L’école romantique"
+                    ]
+                }
+            ]
+    },
+        "Picasso": {
+            "quizzs": [{
+                    "question": "Dans quel parti politique Picasso s’engage en 1944?",
+                    "answer": "Le parti Radical",
+                    "propositions": [
+                        "Le parti Communiste",
+                        "Le parti Socialiste",
+                        "Le parti Radical"
+                    ]
+                },{
+                    "question": "Quel événement a inspiré à Picasso sa toile intitulée « Guernica »?",
+                    "answer": "Le bombardement du village basque de Gernica",
+                    "propositions": [
+                        "La rencontre Franco-Hitler à Guernica",
+                        "La rencontre Franco-Mussolini à Guernica",
+                        "Le bombardement du village basque de Gernica"
+                    ]
+                },{
+                    "question": "Quelle est la toile de Picasso qui fut à l'origine du mouvement cubiste, en 1907 ?",
+                    "answer": "Les Demoiselles d’Avignon",
+                    "propositions": [
+                        "Guernica",
+                        "Les Demoiselles d’Avignon",
+                        "La carrière de Bibemus"
+                    ]
+                },{
+                    "question": "Quelle fut la première compagne parisienne de Picasso qui inspira de nombreuses oeuvres cubistes ?",
+                    "answer": "Fernande Olivier",
+                    "propositions": [
+                        "Eva Gouel",
+                        "Fernande Olivier",
+                        "Peggy Guggenheim"
+                    ]
+                },{
+                    "question": "Comment nomme-t-on la période artistique qui caractérisa sa production de 1901 à 1904 ?",
+                    "answer": "La période bleue",
+                    "propositions": [
+                        "La période bleue",
+                        "La période rouge",
+                        "La période rose"
+                    ]
+                },{
+                    "question": "Dans quel atelier parisien va-t-il s’installer en 1905?",
+                    "answer": "Le Bateau Lavoir",
+                    "propositions": [
+                        "Le Bateau Ivre",
+                        "Le Bateau Lavoir",
+                        "Le Bateau Vert"
+                    ]
+                },{
+                    "question": "Dans quelle ville est enterré Picasso?",
+                    "answer": "Vauvenargues",
+                    "propositions": [
+                        "Mougins",
+                        "Guernica",
+                        "Vauvenargues"
+                    ]
+                },{
+                    "question": "Quel fut un de ses premiers tableaux, peint à l'âge de 8 ans, et dont il refusera, toute sa vie, de se séparer ?",
+                    "answer": "Le picador",
+                    "propositions": [
+                        "Le picador",
+                        "Le matador",
+                        "Le toreador"
+                    ]
+                },{
+                    "question": "Quel était le prénom de Picasso?",
+                    "answer": "Pablo",
+                    "propositions": [
+                        "Pedro",
+                        "Pablo",
+                        "Antonio"
+                    ]
+                },{
+                    "question": "Dans quelle ville Espagnole est-il né en 1881?",
+                    "answer": "Malaga",
+                    "propositions": [
+                        "Barcelone",
+                        "Cadaques",
+                        "Malaga"
+                    ]
+                }
+            ]
+    },
+        "Rois": {
+            "quizzs": [{
+                    "question": "De quel roi Richelieu était-il le ministre?",
+                    "answer": "Louis XIII",
+                    "propositions": [
+                        "Louis XIII",
+                        "Charles VII",
+                        "Louis XIV"
+                    ]
+                },{
+                    "question": "A quel roi doit-on ce fameux mot \"l'exactitude est la politesse des rois\"?",
+                    "answer": "Louis XVIII",
+                    "propositions": [
+                        "Louis XVIII",
+                        "Louis XIV",
+                        "Henri IV"
+                    ]
+                },{
+                    "question": "Pour arriver au pouvoir Henri IV doit renoncer:",
+                    "answer": "A sa foi protestante",
+                    "propositions": [
+                        "A monter sur le trône d’Espagne",
+                        "A sa foi protestante",
+                        "A Marie de Medicis"
+                    ]
+                },{
+                    "question": "Quel roi promulgua l’Edit de Nantes?",
+                    "answer": "Henri IV",
+                    "propositions": [
+                        "Henri IV",
+                        "Charles X",
+                        "Louis XIV"
+                    ]
+                },{
+                    "question": "Quelle grande victoire de Philippe Auguste est restée dans les mémoires?",
+                    "answer": "Bouvines",
+                    "propositions": [
+                        "Crécy",
+                        "Marignan",
+                        "Bouvines"
+                    ]
+                },{
+                    "question": "De qui la marquise de Pompadour était-elle la maitresse?",
+                    "answer": "Louis XV",
+                    "propositions": [
+                        "Louis XIV",
+                        "Louis XV",
+                        "Louis III"
+                    ]
+                },{
+                    "question": "Quel roi de France est communément appelé Saint Louis?",
+                    "answer": "Louis IX",
+                    "propositions": [
+                        "Louis IX",
+                        "Louis XI",
+                        "Louis VI"
+                    ]
+                },{
+                    "question": "Sur quel pays règnent encore les Bourbons?",
+                    "answer": "Espagne",
+                    "propositions": [
+                        "Pays-Bas",
+                        "Espagne",
+                        "Suède"
+                    ]
+                },{
+                    "question": "Quel roi avait pour devise « Qui s’y frotte, s’y pique »?",
+                    "answer": "Louis XII",
+                    "propositions": [
+                        "Charles VII",
+                        "Louis XII",
+                        "Philippe Auguste"
+                    ]
+                },{
+                    "question": "Pourquoi Louis XI était surnommé \"l'universelle arragne\"?",
+                    "answer": "Parce qu'il s'appuyait sur la ruse et ses réseaux d'informateurs pour régner.",
+                    "propositions": [
+                        "Parce qu'il s'appuyait sur la ruse et ses réseaux d'informateurs pour régner.",
+                        "Parce que toutes les contrées qu'il a visitées ont connu la cruauté",
+                        "Pour sa laideur qui le faisait ressembler à une méchante araignée"
+                    ]
+                }
+            ]
+        
+    },
+        "Volcan": {
+            "quizzs": [{
+                    "question": "Quel mythe est né de l’éruption du volcan de Santorin dans l’Antiquité?",
+                    "answer": "L’Atlantide",
+                    "propositions": [
+                        "Le Déluge",
+                        "Le Léviathan",
+                        "L’Atlantide"
+                    ]
+                },{
+                    "question": "Qu’a recraché la lave du Volcan Kilauea à Hawaï?",
+                    "answer": "Des pierres précieuses vertes",
+                    "propositions": [
+                        "Des ossements de dinosaures",
+                        "Des pierres précieuses vertes",
+                        "Des pépites d’or"
+                    ]
+                },{
+                    "question": "Avec 70 000 victimes, son éruption détient un triste record. Il s'agit...",
+                    "answer": "Du Tambora en Indonésie en 1815",
+                    "propositions": [
+                        "Du Tambora en Indonésie en 1815",
+                        "Du Nevado de Ruiz en Colombie en 1985",
+                        "De la Montagne Pelée en Martinique en 1902"
+                    ]
+                },{
+                    "question": "Combien y-a-t-il de volcans actifs?",
+                    "answer": "1500",
+                    "propositions": ["500","1500","2000"
+                    ]
+                },{
+                    "question": "Quel est le nom de l'autre ville engloutie, comme Pompéi, par l'éruption du Vésuve en 79 ap. J.-C. ?",
+                    "answer": "Herculanum",
+                    "propositions": [
+                        "Laudanum",
+                        "Triclinium",
+                        "Herculanum"
+                    ]
+                },{
+                    "question": "Quelle est la température de la lave en fusion?",
+                    "answer": "1 200°C",
+                    "propositions": [
+                        "2 000°C",
+                        "2 500°C",
+                        "1 200°C"
+                    ]
+                },{
+                    "question": "Où se trouve le plus haut volcan du monde?",
+                    "answer": "Hawaï",
+                    "propositions": [
+                        "Hawaï",
+                        "Philippines",
+                        "Indes"
+                    ]
+                },{
+                    "question": "Où se situe le volcan Eyjafjallajökull qui est entré en éruption en 2010 ?",
+                    "answer": "En Islande",
+                    "propositions": [
+                        "En Finlande",
+                        "Au Groenland",
+                        "En Islande"
+                    ]
+                },{
+                    "question": "Comment se nomme le volcan actif de la Réunion?",
+                    "answer": "Le Piton de la Fournaise",
+                    "propositions": [
+                        "La Soufrière",
+                        "La Montagne Pelée",
+                        "Le Piton de la Fournaise"
+                    ]
+                },{
+                    "question": "A quand remonte la dernière éruption des volcans d’Auvergne?",
+                    "answer": "6 700 ans",
+                    "propositions": [
+                        "6 700 ans",
+                        "67 000 ans",
+                        "80 000 ans"
+                    ]
+                }
+            ]
+        }
+    }
+    
+    
+    
+
+

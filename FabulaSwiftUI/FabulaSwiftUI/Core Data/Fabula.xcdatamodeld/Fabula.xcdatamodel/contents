@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="20086" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="AnecdoteFav" representedClassName="AnecdoteFav" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="date" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="String"/>
+        <attribute name="source" optional="YES" attributeType="String"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="GameScore" representedClassName="GameScore" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="score" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="theme" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="QuoteFav" representedClassName="QuoteFav" syncable="YES" codeGenerationType="class">
+        <attribute name="author" optional="YES" attributeType="String"/>
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+    </entity>
+    <entity name="WordFav" representedClassName="WordFav" syncable="YES" codeGenerationType="class">
+        <attribute name="definition" optional="YES" attributeType="String"/>
+        <attribute name="example" optional="YES" attributeType="String"/>
+        <attribute name="qualifier" optional="YES" attributeType="String"/>
+        <attribute name="word" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="AnecdoteFav" positionX="-63" positionY="-18" width="128" height="119"/>
+        <element name="GameScore" positionX="-54" positionY="45" width="128" height="74"/>
+        <element name="QuoteFav" positionX="-63" positionY="27" width="128" height="74"/>
+        <element name="WordFav" positionX="-63" positionY="27" width="128" height="89"/>
+    </elements>
+</model>
