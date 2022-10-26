@@ -99,6 +99,7 @@
 		47BB6875288978F100D576CE /* AccountManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BB6874288978F100D576CE /* AccountManagerView.swift */; };
 		47BB68792889807200D576CE /* AccountManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BB68782889807200D576CE /* AccountManagerViewModel.swift */; };
 		47BB687B2889E26700D576CE /* ChangeCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BB687A2889E26600D576CE /* ChangeCommentView.swift */; };
+		47BC3D6D290996FC001D29E8 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC3D6C290996FC001D29E8 /* RefreshableScrollView.swift */; };
 		47BC692E2885624700258032 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC692D2885624700258032 /* MainTabView.swift */; };
 		47BC69302885EA1B00258032 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC692F2885EA1B00258032 /* PasswordResetView.swift */; };
 		47BC69322885F00100258032 /* PasswordResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC69312885F00100258032 /* PasswordResetViewModel.swift */; };
@@ -237,6 +238,7 @@
 		47BB6874288978F100D576CE /* AccountManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerView.swift; sourceTree = "<group>"; };
 		47BB68782889807200D576CE /* AccountManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerViewModel.swift; sourceTree = "<group>"; };
 		47BB687A2889E26600D576CE /* ChangeCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCommentView.swift; sourceTree = "<group>"; };
+		47BC3D6C290996FC001D29E8 /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
 		47BC692D2885624700258032 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		47BC692F2885EA1B00258032 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		47BC69312885F00100258032 /* PasswordResetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewModel.swift; sourceTree = "<group>"; };
@@ -554,6 +556,7 @@
 				47522886288AD90000315C6C /* UIImage+reduceHeight.swift */,
 				47B8948B2892F63500C29A2A /* Color+customColor.swift */,
 				47D86B9A289024D600A28E62 /* NavigationLazyView.swift */,
+				47BC3D6C290996FC001D29E8 /* RefreshableScrollView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -1057,6 +1060,7 @@
 				47C495D928786DFC0060BDA9 /* SingleWelcomeView.swift in Sources */,
 				47C0DE5B28733B39006D3C67 /* PropositionView.swift in Sources */,
 				47553B73286DC73F00D86B04 /* HomeQuizzView.swift in Sources */,
+				47BC3D6D290996FC001D29E8 /* RefreshableScrollView.swift in Sources */,
 				4722A08B2854D96C00436214 /* Quote.swift in Sources */,
 				475F22E82848FA130058B030 /* Comment.swift in Sources */,
 				4766140928630E6E00F22B43 /* FormField.swift in Sources */,
@@ -1204,6 +1208,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FabulaSwiftUI/Preview Content\"";
@@ -1212,6 +1217,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FabulaSwiftUI/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"Merci d'autoriser l'accès à vos photos pour créer votre profil\"";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Cette autorisation permettra la diffusion d'annonces personnalisées.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1224,9 +1230,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = squirrel.FabulaSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
@@ -1241,6 +1248,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"FabulaSwiftUI/Preview Content\"";
@@ -1249,6 +1257,7 @@
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FabulaSwiftUI/Info.plist;
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"Merci d'autoriser l'accès à vos photos pour créer votre profil\"";
+				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Cette autorisation permettra la diffusion d'annonces personnalisées.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -1261,9 +1270,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 0.1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = squirrel.FabulaSwiftUI;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
 				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;

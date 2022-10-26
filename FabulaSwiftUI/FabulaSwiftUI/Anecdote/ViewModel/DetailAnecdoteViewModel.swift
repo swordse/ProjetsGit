@@ -46,25 +46,28 @@ extension DetailAnecdoteView {
             }
         }
         
-        func updateUserConnexionState() {
-            guard let user = UserDefaultsManager.manager.retrieveCurrentUser() else {
-                currentUser = nil
-                return
-            }
-            currentUser = user
-        }
+//        func updateUserConnexionState() {
+//            guard let user = UserDefaultsManager.manager.retrieveCurrentUser() else {
+//                currentUser = nil
+//                return
+//            }
+//            currentUser = user
+//        }
         
-        func save(commentToSave: String, anecdoteId: String) {
+        func save(commentToSave: String, anecdoteId: String, user: FabulaUser?) {
             
             showProgressView = true
+            
+            guard let user = user else { return }
+            
             let commentToSave: [String: Any] = [
                 "commentId": UUID().uuidString,
                 "commentText": commentToSave,
-                "userName": currentUser?.userName as Any,
-                "userId": currentUser?.userId as Any,
+                "userName": user.userName as Any,
+                "userId": user.userId as Any,
                 "anecdoteId": anecdoteId,
                 "date": Timestamp(date: Date()),
-                "userImage": currentUser?.userImage?.absoluteString as Any]
+                "userImage": user.userImage?.absoluteString as Any]
             
             commentSession.save(commentToSave: commentToSave) { [weak self] result in
                 switch result {

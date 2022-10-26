@@ -14,6 +14,7 @@ enum DataRequest: String {
     case words = "words"
     case allWords = "allWords"
     case citations = "citations"
+    case themesCitation = "themesCitation"
     case user = "users"
     case categoryQuizz = "categoryQuizz"
     case quizzs = "quizzs"

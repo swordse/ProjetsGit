@@ -69,6 +69,7 @@ extension QuizzView {
         questionNumber = 0
         displayedScore = 0
         setUpQuizz()
+        playerResponses.removeAll()
     }
     
     func getJsonData() {

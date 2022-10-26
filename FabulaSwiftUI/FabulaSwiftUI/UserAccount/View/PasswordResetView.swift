@@ -38,12 +38,13 @@ struct PasswordResetView: View {
                     .buttonStyle(.plain)
                     .disabled(email.isEmpty)
                 }
+                .padding()
                 .toolbar {
-                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarLeading) {
+                    ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
                         Button {
                             presentationMode.wrappedValue.dismiss()
                         } label: {
-                            Image(systemName: "x.circle")
+                            Image(systemName: "x.circle.fill")
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }

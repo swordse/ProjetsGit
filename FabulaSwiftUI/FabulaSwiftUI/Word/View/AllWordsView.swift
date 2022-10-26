@@ -111,6 +111,7 @@ struct AllWordsView: View {
                 }
             }
             .navigationTitle("Mot du jour")
+            .navigationBarTitleDisplayMode(.inline)
     }
 }
 

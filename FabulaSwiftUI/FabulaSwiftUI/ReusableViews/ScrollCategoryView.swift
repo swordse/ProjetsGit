@@ -44,6 +44,7 @@ struct ScrollCategoryView<T: Hashable & RawRepresentable & CaseIterable>: View w
                             selectedCategory = categorie
                         } label: {
                                 Text(categorie.rawValue)
+                                .font(.system(size: 17))
                                     .fontWeight(.medium)
                                     .foregroundColor(.white)
                                     .frame(width: 100, height: 50)

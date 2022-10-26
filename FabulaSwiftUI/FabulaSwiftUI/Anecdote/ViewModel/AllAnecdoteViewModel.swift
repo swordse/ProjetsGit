@@ -60,6 +60,17 @@ class AllAnecdotesViewModel: ObservableObject {
         }
     }
     
+    func refresh(filterBy: Anecdote.Category) {
+        if filterBy == .favoris {
+            return
+        }
+        if filterBy == .nouveautes {
+            getAnecdote(filterBy: nil)
+        } else {
+            getAnecdote(filterBy: filterBy)
+        }
+    }
+    
     // MARK: Network calls
     /// method called when user change category in the ScrollViewCategories
    

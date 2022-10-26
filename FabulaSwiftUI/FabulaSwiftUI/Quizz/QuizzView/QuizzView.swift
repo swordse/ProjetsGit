@@ -40,21 +40,22 @@ struct QuizzView: View {
                                 .padding(40)
                         }
                         VStack {
-                                    Text(viewModel.question)
-                                        .frame(width: geo.size.width/1.3, height: geo.size.height/4)
-                                        .lineSpacing(10)
-                                        .font(.system(size: 20, weight: .bold, design: .default))
-                                        .foregroundColor(Color.white)
-                                        .multilineTextAlignment(.center)
-                            
-                            ForEach($viewModel.propositions, id: \.self) { $proposition in
-                                HStack {
-                                    Spacer()
-                                    PropositionView(geo: geo, proposition: $proposition, correctAnswer: $viewModel.correctAnswer, selectedProposition: $selectedProposition, buttonIsDisabled: $viewModel.buttonIsDisabled)
-                                        .padding(.vertical, 10)
-                                    Spacer()
+                            Text(viewModel.question)
+                                .frame(width: geo.size.width/1.3, height: geo.size.height/4)
+                                .lineSpacing(10)
+                                .font(.system(size: 20, weight: .bold, design: .default))
+                                .foregroundColor(Color.white)
+                                .multilineTextAlignment(.center)
+
+                                ForEach($viewModel.propositions, id: \.self) { $proposition in
+                                    HStack {
+                                        Spacer()
+                                        PropositionView(geo: geo, proposition: $proposition, correctAnswer: $viewModel.correctAnswer, selectedProposition: $selectedProposition, buttonIsDisabled: $viewModel.buttonIsDisabled)
+                                            .padding(.vertical, 10)
+                                        Spacer()
+                                    }
                                 }
-                            }
+                            
                         }
                         .opacity(opacity)
                         .onAnimationCompleted(for: opacity, valueWithoutCompletion: 1.0, completion: {

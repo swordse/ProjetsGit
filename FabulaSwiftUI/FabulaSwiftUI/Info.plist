@@ -2,8 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>NSUserTrackingUsageDescription</key>
-    <string>Cette autorisation permettra la diffusion d'annonces personnalisées.</string>
 	<key>GADApplicationIdentifier</key>
 	<string>ca-app-pub-8419450680227145~4127379204</string>
 	<key>GADIsAdManagerApp</key>
@@ -169,10 +167,6 @@
 		</dict>
 	</array>
 	<key>UIBackgroundModes</key>
-	<array>
-		<string>fetch</string>
-		<string>processing</string>
-		<string>remote-notification</string>
-	</array>
+	<array/>
 </dict>
 </plist>

@@ -141,7 +141,7 @@
                         "Vauvenargues"
                     ]
                 },{
-                    "question": "Quel fut un de ses premiers tableaux, peint à l'âge de 8 ans, et dont il refusera, toute sa vie, de se séparer ?",
+                    "question": "De quel tableau, peint à 8 ans, refuser-t-il toujours de se séparer ?",
                     "answer": "Le picador",
                     "propositions": [
                         "Le picador",
@@ -177,14 +177,6 @@
                         "Louis XIV"
                     ]
                 },{
-                    "question": "A quel roi doit-on ce fameux mot \"l'exactitude est la politesse des rois\"?",
-                    "answer": "Louis XVIII",
-                    "propositions": [
-                        "Louis XVIII",
-                        "Louis XIV",
-                        "Henri IV"
-                    ]
-                },{
                     "question": "Pour arriver au pouvoir Henri IV doit renoncer:",
                     "answer": "A sa foi protestante",
                     "propositions": [
@@ -193,12 +185,12 @@
                         "A Marie de Medicis"
                     ]
                 },{
-                    "question": "Quel roi promulgua l’Edit de Nantes?",
-                    "answer": "Henri IV",
+                    "question": "A quel roi doit-on ce fameux mot \"l'exactitude est la politesse des rois\"?",
+                    "answer": "Louis XVIII",
                     "propositions": [
-                        "Henri IV",
-                        "Charles X",
-                        "Louis XIV"
+                        "Louis XVIII",
+                        "Louis XIV",
+                        "Henri IV"
                     ]
                 },{
                     "question": "Quelle grande victoire de Philippe Auguste est restée dans les mémoires?",
@@ -207,6 +199,14 @@
                         "Crécy",
                         "Marignan",
                         "Bouvines"
+                    ]
+                },{
+                    "question": "Quel roi promulgua l’Edit de Nantes?",
+                    "answer": "Henri IV",
+                    "propositions": [
+                        "Henri IV",
+                        "Charles X",
+                        "Louis XIV"
                     ]
                 },{
                     "question": "De qui la marquise de Pompadour était-elle la maitresse?",
@@ -242,11 +242,11 @@
                     ]
                 },{
                     "question": "Pourquoi Louis XI était surnommé \"l'universelle arragne\"?",
-                    "answer": "Parce qu'il s'appuyait sur la ruse et ses réseaux d'informateurs pour régner.",
+                    "answer": "Car il régnait par la ruse",
                     "propositions": [
-                        "Parce qu'il s'appuyait sur la ruse et ses réseaux d'informateurs pour régner.",
-                        "Parce que toutes les contrées qu'il a visitées ont connu la cruauté",
-                        "Pour sa laideur qui le faisait ressembler à une méchante araignée"
+                        "Car il régnait par la ruse",
+                        "Car il était cruel",
+                        "Car il était laid"
                     ]
                 }
             ]
@@ -332,6 +332,330 @@
                     ]
                 }
             ]
+        },
+        "Capitales Européennes": {
+            "quizzs": [{
+                    "question": "Quelle est la capitale de la Finlande?",
+                    "answer": "Helsinki",
+                    "propositions": [
+                        "Zagreb",
+                        "Riga",
+                        "Helsinki"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Suisse?",
+                    "answer": "Berne",
+                    "propositions": ["Zurich","Genève","Berne"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Grèce?",
+                    "answer": "Athènes",
+                    "propositions": [
+                        "Minsk",
+                        "Athènes",
+                        "Amsterdam"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Suède?",
+                    "answer": "Stockholm",
+                    "propositions": [
+                        "Stockholm",
+                        "Oslo",
+                        "Helsinki"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Lituanie?",
+                    "answer": "Vilnius",
+                    "propositions": [
+                        "Riga",
+                        "Tallinn",
+                        "Vilnius"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Croatie?",
+                    "answer": "Zagreb",
+                    "propositions": [
+                        "Sofia",
+                        "Zagreb",
+                        "Tirana"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Danemark?",
+                    "answer": "Copenhague",
+                    "propositions": [
+                        "Copenhague",
+                        "Vienne",
+                        "Amsterdam"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de l'Islande?",
+                    "answer": "Reykjavík",
+                    "propositions": [
+                        "Reykjavík",
+                        "Stockholm",
+                        "Oslo"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Portugal?",
+                    "answer": "Lisbonne",
+                    "propositions": [
+                        "Amadora",
+                        "Porto",
+                        "Lisbonne"
+                    ]
+                }, {
+                    "question": "Quelle est la capitale de la Norvège?",
+                    "answer": "Oslo",
+                    "propositions": [
+                        "Oslo",
+                        "Stockholm",
+                        "Riga"
+                    ]
+                }
+            ]
+        },
+        "Grand dauphin": {
+            "quizzs": [{
+                "question": "La racine latine de dauphin est:",
+                "answer": "Delphinus",
+                "propositions": [
+                    "Daulphus",
+                    "Dolphinus",
+                    "Delphinus"
+                ]
+            },{
+                "question": "Combien existent-ils d'espèces de dauphins?",
+                "answer": "43",
+                "propositions": ["15","23","43"
+                ]
+            },{
+                "question": "Quelle est la taille moyenne d'un grand dauphin?",
+                "answer": "2 à 4 m",
+                "propositions": [
+                    "2 à 4 m",
+                    "3 à 4 m",
+                    "4 à 5 m"
+                ]
+            },{
+                "question": "Quel est le poids moyen d'un grand dauphin?",
+                "answer": "150 à 400 kg",
+                "propositions": [
+                    "100 à 300 kg",
+                    "150 à 400 kg",
+                    "250 à 500 kg"
+                ]
+            },{
+                "question": "Comment s'appelle le petit du dauphin?",
+                "answer": "delphineau",
+                "propositions": [
+                    "delphineau",
+                    "dauphineau",
+                    "daulphineau"
+                ]
+            },{
+                "question": "Quelle est la durée moyenne de gestation?",
+                "answer": "12 mois",
+                "propositions": [
+                    "10 mois",
+                    "11 mois",
+                    "12 mois"
+                ]
+            },{
+                "question": "Quelle est la durée de vie moyenne d'un grand dauphin?",
+                "answer": "35 ans",
+                "propositions": [
+                    "25 ans",
+                    "35 ans",
+                    "45 ans"
+                ]
+            },{
+                "question": "Comment s'appelle le trou présent sur la tête du daupgin?",
+                "answer": "Un évent",
+                "propositions": [
+                    "Un auvent",
+                    "Un évent",
+                    "Un avant"
+                ]
+            },{
+                "question": "Quel est le nombre de delphineau dans une portée?",
+                "answer": "1",
+                "propositions": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },{
+                "question": "Quel est le principal prédateur du dauphin?",
+                "answer": "Le requin",
+                "propositions": [
+                    "L'orque",
+                    "L'homme",
+                    "Le requin"
+                ]
+            }
+        ]
+        },
+        "Basket": {
+            "quizzs": [{
+                "question": "En quelle année a été créée la NBA? ",
+                "answer": "1949",
+                "propositions": [
+                    "1921",
+                    "1965",
+                    "1949"
+                ]
+            },{
+                "question": "Quel est le nombre de joueurs par équipe ?",
+                "answer": "5",
+                "propositions": ["4","5","7"
+                ]
+            },{
+                "question": "Combien de pas un joueur peut-il faire sans dribbler?",
+                "answer": "2",
+                "propositions": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },{
+                "question": "Quel joueur a marqué plus de 100 points en un match?",
+                "answer": "Wilt Chamberlain",
+                "propositions": [
+                    "Kareem Abdul-Jabbar",
+                    "Michael Jordan",
+                    "Wilt Chamberlain"
+                ]
+            },{
+                "question": "Quelle est la durée d'un quart-temps?",
+                "answer": "10 mn",
+                "propositions": [
+                    "7 mn",
+                    "10 mn",
+                    "15 mn"
+                ]
+            },{
+                "question": "Quel joueur a marqué au cours de sa carrière le plus grand nombre de point?",
+                "answer": "Kareem Abdul-Jabbar",
+                "propositions": [
+                    "Michael Jordan",
+                    "Wilt Chamberlain",
+                    "Kareem Abdul-Jabbar"
+                ]
+            },{
+                "question": "En 1992, la Dream Team a remporté ses matchs avec, en moyenne, combien de point d'écart?",
+                "answer": "43 points",
+                "propositions": [
+                    "33 points",
+                    "43 points",
+                    "53 points"
+                ]
+            },{
+                "question": "Combien de temps un attaquant peut rester dans la raquette?",
+                "answer": "3 secondes",
+                "propositions": [
+                    "3 secondes",
+                    "5 secondes",
+                    "8 secondes"
+                ]
+            },{
+                "question": "Combien de point vaut un panier dans la raquette?",
+                "answer": "2",
+                "propositions": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },{
+                "question": "Combien de franchises participent au championnat NBA?",
+                "answer": "30",
+                "propositions": [
+                    "30",
+                    "36",
+                    "42"
+                ]
+            }
+        ]
+        },
+        "Films d'action": {
+            "quizzs": [{
+                "question": "Quel film a révélé Mel Gibson en 1979 ? ",
+                "answer": "Mad Max",
+                "propositions": [
+                    "Forever young",
+                    "Mad Max",
+                    "L'arme fatale"
+                ]
+            },{
+                "question": "Quel acteur joue le rôle du père d'Harrison Ford dans La dernière croisade ?",
+                "answer": "Sean Connery",
+                "propositions": ["Al Pacino","Anthony Hopkins","Sean Connery"
+                ]
+            },{
+                "question": "Pour rendre Terminator plus réel, Schwarzenegger a décidé",
+                "answer": "de ne pas cligner des yeux",
+                "propositions": [
+                    "de serrer en permanence les dents",
+                    "de limiter sa respiration",
+                    "de ne pas cligner des yeux"
+                ]
+            },{
+                "question": "Pour quel film Quentin Tarantino a reçu la Plame d'Or?",
+                "answer": "Pulp Fiction",
+                "propositions": [
+                    "Reservoir Dogs",
+                    "Pulp Fiction",
+                    "Inglorious Bastard"
+                ]
+            },{
+                "question": "Quel Oscar n'a pas obtenu Jurassic Park?",
+                "answer": "Oscar du meilleur film",
+                "propositions": [
+                    "Oscar des meilleurs effets visuels",
+                    "Oscar du meilleur son",
+                    "Oscar du meilleur film"
+                ]
+            },{
+                "question": "En quelle année est sorti le film La communauté de l'anneau?",
+                "answer": "2001",
+                "propositions": [
+                    "2001",
+                    "1999",
+                    "2002"
+                ]
+            },{
+                "question": "Quel James Bond se déroule en partie sur la Tour Eiffel?",
+                "answer": "Dangereusement votre",
+                "propositions": [
+                    "Dangereusement votre",
+                    "Permis de tuer",
+                    "Moonraker"
+                ]
+            },{
+                "question": "Quel acteur a joué le plus de fois James Bond?",
+                "answer": "Roger Moore",
+                "propositions": [
+                    "Roger Moore",
+                    "Sean Connery",
+                    "Pierce Brosnan"
+                ]
+            },{
+                "question": "Le réalisateur des trois John Wick connaissait bien Keanu Reeves car:",
+                "answer": "Il était sa doublure dans Matrix",
+                "propositions": [
+                    "Ils sont amis d'enfance",
+                    "Il était sa doublure dans Matrix",
+                    "Ils sont cousins"
+                ]
+            },{
+                "question": "Quel acteur souffre de prosopagnosie (trouble de la reconnaissance des visages) ?",
+                "answer": "Brad Pitt",
+                "propositions": [
+                    "Brad Pitt",
+                    "George Clooney",
+                    "Jack Nicholson"
+                ]
+            }
+        ]
         }
     }
     

@@ -25,6 +25,19 @@ struct TextEditorBackGround: ViewModifier {
     }
 }
 
+struct RefreshView: ViewModifier {
+    
+    var action: @Sendable () async -> Void
+    
+    func body(content: Content) -> some View {
+        if #available(iOS 15, *) {
+            content.refreshable(action: action)
+        } else {
+            content
+        }
+    }
+}
+
 struct HiddeRowSeparator: ViewModifier {
     
     func body(content: Content) -> some View {
@@ -95,6 +108,10 @@ extension View {
     
     func textEditorBackGround() -> some View {
         modifier(TextEditorBackGround())
+    }
+    
+    func refreshView(action: @escaping @Sendable () async -> Void) -> some View {
+        modifier(RefreshView(action: action))
     }
     
     func hideRowSeparator() -> some View {

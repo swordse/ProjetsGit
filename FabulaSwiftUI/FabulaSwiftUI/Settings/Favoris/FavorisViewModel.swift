@@ -18,7 +18,9 @@ import Foundation
     
     func getFavoritesForSettings(for destination: Destination) {
         switch destination {
-        case .toRGPD:
+//        case .toRGPD:
+//            return
+        case.toLegal:
             return
         case .toChangePhoto:
             return
@@ -46,12 +48,12 @@ import Foundation
             title = "Mot du jour Favoris"
         case .toScores:
             return
-        case .toSubmitRules:
-            return
-        case .toCommentRules:
-            return
-        case .toCGU:
-            return
+//        case .toSubmitRules:
+//            return
+//        case .toCommentRules:
+//            return
+//        case .toCGU:
+//            return
         case .toEmail:
             return
         }

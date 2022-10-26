@@ -35,10 +35,10 @@ struct AccountView: View {
                             LazyVStack(spacing: 30) {
                                 Spacer()
                                 Spacer()
-                                if viewModel.isConnexion {
-                                    LottieView(name: "login-and-sign-up", numberOfRepeat: 1, height: 200)
-                                        .frame(height: 200)
-                                }
+//                                if viewModel.isConnexion {
+//                                    LottieView(name: "login-and-sign-up", numberOfRepeat: 1, height: 200)
+//                                        .frame(height: 200)
+//                                }
                                 if !viewModel.isConnexion {
                                     HStack {
                                         if viewModel.userImage != nil {

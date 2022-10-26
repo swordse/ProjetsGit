@@ -47,6 +47,9 @@ struct AllQuotesView: View {
                     .listRowBackground(Color.background)
                     .hideRowSeparator()
                 }
+//                .refreshable(action: {
+//                    viewModel.refresh(filterBy: selectedCategory)
+//                })
                 .padding(.bottom, 30)
                 .hideScrollBackground()
                 .listStyle(.plain)
@@ -84,7 +87,8 @@ struct AllQuotesView: View {
             }
         }
         .navigationTitle("Citations")
-        .navigationBarTitleDisplayMode(.automatic)
+        
+        .navigationBarTitleDisplayMode(.inline)
     }
 }
 

@@ -21,6 +21,7 @@ struct DetailAnecdoteView: View {
     @State private var showCommentSubmitAlert = false
     
     @AppStorage(Keys.currentUserSaved) var user: Data = Data()
+    @State private var fabulaUser: FabulaUser?
     
     var body: some View {
             ZStack {
@@ -71,7 +72,7 @@ struct DetailAnecdoteView: View {
                                 .textEditorBackGround()
                                 .frame(height: 60)
                                 .onTapGesture {
-                                    if user.isEmpty {
+                                    if fabulaUser == nil {
                                         isConnexionSheetPresented = true
                                         hideKeyboard()
                                     }
@@ -84,12 +85,12 @@ struct DetailAnecdoteView: View {
                             }
                             .padding(.vertical)
                             .buttonStyle(.plain)
-                            .disabled(user.isEmpty)
+                            .disabled(fabulaUser == nil)
                             
                             Spacer()
                             
                             ForEach($viewModel.comments, id: \.commentText) { $comment in
-                                if viewModel.currentUser?.userId == comment.userId {
+                                if fabulaUser?.userId == comment.userId {
                                     CommentView(showCommentChangeButton: true, comment: comment)
                                         .rowSeparatorColor(color: .black)
                                         .fixedSize(horizontal: false, vertical: true)
@@ -122,29 +123,41 @@ struct DetailAnecdoteView: View {
                     }
                 }
                 .onAppear {
-                    viewModel.updateUserConnexionState()
+//                    viewModel.updateUserConnexionState()
+                    decodeUser(userData: user)
                 }
             }
+            .onChange(of: user, perform: { _ in
+                    decodeUser(userData: user)
+                })
             .sheet(isPresented: $showChangeCommentView, onDismiss: {
                 viewModel.updateCommentAfterChange(comment: selectedComment)
             }, content: {
                 ChangeCommentView(comment: $selectedComment)
             })
-            .sheet(isPresented: $isConnexionSheetPresented, onDismiss: { viewModel.updateUserConnexionState() }, content: {
-                AccountView()
-            })
+//            .sheet(isPresented: $isConnexionSheetPresented, onDismiss: { viewModel.updateUserConnexionState() }, content: {
+//                AccountView()
+//            })
             .alert(isPresented: $viewModel.commentError, content: {
                 Alert(title: Text("Erreur"), message: Text("Une erreur est survenue lors du chargement des commenaires."), dismissButton: .default(Text("OK")))
             })
             .alert(isPresented: $showCommentSubmitAlert, content: {
                 Alert(title: Text("Votre commentaire est prêt."), message: Text("En le soumettant vous acceptez les règles d'utilisation de l'application."), primaryButton: .default(Text("ACCEPTER"), action: {
-                    viewModel.save(commentToSave: newComment, anecdoteId: anecdote.id ?? "")
+                    viewModel.save(commentToSave: newComment, anecdoteId: anecdote.id ?? "", user: fabulaUser)
                     newComment = ""
                 }), secondaryButton: .cancel()
                 )
             })
             .navigationTitle("Detail")
 //        }
+    }
+    
+    func decodeUser(userData: Data) {
+        if let decoded = try? JSONDecoder().decode(FabulaUser.self, from: userData) {
+            fabulaUser = decoded
+        } else {
+            fabulaUser = nil
+        }
     }
 }
 

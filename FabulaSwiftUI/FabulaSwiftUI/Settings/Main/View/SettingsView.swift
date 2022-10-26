@@ -34,13 +34,17 @@ struct SettingsView: View {
                                             case .toMotduJourFav:
                                                 FavorisView(toDestination: option.destination)
                                             case .toScores: SettingsScoreView()
-                                            case .toSubmitRules:
-                                                LegalView(settingTitleText: SettingTitleText.submitRulesText, navTitle: "Règles Soumission")
-                                            case .toCommentRules:
-                                                LegalView(settingTitleText: SettingTitleText.commentRules, navTitle: "Règles Commentaires")
-                                            case .toCGU:
-                                                LegalView(settingTitleText: SettingTitleText.termsAndConditions, navTitle: "CGU")
-                                            case.toRGPD: LegalView(settingTitleText: SettingTitleText.confidentiality, navTitle: "Données personnelles")
+                                            case .toLegal:
+                                                LegalView()
+//                                            case .toSubmitRules:
+//                                                LegalView()
+//                                                }
+//                                                LegalView(settingTitleText: SettingTitleText.submitRulesText, navTitle: "Règles Soumission")
+//                                            case .toCommentRules:
+//                                                LegalView(settingTitleText: SettingTitleText.commentRules, navTitle: "Commentaires")
+//                                            case .toCGU:
+//                                                LegalView(settingTitleText: SettingTitleText.termsAndConditions, navTitle: "CGU")
+//                                            case.toRGPD: LegalView(settingTitleText: SettingTitleText.confidentiality, navTitle: "Données personnelles")
                                             case .toEmail :
                                                 HomeEmailView()
                                             }

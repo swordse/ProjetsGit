@@ -26,6 +26,7 @@ struct PropositionView: View {
                 buttonIsDisabled = true
             } label: {
                 if isSelected {
+//                if selectedProposition != "" {
                     HStack{
                         Text(proposition)
                             .font(.system(size: 18, weight: .semibold, design: .default))
@@ -68,6 +69,7 @@ struct PropositionView: View {
                 }
             }
             .disabled(buttonIsDisabled)
+            
         }
     }
     

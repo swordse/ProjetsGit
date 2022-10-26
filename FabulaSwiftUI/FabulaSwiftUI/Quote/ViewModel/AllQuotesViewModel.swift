@@ -13,6 +13,7 @@ extension AllQuotesView {
     var quoteCache = QuoteCache.shared
     
     @Published var quotes = [Quote]()
+    @Published var themes = [String]()
     @Published var isErrorOccured = false
     @Published var pageNumber = 1
     @Published var isNextHidden = false
@@ -33,6 +34,15 @@ extension AllQuotesView {
             if isQuoteSaved(selectedCategorie: selectedCategorie) == false {
                 getQuote(filterBy: selectedCategorie)
             }
+        }
+    }
+    
+    func refresh(filterBy: QuoteCategoriesMenu) {
+        if filterBy == .favoris {
+            return
+        }
+        if filterBy == .nouveautes {
+            getQuote(filterBy: nil)
         }
     }
     
@@ -93,6 +103,16 @@ extension AllQuotesView {
         }
     }
     
+//    func getThemes() {
+//        Task {
+//            do {
+//                let result = try await quoteService.getThemes()
+//                themes = result.sorted()
+//            } catch {
+//                iserr
+//            }
+//        }
+//    }
     
     func getQuote(filterBy: QuoteCategoriesMenu?) {
         Task {

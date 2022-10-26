@@ -11,6 +11,8 @@ import FirebaseFirestoreSwift
 
 protocol FSQuoteSession {
     
+//    func getThemes() async throws -> [String]
+    
     func getQuotes(filterBy: QuoteCategoriesMenu?) async throws -> (quotes: [Quote], snapshots: [QueryDocumentSnapshot?])
     
     func getNewQuotes(filterBy: QuoteCategoriesMenu?, snapshots: [QueryDocumentSnapshot?]) async throws -> (quotes: [Quote], snapshots: [QueryDocumentSnapshot?])
@@ -23,6 +25,23 @@ final class QuoteSession: FSQuoteSession {
     let dataBase = Firestore.firestore()
     
     private var limitNumber = Constant.numberOfData
+    
+//    func getThemes() async throws -> [String] {
+//        let docRef = dataBase.collection(DataRequest.themesCitation.rawValue)
+//        var themes = [String]()
+//        do {
+//            let callResult = try await docRef.getDocuments()
+//            themes = callResult.documents.compactMap { queryDoc in
+//                let theme = try! queryDoc.data(as: String.self)
+//                return theme
+//            }
+//        }
+//        catch {
+//            print(error)
+//            throw error
+//        }
+//        return themes
+//    }
     
     func getQuotes(filterBy: QuoteCategoriesMenu?) async throws -> (quotes: [Quote], snapshots: [QueryDocumentSnapshot?]) {
         

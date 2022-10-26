@@ -49,7 +49,7 @@ struct ChangeCommentView: View {
                         Button {
                             presentationMode.wrappedValue.dismiss()
                         } label: {
-                            Image(systemName: "x.circle")
+                            Image(systemName: "x.circle.fill")
                                 .foregroundColor(.white)
                                 .font(.caption)
                         }

@@ -6,7 +6,9 @@
             ]
         },{
             "categorieName": "Géographie",
-            "themes": []
+            "themes": [
+                "Capitales Européennes"
+            ]
         },{
             "categorieName": "Science",
             "themes": [
@@ -14,7 +16,9 @@
             ]
         },{
             "categorieName": "Nature",
-            "themes": []
+            "themes": [
+                "Grand dauphin"
+            ]
         },{
             "categorieName": "Art",
             "themes": [
@@ -22,13 +26,13 @@
             ]
         },{
             "categorieName": "Loisirs",
-            "themes": []
+            "themes": ["Films d'action"]
         },{
             "categorieName": "Littérature",
             "themes": ["Hugo"]
         },{
             "categorieName": "Sport",
-            "themes": []
+            "themes": ["Basket"]
         }
     ]
 }

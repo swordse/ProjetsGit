@@ -42,14 +42,43 @@ final class QuizzSession: FSQuizzSession {
         
         do {
             let callResult = try await docRef.getDocuments()
-            let quizzs: [Quizz] = callResult.documents.map { queryDocumentSnapshot in
-                let result = queryDocumentSnapshot.data()
-                return Quizz(question: result["question"] as! String, answer: result["response"] as! String, propositions: result["propositions"] as! [String])
-            }
-            return(quizzs, nil)
-        } catch {
-            return(nil, NetworkError.errorOccured)
-        }
+//            let quizzs: [Quizz] = callResult.documents.map { document in
+            guard let result = callResult.documents.first?.data() else { return (nil, NetworkError.errorOccured) }
+            let questions = result["questions"] as! [String]
+            let propositions = result["propositions"] as! [[String: String]]
+            let answers = result["responses"] as! [String]
+                
+            var quizzs = [Quizz]()
+                
+            for index in 0..<questions.count {
+                    let question = questions[index]
+                    let answer = answers[index]
+                    var resultProps = [String]()
+                    
+                    for key in 0..<3 {
+                        guard let prop = propositions[index]["\(key)"] else { return (nil, NetworkError.errorOccured) }
+                        resultProps.append(prop)
+                    }
+                    
+                    quizzs.append(Quizz(question: question, answer: answer, propositions: resultProps))
+                }
+                return (quizzs, nil)
+            } catch {
+                        return(nil, NetworkError.errorOccured)
+                    }
+        
+//        let docRef = dataBase.collection(dataRequest).whereField("title", isEqualTo: title)
+//
+//        do {
+//            let callResult = try await docRef.getDocuments()
+//            let quizzs: [Quizz] = callResult.documents.map { queryDocumentSnapshot in
+//                let result = queryDocumentSnapshot.data()
+//                return Quizz(question: result["question"] as! String, answer: result["response"] as! String, propositions: result["propositions"] as! [String])
+//            }
+//            return(quizzs, nil)
+//        } catch {
+//            return(nil, NetworkError.errorOccured)
+//        }
     }
     
 }

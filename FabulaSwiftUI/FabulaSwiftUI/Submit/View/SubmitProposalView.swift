@@ -11,6 +11,7 @@ struct SubmitProposalView: View {
     
     @Binding var showUserAccount: Bool
     @StateObject var viewModel = SubmitProposalViewModel()
+    @State private var acceptBoxIsCheck = false
     
     @AppStorage(Keys.currentUserSaved) var user: Data = Data()
     
@@ -57,12 +58,29 @@ struct SubmitProposalView: View {
                                 ButtonView(text: !user.isEmpty ? "SOUMETTRE" : "VOUS DEVEZ VOUS CONNECTER")
                             }
                             .buttonStyle(.plain)
-                            .disabled(viewModel.buttonIsDisable || user.isEmpty)
-                            Text("En soumettant une proposition vous acceptez les règles de soumission (consultables dans les préférences).")
-                                .fontWeight(.medium)
-                                .foregroundColor(.white)
-                                .frame(maxWidth: .infinity, alignment: .center)
-                                .multilineTextAlignment(.center)
+                            .disabled(viewModel.buttonIsDisable && !acceptBoxIsCheck || user.isEmpty)
+                            HStack {
+                                Spacer()
+                                Button {
+                                    acceptBoxIsCheck.toggle()
+                                } label: {
+                                    Image(systemName: acceptBoxIsCheck ? "checkmark.square" : "square")
+                                        .foregroundColor(.white)
+                                }
+                                Text("J'accepte les règles de soumission.")
+                                Spacer()
+                            }
+                            Button {
+                                let stringUrl = "https://www.sites.google.com/view/appfabula/accueil/règles-de-soumission"
+                                let encoded = stringUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+                                
+                                let url = URL(string: encoded!)
+                                UIApplication.shared.open(url!)
+                            } label: {
+                                Text("Consultez les règles.")
+                                    .foregroundColor(.blue)
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                            }
                         }.padding()
                     }
                     

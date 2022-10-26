@@ -10,7 +10,7 @@ import Foundation
 
 struct EmailConstants {
     
-    var email = "raphaelgoupille@gmail.com"
+    var email = "fabula.app.contact@gmail.com"
     
     let noSupportext = "Vous devez configurer votre compte email pour pouvoir nous envoyer un message."
         let contentPreText = "Voici mon retour concernant Fabula"

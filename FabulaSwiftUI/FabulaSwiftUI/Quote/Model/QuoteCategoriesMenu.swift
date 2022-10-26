@@ -13,6 +13,8 @@ enum QuoteCategoriesMenu: String, CaseIterable, ScrollCategories {
     
     case nouveautes = "Nouveautés"
     case favoris = "Vos Favoris"
+//    case themes = "Catégorie"
+    case absurde = "Absurde"
     case amour = "Amour"
     case amitie = "Amitié"
     case exigence = "Exigence"
@@ -20,10 +22,11 @@ enum QuoteCategoriesMenu: String, CaseIterable, ScrollCategories {
     case homme = "Homme"
     case impossible = "Impossible"
     case monde = "Monde"
+    case mort = "Mort"
     case success = "Succès"
     case temps = "Temps"
     case travail = "Travail"
     case vie = "Vie"
-    case absurde = "Absurde"
+    
 
 }

@@ -28,14 +28,16 @@ struct FavorisView: View {
                 .ignoresSafeArea()
             List {
                 switch toDestination {
+                case .toLegal:
+                    EmptyView()
                 case .toEmail:
                     EmptyView()
-                case .toRGPD:
-                    EmptyView()
-                case .toCGU:
-                    EmptyView()
-                case .toCommentRules:
-                    EmptyView()
+//                case .toRGPD:
+//                    EmptyView()
+//                case .toCGU:
+//                    EmptyView()
+//                case .toCommentRules:
+//                    EmptyView()
                 case .toChangePhoto:
                     EmptyView()
                 case .toDeleteAccount:
@@ -44,8 +46,8 @@ struct FavorisView: View {
                     EmptyView()
                 case .toScores:
                     EmptyView()
-                case .toSubmitRules:
-                    EmptyView()
+//                case .toSubmitRules:
+//                    EmptyView()
                 case .toAnecdoteFav:
                     Section {
                     if viewModel.anecdoteFav.isEmpty {

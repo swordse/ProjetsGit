@@ -18,7 +18,7 @@ struct HomeEmailView: View {
             Color.background.ignoresSafeArea()
             VStack(spacing: 40) {
                 if MFMailComposeViewController.canSendMail() {
-                    Text("Envoyez nous un email pour nous faire part de vos questions ou de votre expérience.")
+                    Text("Envoyez nous un email pour nous poser vos questions ou nous faire part de votre expérience.")
                         .multilineTextAlignment(.center)
                         .foregroundColor(.white)
                     Button {
