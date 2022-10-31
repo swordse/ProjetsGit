@@ -79,6 +79,8 @@
 		47A2DE3128D5028200173DDB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A2DE3028D5028200173DDB /* LottieView.swift */; };
 		47A2DE3428D503D800173DDB /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = 47A2DE3328D503D800173DDB /* Lottie */; };
 		47A2DE3E28D9F53E00173DDB /* UserNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A2DE3D28D9F53E00173DDB /* UserNavBar.swift */; };
+		47A39E072910087000AB257A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 47A39E062910087000AB257A /* FirebaseMessaging */; };
+		47A39E0A291018D100AB257A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 47A39E09291018D100AB257A /* FirebaseAnalytics */; };
 		47A47DC928FC4B630089F893 /* MailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A47DC828FC4B630089F893 /* MailView.swift */; };
 		47A47DCB28FC50540089F893 /* EmailConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A47DCA28FC50540089F893 /* EmailConstants.swift */; };
 		47A47DCD28FC52A40089F893 /* HomeEmailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A47DCC28FC52A40089F893 /* HomeEmailView.swift */; };
@@ -99,7 +101,11 @@
 		47BB6875288978F100D576CE /* AccountManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BB6874288978F100D576CE /* AccountManagerView.swift */; };
 		47BB68792889807200D576CE /* AccountManagerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BB68782889807200D576CE /* AccountManagerViewModel.swift */; };
 		47BB687B2889E26700D576CE /* ChangeCommentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BB687A2889E26600D576CE /* ChangeCommentView.swift */; };
-		47BC3D6D290996FC001D29E8 /* RefreshableScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC3D6C290996FC001D29E8 /* RefreshableScrollView.swift */; };
+		47BC3D78290D59E7001D29E8 /* Credentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC3D77290D59E7001D29E8 /* Credentials.swift */; };
+		47BC3D7A290D5AF7001D29E8 /* Authentification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC3D79290D5AF7001D29E8 /* Authentification.swift */; };
+		47BC3D7C290D5FA3001D29E8 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC3D7B290D5FA3001D29E8 /* AuthView.swift */; };
+		47BC3D7F290D7191001D29E8 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 47BC3D7E290D7191001D29E8 /* SwiftKeychainWrapper */; };
+		47BC3D81290D74E1001D29E8 /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC3D80290D74E1001D29E8 /* KeyChainStorage.swift */; };
 		47BC692E2885624700258032 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC692D2885624700258032 /* MainTabView.swift */; };
 		47BC69302885EA1B00258032 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC692F2885EA1B00258032 /* PasswordResetView.swift */; };
 		47BC69322885F00100258032 /* PasswordResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC69312885F00100258032 /* PasswordResetViewModel.swift */; };
@@ -218,6 +224,7 @@
 		47A162A428E3000500CAA89B /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
 		47A2DE3028D5028200173DDB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
 		47A2DE3D28D9F53E00173DDB /* UserNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNavBar.swift; sourceTree = "<group>"; };
+		47A39E0829100CB500AB257A /* FabulaSwiftUI.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FabulaSwiftUI.entitlements; sourceTree = "<group>"; };
 		47A47DC828FC4B630089F893 /* MailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailView.swift; sourceTree = "<group>"; };
 		47A47DCA28FC50540089F893 /* EmailConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmailConstants.swift; sourceTree = "<group>"; };
 		47A47DCC28FC52A40089F893 /* HomeEmailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeEmailView.swift; sourceTree = "<group>"; };
@@ -238,7 +245,10 @@
 		47BB6874288978F100D576CE /* AccountManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerView.swift; sourceTree = "<group>"; };
 		47BB68782889807200D576CE /* AccountManagerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerViewModel.swift; sourceTree = "<group>"; };
 		47BB687A2889E26600D576CE /* ChangeCommentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeCommentView.swift; sourceTree = "<group>"; };
-		47BC3D6C290996FC001D29E8 /* RefreshableScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RefreshableScrollView.swift; sourceTree = "<group>"; };
+		47BC3D77290D59E7001D29E8 /* Credentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Credentials.swift; sourceTree = "<group>"; };
+		47BC3D79290D5AF7001D29E8 /* Authentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentification.swift; sourceTree = "<group>"; };
+		47BC3D7B290D5FA3001D29E8 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		47BC3D80290D74E1001D29E8 /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStorage.swift; sourceTree = "<group>"; };
 		47BC692D2885624700258032 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		47BC692F2885EA1B00258032 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		47BC69312885F00100258032 /* PasswordResetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewModel.swift; sourceTree = "<group>"; };
@@ -291,12 +301,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				47A39E072910087000AB257A /* FirebaseMessaging in Frameworks */,
 				475F22D52847C3160058B030 /* FirebaseAuth in Frameworks */,
 				47A47DD528FCA0800089F893 /* AppTrackingTransparency.framework in Frameworks */,
 				47BC6937288725C500258032 /* FirebaseStorage in Frameworks */,
 				47D62236288EB9A200E242F0 /* GoogleMobileAds in Frameworks */,
 				475F22D72847C3160058B030 /* FirebaseFirestore in Frameworks */,
 				475F22D92847C3160058B030 /* FirebaseFirestoreSwift in Frameworks */,
+				47BC3D7F290D7191001D29E8 /* SwiftKeychainWrapper in Frameworks */,
+				47A39E0A291018D100AB257A /* FirebaseAnalytics in Frameworks */,
 				47A2DE3428D503D800173DDB /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -324,6 +337,7 @@
 		4701DCE328466E6F0069B8AE /* FabulaSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				47A39E0829100CB500AB257A /* FabulaSwiftUI.entitlements */,
 				4701DCE428466E6F0069B8AE /* FabulaSwiftUIApp.swift */,
 				47B8948D28943C7700C29A2A /* ReusableViews */,
 				47D62231288EADAA00E242F0 /* Add */,
@@ -556,7 +570,6 @@
 				47522886288AD90000315C6C /* UIImage+reduceHeight.swift */,
 				47B8948B2892F63500C29A2A /* Color+customColor.swift */,
 				47D86B9A289024D600A28E62 /* NavigationLazyView.swift */,
-				47BC3D6C290996FC001D29E8 /* RefreshableScrollView.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -743,6 +756,10 @@
 				471FFBDC2860E0880028A3AA /* AuthService.swift */,
 				471FFBD6286092630028A3AA /* NetworkError.swift */,
 				471FFBD8286092A10028A3AA /* FabulaUser.swift */,
+				47BC3D77290D59E7001D29E8 /* Credentials.swift */,
+				47BC3D80290D74E1001D29E8 /* KeyChainStorage.swift */,
+				47BC3D79290D5AF7001D29E8 /* Authentification.swift */,
+				47BC3D7B290D5FA3001D29E8 /* AuthView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -892,6 +909,9 @@
 				47BC6936288725C500258032 /* FirebaseStorage */,
 				47D62235288EB9A200E242F0 /* GoogleMobileAds */,
 				47A2DE3328D503D800173DDB /* Lottie */,
+				47BC3D7E290D7191001D29E8 /* SwiftKeychainWrapper */,
+				47A39E062910087000AB257A /* FirebaseMessaging */,
+				47A39E09291018D100AB257A /* FirebaseAnalytics */,
 			);
 			productName = FabulaSwiftUI;
 			productReference = 4701DCE128466E6F0069B8AE /* FabulaSwiftUI.app */;
@@ -926,6 +946,7 @@
 				47BC6935288725C500258032 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				47D62234288EB9A200E242F0 /* XCRemoteSwiftPackageReference "swift-package-manager-google-mobile-ads" */,
 				47A2DE3228D503D800173DDB /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				47BC3D7D290D7191001D29E8 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = 4701DCE228466E6F0069B8AE /* Products */;
 			projectDirPath = "";
@@ -987,6 +1008,7 @@
 				47C0DE56287303F4006D3C67 /* View_OnAnimationCompleted.swift in Sources */,
 				4766140D28633E5500F22B43 /* AccountView.swift in Sources */,
 				472BC3CE285B52D200AE9B18 /* Constant.swift in Sources */,
+				47BC3D81290D74E1001D29E8 /* KeyChainStorage.swift in Sources */,
 				475F22DD2847F0A00058B030 /* AllAnecdoteViewModel.swift in Sources */,
 				47BC69302885EA1B00258032 /* PasswordResetView.swift in Sources */,
 				47C495DE287C85840060BDA9 /* FavorisView.swift in Sources */,
@@ -1010,6 +1032,7 @@
 				4722A0922855277700436214 /* FSQuoteSession.swift in Sources */,
 				47CB202A28EC8CB400A79F21 /* Interstitial.swift in Sources */,
 				47B894882892D3A800C29A2A /* RewardedAd.swift in Sources */,
+				47BC3D7A290D5AF7001D29E8 /* Authentification.swift in Sources */,
 				47B8948A2892D3D500C29A2A /* RewardedAdView.swift in Sources */,
 				47C600482875D6AC0031D8CA /* SettingsScoreView.swift in Sources */,
 				47CB202428E9F36C00A79F21 /* WordCache.swift in Sources */,
@@ -1047,6 +1070,7 @@
 				471FFBDB2860A6040028A3AA /* UserDefaultsManager.swift in Sources */,
 				4722A09A285675CA00436214 /* AllQuotesViewModel.swift in Sources */,
 				471FFBDD2860E0880028A3AA /* AuthService.swift in Sources */,
+				47BC3D7C290D5FA3001D29E8 /* AuthView.swift in Sources */,
 				4701DCE528466E6F0069B8AE /* FabulaSwiftUIApp.swift in Sources */,
 				47C0DE5928730E50006D3C67 /* QuizzViewModel.swift in Sources */,
 				4701DCF8284755670069B8AE /* AnecdoteView.swift in Sources */,
@@ -1060,11 +1084,11 @@
 				47C495D928786DFC0060BDA9 /* SingleWelcomeView.swift in Sources */,
 				47C0DE5B28733B39006D3C67 /* PropositionView.swift in Sources */,
 				47553B73286DC73F00D86B04 /* HomeQuizzView.swift in Sources */,
-				47BC3D6D290996FC001D29E8 /* RefreshableScrollView.swift in Sources */,
 				4722A08B2854D96C00436214 /* Quote.swift in Sources */,
 				475F22E82848FA130058B030 /* Comment.swift in Sources */,
 				4766140928630E6E00F22B43 /* FormField.swift in Sources */,
 				47553B5A286B336100D86B04 /* WordView.swift in Sources */,
+				47BC3D78290D59E7001D29E8 /* Credentials.swift in Sources */,
 				47553B88286E1A6800D86B04 /* HomeQuizzViewModel.swift in Sources */,
 				475F22DF284804AC0058B030 /* AnecdoteService.swift in Sources */,
 				475F22E22848CF2E0058B030 /* ShareSheetView.swift in Sources */,
@@ -1208,14 +1232,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FabulaSwiftUI/FabulaSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"FabulaSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = SA2BACU3UM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FabulaSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Autorisez FaceId pour vous connecter avec vos identifiants.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"Merci d'autoriser l'accès à vos photos pour créer votre profil\"";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Cette autorisation permettra la diffusion d'annonces personnalisées.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1248,14 +1274,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = FabulaSwiftUI/FabulaSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				DEVELOPMENT_ASSET_PATHS = "\"FabulaSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = SA2BACU3UM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FabulaSwiftUI/Info.plist;
+				INFOPLIST_KEY_NSFaceIDUsageDescription = "Autorisez FaceId pour vous connecter avec vos identifiants.";
 				INFOPLIST_KEY_NSPhotoLibraryUsageDescription = "\"Merci d'autoriser l'accès à vos photos pour créer votre profil\"";
 				INFOPLIST_KEY_NSUserTrackingUsageDescription = "Cette autorisation permettra la diffusion d'annonces personnalisées.";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -1323,6 +1351,14 @@
 				minimumVersion = 3.0.0;
 			};
 		};
+		47BC3D7D290D7191001D29E8 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 		47BC6935288725C500258032 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -1361,6 +1397,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 47A2DE3228D503D800173DDB /* XCRemoteSwiftPackageReference "lottie-ios" */;
 			productName = Lottie;
+		};
+		47A39E062910087000AB257A /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 475F22D32847C3160058B030 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		47A39E09291018D100AB257A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 475F22D32847C3160058B030 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		47BC3D7E290D7191001D29E8 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 47BC3D7D290D7191001D29E8 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 		47BC6936288725C500258032 /* FirebaseStorage */ = {
 			isa = XCSwiftPackageProductDependency;

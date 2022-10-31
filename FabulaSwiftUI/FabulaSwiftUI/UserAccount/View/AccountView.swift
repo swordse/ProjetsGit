@@ -13,11 +13,17 @@ struct AccountView: View {
     
     @StateObject var viewModel = AccountViewModel()
     
+    let authentification = Authentification()
+    
+    @State private var credentials: Credentials?
     @State var isDeleteAccount = false
     @State var isAccountManager = false
     @State private var showPasswordReset = false
     @State private var image: UIImage?
     @State private var showImagePicker = false
+    @State private var showAccountManagerView = false
+    
+    @State private var faceIdError: Authentification.AuthentificationError?
     
     @AppStorage(Keys.currentUserSaved) var user: Data = Data()
     
@@ -66,11 +72,17 @@ struct AccountView: View {
                                         }
                                         .padding(.horizontal)
                                     }
-                                    FormField(text: $viewModel.userName, isSecured: false, placeholderString: "Nom d'utilisateur", imageToDisplay: DisplayImage.userName, textContentType: .name, keyboardType: .default)
+                                    FormField(text: $viewModel.userName, isSecured: false, placeholderString: "  Nom d'utilisateur", imageToDisplay: DisplayImage.userName, textContentType: .name, keyboardType: .default)
                                 }
-                                FormField(text: $viewModel.email, isSecured: false, placeholderString: "Email", imageToDisplay: DisplayImage.email, textContentType: .emailAddress, keyboardType: .emailAddress)
+                                FormField(text: $viewModel.email, isSecured: false, placeholderString: "  Email", imageToDisplay: DisplayImage.email, textContentType: .emailAddress, keyboardType: .emailAddress)
                                 
-                                FormField(text: $viewModel.password, isSecured: true, placeholderString: "Mot de passe", imageToDisplay: DisplayImage.lock, textContentType: .password, keyboardType: .default)
+                                FormField(text: $viewModel.password, isSecured: true, placeholderString: "  Mot de passe", imageToDisplay: DisplayImage.lock, textContentType: .password, keyboardType: .default)
+                                
+                                if !viewModel.isConnexion {
+                                    Text("Au moins 6 caractères, 1 majuscule, un chiffre ou un caractère spécial")
+                                        .font(.caption)
+                                        .foregroundColor(.gray)
+                                }
                                 
                                 if viewModel.isConnexion {
                                     Button("Mot de passe oublié?") {
@@ -79,7 +91,7 @@ struct AccountView: View {
                                 }
                                 
                                 if !viewModel.isConnexion {
-                                    FormField(text: $viewModel.confirmationPassword, isSecured: true, placeholderString: "Confirmation mot de passe", imageToDisplay: DisplayImage.lock, textContentType: .password, keyboardType: .default)
+                                    FormField(text: $viewModel.confirmationPassword, isSecured: true, placeholderString: "  Confirmation mot de passe", imageToDisplay: DisplayImage.lock, textContentType: .password, keyboardType: .default)
                                 }
                                 LazyVStack(spacing: 30) {
                                     Button {
@@ -97,25 +109,56 @@ struct AccountView: View {
                                             Text(viewModel.isConnexion ? "Pas de compte? Créez en un." : "Déjà un compte: Connectez-vous.")
                                                 .bold()
                                         }
+                                    if viewModel.isConnexion {
+                                    if authentification.biometricType() != .none {
+                                        Button {
+                                            authentification.requestBiometricUnlock { (result: Result <Credentials, Authentification.AuthentificationError>) in
+                                                switch result {
+                                                case .success(let credentials):
+                                                    viewModel.signIn(password: credentials.password, email: credentials.email)
+                                                    // appeler la fonction de login avec ces credentials
+                                                case .failure(let error):
+                                                    print(error)
+                                                    faceIdError = error
+                                                    // appeler une alert avec l'erreur
+                                                }
+                                            }
+                                        } label: {
+                                            Image(systemName: authentification.biometricType() == .face ? "faceid" : "touchid")
+                                                .resizable()
+                                                .frame(width: 50, height: 50)
+                                            
+                                        }
+                                    }
+                                }
                                 }
                             }
                             .frame(alignment: .center)
                         }
                         else {
                             if !isDeleteAccount  {
-                                LazyVStack(spacing: 100) {
+                                LazyVStack {
                                     Spacer()
                                         .frame(height: 50)
                                     Text("Vous êtes connecté")
                                         .font(.system(.title2, design: .rounded))
                                         .bold()
                                         .padding(.top, 20)
+                                        .padding(.bottom, 60)
                                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .top)
                                     Button {
                                         viewModel.logOut()
                                     } label: {
                                         ButtonView(text: "DECONNEXION")
                                     }
+                                    
+                                    Button {
+                                        showAccountManagerView.toggle()
+                                    } label: {
+                                        Text("Modifier votre profil")
+                                            .fontWeight(.medium)
+                                            .foregroundColor(.blue)
+                                    }.padding(.top, 40)
                                 }
                                 .frame(maxHeight: .infinity)
                             } else {
@@ -175,12 +218,25 @@ struct AccountView: View {
                     .alert(isPresented: $viewModel.showAlert) {
                         Alert(title: Text(viewModel.alertMessage.title), message: Text(viewModel.alertMessage.message), dismissButton: .default(Text("OK")))
                     }
+                    .alert(item: $faceIdError) { error in
+                        if error == .credentialsNotSaved {
+                            return Alert(title: Text("Identifiants non sauvés"), message: Text(error.localizedDescription), primaryButton: .default(Text("OK"), action: {
+                                viewModel.storeCredentialsNext = true
+                            }),
+                                         secondaryButton: .cancel())
+                        } else {
+                            return Alert(title: Text(error.localizedDescription))
+                        }
+                    }
                     .sheet(isPresented: $showPasswordReset) {
                         PasswordResetView()
                     }
                     .sheet(isPresented: $showImagePicker) {
                         ImagePicker(image: $image)
                     }
+                    .sheet(isPresented: $showAccountManagerView, content: {
+                        AccountManagerView(isFromAccountView: true)
+                    })
                     .onChange(of: image) { _ in
                         guard let image = image else { return }
                         guard let compressImage = image.jpegData(compressionQuality: 0.1) else { return }
@@ -194,6 +250,7 @@ struct AccountView: View {
             }
         }
         .tintOrAccentColor(color: .white)
+        .navigationViewStyle(.stack)
     }
     
     func buttonDisabled() -> Bool {

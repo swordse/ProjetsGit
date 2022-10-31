@@ -18,6 +18,8 @@ extension AccountView {
         
         var currentUser: FabulaUser?
         
+        @Published var storeCredentialsNext = false
+        
         @Published var isConnexion = true
         @Published var userImage: UIImage?
         @Published var userName = ""
@@ -47,9 +49,14 @@ extension AccountView {
         }
         
         private var isPasswordStrong : Bool {
-            if email.count < 6 {
-                return false }
-            else { return true }
+            let passwordPattern = #"(?=.{6,})"# + #"(?=.*[A-Z])"# + #"(?=.*[a-z])"# + #"(?=.*\d)"# + #"(?=.*[ @!$%&?._-])"#
+            
+            let result = password.range(
+                of: passwordPattern,
+                options: .regularExpression
+            )
+            
+            return result != nil
         }
         
         private var isConfirmationCorrect: Bool {
@@ -70,7 +77,6 @@ extension AccountView {
         }
         
         func dispatcher() {
-            isShowingProgress.toggle()
             if isConnexion {
                 checkConnexionForm()
             } else {
@@ -79,7 +85,7 @@ extension AccountView {
         }
         
         private func checkConnexionForm() {
-            signIn()
+            signIn(password: password, email: email)
         }
         
         private func checkCreationForm() {
@@ -125,7 +131,8 @@ extension AccountView {
         }
         
         
-        private func signIn() {
+       func signIn(password: String, email: String) {
+           isShowingProgress.toggle()
             Task {
                 do {
                     authService.signIn(email: email, password: password) { [weak self] fabulaUser, error in
@@ -138,6 +145,11 @@ extension AccountView {
                             if let fabulaUser = fabulaUser {
                                 self?.isShowingProgress.toggle()
                                 self?.saveCurrentUser(currentUser: fabulaUser)
+                                if self?.storeCredentialsNext == true {
+                                        if KeychainStorage.saveCredentials(Credentials(password: password, email: email)) {
+                                            self?.storeCredentialsNext = false
+                                        }
+                                }
                             } else {
                                 self?.isShowingProgress.toggle()
                                 self?.alertMessage = (title: "Erreur", message: "Une erreur s'est produite. Veuillez réessayer.")
@@ -159,10 +171,15 @@ extension AccountView {
         }
         
         func createUser() {
-            
+            isShowingProgress.toggle()
             authService.createAccount(userEmail: email, password: password, userName: userName, userImage: userImage) { [weak self] photoUrl, userId, error in
                 if userId != nil {
                     self?.isShowingProgress.toggle()
+                    if KeychainStorage.saveCredentials(Credentials(password: self!.password, email: self!.email)) {
+                        print("KeyChaineStorage is saved")
+                    } else {
+                        print("ERROR KeyChaineStorage")
+                    }
                     self?.alertMessage = (title: "Merci!", message:"Votre compte a été créé.")
                     self?.showAlert = true
                     let currentUser = FabulaUser(userName: self!.userName, userId: userId!, userEmail: self!.email, userImage: photoUrl)

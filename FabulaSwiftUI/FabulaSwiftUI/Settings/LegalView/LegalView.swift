@@ -38,7 +38,7 @@ struct LegalView: View {
                 } label: {
                     Text(legalData.title)
                         .foregroundColor(.white)
-                        .frame(maxWidth: .infinity, alignment: .center)
+                        .frame(maxWidth: .infinity, alignment: .leading)
                 }
                 .listRowBackground(Color.lightBackground)
             }

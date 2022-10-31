@@ -12,8 +12,10 @@ struct SourceView: View {
     
     let anecdote: Anecdote
     let viewModel: DetailAnecdoteView.DetailAnecdoteViewModel
+    @State private var showWeb = false
     
     var body: some View {
+        
         VStack(alignment: .leading) {
             HStack(alignment: .firstTextBaseline) {
                 Image(systemName: "book.closed")
@@ -33,6 +35,7 @@ struct SourceView: View {
             }.buttonStyle(PlainButtonStyle())
         }.padding(.top, 5)
             .padding(.bottom, 5)
+        
     }
     
     func getShortUrl(stringUrl: String?) -> String {

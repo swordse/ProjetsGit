@@ -17,7 +17,7 @@ struct AnecdoteProposalView: View {
             VStack(spacing: 10) {
         SubmitForm(image: ImageSubmitForm.source, categoryName: "Source")
         
-        SuperTextField(isLightBlue: true, isSecured: false, placeholder: Text("source")
+        SuperTextField(isLightBlue: true, isSecured: false, placeholder: Text("   source")
             .font(.system(size: 16, weight: .regular, design: .default)), textContentType: .name, keyboardType: .URL
             , text: $source)
         .foregroundColor(source.isEmpty ? .secondary : .white)

@@ -17,7 +17,7 @@ struct QuoteProposalView: View {
         VStack(spacing: 10) {
             SubmitForm(image: ImageSubmitForm.author, categoryName: "Auteur")
             
-            SuperTextField(isLightBlue: true, isSecured: false, placeholder: Text("auteur")
+            SuperTextField(isLightBlue: true, isSecured: false, placeholder: Text("   auteur")
                 .font(.system(size: 16, weight: .regular, design: .default)), textContentType: .name, keyboardType: .default, text: $author)
             .foregroundColor(author.isEmpty ? .secondary : .white)
         }

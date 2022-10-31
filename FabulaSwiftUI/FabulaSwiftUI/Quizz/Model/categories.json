@@ -2,12 +2,12 @@
     "categories": [{
             "categorieName": "Histoire",
             "themes": [
-                "Rois"
+                "Rois", "Assassins"
             ]
         },{
             "categorieName": "Géographie",
             "themes": [
-                "Capitales Européennes"
+                "Capitales Européennes", "Fleuves, Rivières (France)"
             ]
         },{
             "categorieName": "Science",
@@ -26,7 +26,7 @@
             ]
         },{
             "categorieName": "Loisirs",
-            "themes": ["Films d'action"]
+            "themes": ["Films d'action", "Séries télés", "Les Rolling Stones"]
         },{
             "categorieName": "Littérature",
             "themes": ["Hugo"]

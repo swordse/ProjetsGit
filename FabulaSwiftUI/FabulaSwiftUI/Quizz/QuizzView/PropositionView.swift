@@ -42,7 +42,7 @@ struct PropositionView: View {
                             .foregroundColor(proposition == correctAnswer ? .green : .red)
                             .padding(.trailing, 15)
                     }
-                    .frame(width: geo.size.width - 20, height: 50)
+                    .frame(width: geo.size.width - 20, height: 60)
                     .overlay(RoundedRectangle(cornerRadius: 10)
                         .strokeBorder(.white, lineWidth: 1))
                     .background(Color.lightBackground)
@@ -62,7 +62,7 @@ struct PropositionView: View {
                             .foregroundColor(.white)
                             .padding(.trailing, 15)
                     }
-                    .frame(width: geo.size.width - 20, height: 50)
+                    .frame(width: geo.size.width - 20, height: 60)
                     .overlay(RoundedRectangle(cornerRadius: 10)
                         .strokeBorder(.white, lineWidth: 1))
                     .background(Color.lightBackground)

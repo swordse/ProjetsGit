@@ -252,6 +252,87 @@
             ]
         
     },
+        "Assassins": {
+        "quizzs": [{
+            "question": "Que roi a été assassiné par Ravaillac ? ",
+            "answer": "Henri IV",
+            "propositions": [
+                "François Ier",
+                "Henri II",
+                "Henri IV"
+            ]
+        },{
+            "question": "Qui a assassiné Henri III?",
+            "answer": "Jacques Clément",
+            "propositions": ["Paul Clément","Jacques Clément","Henri Clément"
+            ]
+        },{
+            "question": "Qui a assassiné Yitzhak Rabin?",
+            "answer": "Yigal Amir",
+            "propositions": [
+                "Yigal Amir",
+                "Sada Abe",
+                "Friedrich Adler"
+            ]
+        },{
+            "question": "Qui a été assassiné par Charlotte Corday?",
+            "answer": "Jean-Paul Marat",
+            "propositions": [
+                "Jean-Paul Marat",
+                "Georges Jacques Danton",
+                "Maximilien Robespierre"
+            ]
+        },{
+            "question": "Qui a assassiné Lee Harvey Oswald?",
+            "answer": "Jack Ruby",
+            "propositions": [
+                "James Robert",
+                "Jack Ruby",
+                "Kenneth Carol"
+            ]
+        },{
+            "question": "Qui a été assassiné par John Wilkes Booth?",
+            "answer": "Abraham Lincoln",
+            "propositions": [
+                "Abraham Lincoln",
+                "Malcom X",
+                "James A. Garfield"
+            ]
+        },{
+            "question": "Quel était l'un des assassins de Jules Cesar?",
+            "answer": "Brutus",
+            "propositions": [
+                "Julius",
+                "Britannicus",
+                "Brutus"
+            ]
+        },{
+            "question": "Qui a assassiné Martin Luther King?",
+            "answer": "James Earl Ray",
+            "propositions": [
+                "James Earl Ray",
+                "John Felton",
+                "Richard Remington"
+            ]
+        },{
+            "question": "Bob Kennedy a été assassiné par:",
+            "answer": "Shiran Shiran",
+            "propositions": [
+                "Harry Bolton",
+                "Shiran Shiran",
+                "Allen Lee Davis"
+            ]
+        },{
+            "question": "Qui a assassiné Versace?",
+            "answer": "Andrew Cunanan",
+            "propositions": [
+                "Andrew Cunanan",
+                "Sheryl Miller",
+                "Mathew Tilmor"
+            ]
+        }
+    ]
+    },
         "Volcan": {
             "quizzs": [{
                     "question": "Quel mythe est né de l’éruption du volcan de Santorin dans l’Antiquité?",
@@ -410,6 +491,87 @@
                         "Oslo",
                         "Stockholm",
                         "Riga"
+                    ]
+                }
+            ]
+        },
+        "Fleuves, Rivières (France)": {
+            "quizzs": [{
+                    "question": "Quel est le plus long fleuve de France?",
+                    "answer": "La Loire",
+                    "propositions": [
+                        "La Loire",
+                        "Le Rhône",
+                        "La Garonne"
+                    ]
+                },{
+                    "question": "Quelle est la plus grande rivière de France?",
+                    "answer": "La Marne",
+                    "propositions": ["Le Cher","La Dordogne","La Marne"
+                    ]
+                },{
+                    "question": "Quel est le plus petit fleuve de France?",
+                    "answer": "La Veules",
+                    "propositions": [
+                        "La Meuse",
+                        "La Veules",
+                        "L'Escaut"
+                    ]
+                },{
+                    "question": "Quel fleuve passe à Orléans?",
+                    "answer": "La Loire",
+                    "propositions": [
+                        "La Seine",
+                        "La Garonne",
+                        "La Loire"
+                    ]
+                },{
+                    "question": "Où se jette le Rhin?",
+                    "answer": "La mer du Nord",
+                    "propositions": [
+                        "La mer du Nord",
+                        "L'océan Atlantique",
+                        "La Manche"
+                    ]
+                },{
+                    "question": "Quel fleuve passe à Bayonne?",
+                    "answer": "L'Adour",
+                    "propositions": [
+                        "L'Adour",
+                        "La Dordogne",
+                        "La Garonne"
+                    ]
+                },{
+                    "question": "Quel est le fleuve préféré des cruciverbistes?",
+                    "answer": "L'Aa",
+                    "propositions": [
+                        "La Ba",
+                        "L'Ab",
+                        "L'Aa"
+                    ]
+                },{
+                    "question": "Quelle rivière passe à Lyon?",
+                    "answer": "La Saône",
+                    "propositions": [
+                        "La Saône",
+                        "Le Rhône",
+                        "Le Beaujolais"
+                    ]
+                },{
+                    "question": "Quel fleuve se jette à Marseille dans la Méditerranée?",
+                    "answer": "L'Huveaune",
+                    "propositions": [
+                        "L'Huveaune",
+                        "L'Aude",
+                        "L'Hérault"
+                    ]
+                }, {
+                    "question": "Quel fleuve passe à Limoges?",
+                    "answer": "La Vienne",
+                    "propositions": [
+                        "La Vienne",
+                        "La Veuls",
+                        "La Vie"
                     ]
                 }
             ]
@@ -653,6 +815,168 @@
                     "Brad Pitt",
                     "George Clooney",
                     "Jack Nicholson"
+                ]
+            }
+        ]
+        },
+        "Séries télés": {
+            "quizzs": [{
+                "question": "Quelle est la série TV qui compte le plus de saisons ? ",
+                "answer": "Haine et passion",
+                "propositions": [
+                    "Dallas",
+                    "Haine et passion",
+                    "Les feux de l'amour"
+                ]
+            },{
+                "question": "Dans quelle série George Clooney a-t-il débuté ?",
+                "answer": "Urgences",
+                "propositions": ["Melrose Place","Ally Mc Beal","Urgences"
+                ]
+            },{
+                "question": "Dans quelle série Leonardo DiCaprio a-t-il joué à ses débuts ?",
+                "answer": "Santa Barbara",
+                "propositions": [
+                    "Santa Barbara",
+                    "Sauvé par le gong",
+                    "Punky Brewster"
+                ]
+            },{
+                "question": "Qui a été président des USA dans une série ?",
+                "answer": "Martin Sheen",
+                "propositions": [
+                    "Michael Douglas",
+                    "Alec Baldwin",
+                    "Martin Sheen"
+                ]
+            },{
+                "question": "Dans quelle série TV américaine Hugo Becker a-t-il joué ?",
+                "answer": "Gossip girls",
+                "propositions": [
+                    "Gossip girls",
+                    "Les frères Scott",
+                    "Nip/Tuck"
+                ]
+            },{
+                "question": "De quelle série les Inconnus ont-ils fait une parodie ?",
+                "answer": "Tendresse et passion",
+                "propositions": [
+                    "Tendresse et passion",
+                    "Amour, gloire et beauté",
+                    "K2000"
+                ]
+            },{
+                "question": "Qui a joué le rôle du petit ami de Monica dans Friends ?",
+                "answer": "Tom Selleck",
+                "propositions": [
+                    "Brad Pitt",
+                    "Bruce Willis",
+                    "Tom Selleck"
+                ]
+            },{
+                "question": "Dans quel secteur d'activité officient les employés dans The Office ?",
+                "answer": "La papeterie",
+                "propositions": [
+                    "La lessive",
+                    "La papeterie",
+                    "Les chaussettes"
+                ]
+            },{
+                "question": "Combien de saison composent La petite maison dans la prairie ?",
+                "answer": "9",
+                "propositions": [
+                    "9",
+                    "10",
+                    "12"
+                ]
+            },{
+                "question": "Quelle actrice joue le rôle d'une sexologue dans une série anglaise ?",
+                "answer": "Gillian Anderson",
+                "propositions": [
+                    "Gillian Anderson",
+                    "Jamie Lee Curtis",
+                    "Gwyneth Paltrow"
+                ]
+            }
+        ]
+        },
+        "Les Rolling Stones": {
+            "quizzs": [{
+                "question": "Lequel de ses membres ne faisait pas partie du groupe à sa création ? ",
+                "answer": "Charlie Watts",
+                "propositions": [
+                    "Keith Richards",
+                    "Charlie Watts",
+                    "Ian Stewart"
+                ]
+            },{
+                "question": "Comment est mort Brian Jones ?",
+                "answer": "Noyé dans sa piscine",
+                "propositions": ["Noyé dans sa piscine","Dans un accident de voiture","D'une overdose"
+                ]
+            },{
+                "question": "Comment Keith Richards et Mick Jagger se sont-ils connus ?",
+                "answer": "A la maternelle",
+                "propositions": [
+                    "Ils faisaient partie du même club de football",
+                    "A une soirée organisée par un ami commun",
+                    "A la maternelle"
+                ]
+            },{
+                "question": "Lequel de ces faits concernant les liens entre les Beatles et les Rolling Stones est faux ?",
+                "answer": "Paul McCartney a déclaré: laisseriez-vous votre fille sortir avec un Rolling Stones?",
+                "propositions": [
+                    "Les Beatles ont fait les chœurs sur une chanson des Rolling Stones",
+                    "McCartney a déclaré: laisseriez-vous votre fille sortir avec un Rolling Stones?",
+                    "Ils avaient des influences musicales communes"
+                ]
+            },{
+                "question": "Laquelle de ces actrices apparaît dans le clip bridges to babylon ?",
+                "answer": "Angelina Jolie",
+                "propositions": [
+                    "Sharon Stone",
+                    "Naomi Watts",
+                    "Angelina Jolie"
+                ]
+            },{
+                "question": "Au début de leur carrière, pour qu’elle marque Keith Richards et Mick Jagger ont-ils enregistré un jingle ?",
+                "answer": "Rice Krispies",
+                "propositions": [
+                    "Rice Krispies",
+                    "Philipp Morris",
+                    "Tesco"
+                ]
+            },{
+                "question": "Combien de personnes ont-elles assisté au concert de Copacabana à Rio de Janeiro a en 2006 ?",
+                "answer": "1 500 000",
+                "propositions": [
+                    "1 000 000",
+                    "1 200 000",
+                    "1 500 000"
+                ]
+            },{
+                "question": "En quelle année est sorti le 1er album des Rolling Stones ?",
+                "answer": "1964",
+                "propositions": [
+                    "1963",
+                    "1964",
+                    "1965"
+                ]
+            },{
+                "question": "En 50 ans de carrière, combien de disques ont vendu les Rolling Stones ?",
+                "answer": "200 000 000",
+                "propositions": [
+                    "150 000 000",
+                    "200 000 000",
+                    "250 000 000"
+                ]
+            },{
+                "question": "En quelle année les Rolling stones sont-ils entrés au Hall of Fame ?",
+                "answer": "1989",
+                "propositions": [
+                    "1975",
+                    "1983",
+                    "1989"
                 ]
             }
         ]

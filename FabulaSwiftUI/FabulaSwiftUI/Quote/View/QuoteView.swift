@@ -45,10 +45,14 @@ struct QuoteView: View {
                 }
                 .buttonStyle(PlainButtonStyle())
                 .sheet(isPresented: $isShareSheetPresented) {
-                    ShareSheetView(activityItems: ["Voici une citation que j'ai trouvée sur l'application Fabula:\n\(quote.text)"])
+                    if let url = URL(string: "https://apps.apple.com/us/app/fabula/id6443920494") {
+                        ShareSheetView(activityItems: ["Voici une citation que j'ai trouvée sur l'application Fabula:\n\(quote.text)", url])
+                    }
                 }
             }
-        }.background(Color.background)
+        }
+
+        .background(Color.background)
     }
     
     func favButtonTapped(quote: Quote) {

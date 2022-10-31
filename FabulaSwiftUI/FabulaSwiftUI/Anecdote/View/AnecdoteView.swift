@@ -55,8 +55,8 @@ struct AnecdoteView: View {
                 }
                 Text(anecdote.text
                     .replacingOccurrences(of: "\\n", with: "\n"))
-                    .font(Font.system(.headline))
-                    .fontWeight(.regular)
+//                    .font(.headline)
+//                    .fontWeight(.regular)
                     .lineLimit(isLineLimit ? 5 : nil)
                     .lineSpacing(5)
                     .foregroundColor(.primary)

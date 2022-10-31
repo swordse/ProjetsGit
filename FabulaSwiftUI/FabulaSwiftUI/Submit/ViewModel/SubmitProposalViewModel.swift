@@ -31,7 +31,7 @@ extension SubmitProposalView {
     @Published var alertMessage = (title: "Titre", message: "Message")
     @Published var showAlert = false
     
-    @Published var buttonIsDisable = true
+    @Published var buttonIsEnable = false
 //    @Published var isSourceEmpty = true
 //    @Published var isAnecdoteEmpty = true
 //    @Published var isAuthorEmpty = true
@@ -47,18 +47,18 @@ extension SubmitProposalView {
             .receive(on: RunLoop.main)
             .map { (source, anecdote) in
                 if !source.isEmpty && !anecdote.isEmpty {
-                    return false
-                } else {
                     return true
+                } else {
+                    return false
                 }
             }
-            .assign(to: \.buttonIsDisable, on: self)
+            .assign(to: \.buttonIsEnable, on: self)
             .store(in: &cancellableSet)
     }
     
     func updateButtonState() {
         
-        buttonIsDisable = false
+        buttonIsEnable = false
         
         switch selectedCategory {
         case .Anecdote:
@@ -66,36 +66,36 @@ extension SubmitProposalView {
                 .receive(on: RunLoop.main)
                 .map { (source, anecdote) -> Bool in
                     if !source.isEmpty && !anecdote.isEmpty {
-                        return false
-                    } else {
                         return true
+                    } else {
+                        return false
                     }
                 }
-                .assign(to: \.buttonIsDisable, on: self)
+                .assign(to: \.buttonIsEnable, on: self)
                 .store(in: &cancellableSet)
         case .Citation:
             Publishers.CombineLatest($author, $quote)
                 .receive(on: RunLoop.main)
                 .map { (author, quote) in
                     if !author.isEmpty && !quote.isEmpty {
-                        return false
-                    } else {
                         return true
+                    } else {
+                        return false
                     }
                 }
-                .assign(to: \.buttonIsDisable, on: self)
+                .assign(to: \.buttonIsEnable, on: self)
                 .store(in: &cancellableSet)
         case .MotDuJour:
             Publishers.CombineLatest($word, $definition)
                 .receive(on: RunLoop.main)
                 .map { (word, definition) in
                     if !word.isEmpty && !definition.isEmpty {
-                        return false
-                    } else {
                         return true
+                    } else {
+                        return false
                     }
                 }
-                .assign(to: \.buttonIsDisable, on: self)
+                .assign(to: \.buttonIsEnable, on: self)
                 .store(in: &cancellableSet)
         }
     }

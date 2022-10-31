@@ -21,6 +21,7 @@ extension AccountManagerView {
         @Published var alertMessage = (title: "", message: "")
         
         var currentUser: FabulaUser?
+        var currentPhoto: UIImage?
         private let storage = Storage.storage().reference()
         
         // récupérer l'utilisateur actuel
@@ -54,6 +55,7 @@ extension AccountManagerView {
                     guard let UIImage = UIImage(data: data) else { return }
                     DispatchQueue.main.async {
                         self.photo = UIImage
+                        self.currentPhoto = UIImage
                     }
                 })
             }
@@ -112,6 +114,7 @@ extension AccountManagerView {
                             self.showAlert = true
                             return
                         }
+                        self.currentPhoto = self.photo
                         self.isShowingProgress = false
                         self.alertMessage = (title: "Merci", message: "Votre photo a bien été modifiée.")
                         self.showAlert = true

@@ -33,16 +33,18 @@ struct SuperTextField: View {
                 if isHidden {
             SecureField("", text: $text, onCommit: commit)
                 .font(.system(size: 20, weight: .bold, design: .monospaced))
-                .textContentType(textContentType)
+                .textContentType(.password)
                 .autocapitalization(.none)
                 .keyboardType(keyboardType)
                 .disableAutocorrection(true)
+                .padding(.leading, 10)
                 } else {
                     TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
                         .textContentType(textContentType)
                         .autocapitalization(.none)
                         .keyboardType(keyboardType)
                         .disableAutocorrection(true)
+                        .padding(.leading, 10)
                 }
                 HStack {
                     Spacer()
@@ -58,6 +60,7 @@ struct SuperTextField: View {
                     .autocapitalization(.none)
                     .keyboardType(keyboardType)
                     .disableAutocorrection(true)
+                    .padding(.leading, 10)
             }
         }
     }

@@ -9,14 +9,19 @@ import SwiftUI
 
 struct AccountManagerView: View {
     
+    var isFromAccountView = false
+    @Environment(\.presentationMode) var presentationMode
     @StateObject var viewModel = AccountManagerViewModel()
     
     @State private var showImagePicker = false
     @State private var image: UIImage?
+    @State private var nameButtonIsDisabled = true
+    @State private var photoButtonIsDisabled = true
     
     @AppStorage(Keys.currentUserSaved) var user: Data = Data()
     
     var body: some View {
+        NavigationView {
         ZStack {
             Color.background
                 .ignoresSafeArea()
@@ -61,6 +66,7 @@ struct AccountManagerView: View {
                         } label: {
                             ButtonView(text: "SOUMETTRE")
                         }
+                        .disabled(photoButtonIsDisabled)
                         .frame(height: 40)
                         .buttonStyle(.plain)
                     }
@@ -70,11 +76,15 @@ struct AccountManagerView: View {
                         Rectangle().frame(height: 0.5)
                         TextField("Nouveau nom utilisateur", text: $viewModel.userName)
                             .padding(.vertical)
+                            .onChange(of: viewModel.userName) { _ in
+                                nameButtonIsDisabled = viewModel.userName == viewModel.currentUser?.userName
+                            }
                         Button {
                             viewModel.changeUserName()
                         } label: {
                             ButtonView(text: "SOUMETTRE")
                         }
+                        .disabled(nameButtonIsDisabled)
                         .frame(height: 40)
                         .buttonStyle(.plain)
                     }
@@ -86,12 +96,25 @@ struct AccountManagerView: View {
                             return
                         }
                         viewModel.photo = image
+                        photoButtonIsDisabled = viewModel.currentPhoto?.pngData() == image.pngData()
                     }
                 }
                 .padding(.horizontal)
             }
             if viewModel.isShowingProgress {
                 CustomProgressView()
+            }
+        }
+        .navigationBarHidden(!isFromAccountView)
+        .toolbar {
+            ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
+                if isFromAccountView {
+                    Button {
+                        presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "x.circle.fill")
+                    }
+                }
             }
         }
         .onTapGesture {
@@ -101,6 +124,7 @@ struct AccountManagerView: View {
             Alert(title: Text(viewModel.alertMessage.title), message: Text(viewModel.alertMessage.message), dismissButton: .default(Text("OK")))
         }
         .onAppear(perform: { viewModel.getCurrentUserInfo() })
+    }
     }
     
 }

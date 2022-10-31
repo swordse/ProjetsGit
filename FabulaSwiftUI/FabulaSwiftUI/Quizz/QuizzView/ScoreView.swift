@@ -18,7 +18,7 @@ struct ScoreView: View {
                 LottieView(name: "trophy", numberOfRepeat: 2, height: 200)
                     .frame(height: 200)
             } else {
-                LottieView(name: "missed", numberOfRepeat: 2, height: 200)
+                LottieView(name: "missed", numberOfRepeat: 2, height: 300)
                     .frame(height: 200)
             }
             Text("\(score) réponses correctes")
@@ -35,6 +35,6 @@ struct ScoreView: View {
 
 struct ScoreView_Previews: PreviewProvider {
     static var previews: some View {
-        ScoreView(score: .constant(5))
+        ScoreView(score: .constant(4))
     }
 }

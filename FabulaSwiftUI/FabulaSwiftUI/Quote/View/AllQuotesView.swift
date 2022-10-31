@@ -35,9 +35,11 @@ struct AllQuotesView: View {
                                 .multilineTextAlignment(.center)
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .listRowBackground(Color.background)
-                        } else if viewModel.quotes.isEmpty {
-                                CustomProgressView()
-                        } else {
+                        }
+//                        else if viewModel.quotes.isEmpty {
+//                                CustomProgressView()
+//                        }
+                        else {
                             ForEach($viewModel.quotes, id: \.text) { $quote in
                                 QuoteView(quote: $quote)
                             }
@@ -77,6 +79,11 @@ struct AllQuotesView: View {
                 }
                 .alert(isPresented: $viewModel.isErrorOccured) {
                     Alert(title: Text("Erreur"), message: Text("Une erreur s'est produite. Vérifiez votre connexion ou réessayer."), dismissButton: .default(Text("OK")))
+                }
+                .onChange(of: showInterstitialAd) { newValue in
+                    withAnimation {
+                        interstitial.showAd()
+                    }
                 }
             }
             if selectedCategory != .favoris {

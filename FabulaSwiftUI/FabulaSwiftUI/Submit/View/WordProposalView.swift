@@ -18,7 +18,7 @@ struct WordProposalView: View {
         VStack(spacing: 10) {
             SubmitForm(image: ImageSubmitForm.word, categoryName: "Mot")
             
-            SuperTextField(isLightBlue: true, isSecured: false, placeholder: Text("mot")
+            SuperTextField(isLightBlue: true, isSecured: false, placeholder: Text("   mot")
                 .font(.system(size: 16, weight: .regular, design: .default)), textContentType: .name, keyboardType: .default
                            , text: $word)
             .foregroundColor(word.isEmpty ? .secondary : .white)

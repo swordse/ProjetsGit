@@ -43,8 +43,8 @@ struct ScrollCategoryView<T: Hashable & RawRepresentable & CaseIterable>: View w
                         Button {
                             selectedCategory = categorie
                         } label: {
-                                Text(categorie.rawValue)
-                                .font(.system(size: 17))
+                            Text(categorie.rawValue)
+                                .font(categorie.rawValue == "Divertissement" ? .system(size: 13) : .system(size: 17))
                                     .fontWeight(.medium)
                                     .foregroundColor(.white)
                                     .frame(width: 100, height: 50)
@@ -56,7 +56,6 @@ struct ScrollCategoryView<T: Hashable & RawRepresentable & CaseIterable>: View w
                     .padding(.vertical, 1)
                     .padding(.leading, 5)
                 }
-//                .hideRowSeparator()
             }
         }.frame(height: 51)
             .background(Color.background.opacity(0.9))

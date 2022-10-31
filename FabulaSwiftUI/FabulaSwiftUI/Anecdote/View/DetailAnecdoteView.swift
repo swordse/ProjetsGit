@@ -24,109 +24,110 @@ struct DetailAnecdoteView: View {
     @State private var fabulaUser: FabulaUser?
     
     var body: some View {
-            ZStack {
-                Color.background
-                    .ignoresSafeArea()
-                if viewModel.showProgressView {
-                    CustomProgressView()
+
+        ZStack {
+            Color.background
+                .ignoresSafeArea()
+            if viewModel.showProgressView {
+                CustomProgressView()
+            }
+            List {
+                // Anecdote Section
+                Section {
+                    AnecdoteView(isLineLimit: false, isDetail: true, anecdote: anecdote)
+                        .hideRowSeparator()
                 }
-                List {
-                    // Anecdote Section
-                    Section {
-                        AnecdoteView(isLineLimit: false, isDetail: true, anecdote: anecdote)
-                            .hideRowSeparator()
+                .listRowBackground(Color.background)
+                // Share Button Section
+                Section {
+                    Button {
+                        isShareSheetPresented.toggle()
+                    } label: {
+                        ButtonView(text: "PARTAGER", isShare: true)
                     }
-                    .listRowBackground(Color.background)
-                    // Share Button Section
-                    Section {
+                    .buttonStyle(.plain)
+                }
+                .padding(.vertical)
+                .listRowBackground(Color.background)
+                .sheet(isPresented: $isShareSheetPresented) {
+                    ShareSheetView(activityItems: ["Voici une anecdote que j'ai trouvé sur l'application Fabula: \n\(anecdote.text)"])
+                }
+                // Source Section
+                Section {
+                    if anecdote.source != nil {
+                        SourceView(anecdote: anecdote, viewModel: viewModel)
+                    }
+                }
+                .padding(.vertical)
+                .listRowBackground(Color.background)
+                // Comment Section
+                Section {
+                    LazyVStack(alignment: .leading){
+                        HStack {
+                            Image(systemName: "pencil")
+                                .font(.headline)
+                            Text("Ajouter un commentaire")
+                                .font(.headline)
+                        }
+                        TextEditor(text: $newComment)
+                            .textEditorBackGround()
+                            .frame(height: 60)
+                            .onTapGesture {
+                                if fabulaUser == nil {
+                                    isConnexionSheetPresented = true
+                                    hideKeyboard()
+                                }
+                            }
                         Button {
-                            isShareSheetPresented.toggle()
+                            guard !newComment.isEmpty else { return }
+                            showCommentSubmitAlert.toggle()
                         } label: {
-                            ButtonView(text: "PARTAGER", isShare: true)
+                            ButtonView(text: "SOUMETTRE")
                         }
+                        .padding(.vertical)
                         .buttonStyle(.plain)
-                    }
-                    .padding(.vertical)
-                    .listRowBackground(Color.background)
-                    .sheet(isPresented: $isShareSheetPresented) {
-                        ShareSheetView(activityItems: ["Voici une anecdote que j'ai trouvé sur l'application Fabula: \n\(anecdote.text)"])
-                    }
-                    // Source Section
-                    Section {
-                        if anecdote.source != nil {
-                            SourceView(anecdote: anecdote, viewModel: viewModel)
-                        }
-                    }
-                    .padding(.vertical)
-                    .listRowBackground(Color.background)
-                    // Comment Section
-                    Section {
-                        LazyVStack(alignment: .leading){
-                            HStack {
-                                Image(systemName: "pencil")
-                                    .font(.headline)
-                                Text("Ajouter un commentaire")
-                                    .font(.headline)
-                            }
-                            TextEditor(text: $newComment)
-                                .textEditorBackGround()
-                                .frame(height: 60)
-                                .onTapGesture {
-                                    if fabulaUser == nil {
-                                        isConnexionSheetPresented = true
-                                        hideKeyboard()
+                        .disabled(fabulaUser == nil)
+                        
+                        Spacer()
+                        
+                        ForEach($viewModel.comments, id: \.commentText) { $comment in
+                            if fabulaUser?.userId == comment.userId {
+                                CommentView(showCommentChangeButton: true, comment: comment)
+                                    .rowSeparatorColor(color: .black)
+                                    .fixedSize(horizontal: false, vertical: true)
+                                    .onTapGesture {
+                                        selectedComment = comment
+                                        showChangeCommentView.toggle()
                                     }
-                                }
-                            Button {
-                                guard !newComment.isEmpty else { return }
-                                showCommentSubmitAlert.toggle()
-                            } label: {
-                                ButtonView(text: "SOUMETTRE")
+                            } else {
+                                CommentView(comment: comment)
+                                    .rowSeparatorColor(color: .black)
+                                    .fixedSize(horizontal: false, vertical: true)
                             }
-                            .padding(.vertical)
-                            .buttonStyle(.plain)
-                            .disabled(fabulaUser == nil)
-                            
-                            Spacer()
-                            
-                            ForEach($viewModel.comments, id: \.commentText) { $comment in
-                                if fabulaUser?.userId == comment.userId {
-                                    CommentView(showCommentChangeButton: true, comment: comment)
-                                        .rowSeparatorColor(color: .black)
-                                        .fixedSize(horizontal: false, vertical: true)
-                                        .onTapGesture {
-                                            selectedComment = comment
-                                            showChangeCommentView.toggle()
-                                        }
-                                } else {
-                                    CommentView(comment: comment)
-                                        .rowSeparatorColor(color: .black)
-                                        .fixedSize(horizontal: false, vertical: true)
-                                }
-                            }
-                        }.padding(.top, 5)
-                            .padding(.bottom, 5)
-                            .listRowBackground(Color.background)
-                    }
-                }
-                .hideScrollBackground()
-                .listStyle(.plain)
-                .onTapGesture {
-                    hideKeyboard()
-                }
-                .onAppear {
-                    Task {
-                        if viewModel.comments.isEmpty {
-                            guard let anecdoteId = anecdote.id else { return }
-                            viewModel.getComment(anecdoteId: anecdoteId)
                         }
-                    }
-                }
-                .onAppear {
-//                    viewModel.updateUserConnexionState()
-                    decodeUser(userData: user)
+                    }.padding(.top, 5)
+                        .padding(.bottom, 5)
+                        .listRowBackground(Color.background)
                 }
             }
+            .hideScrollBackground()
+            .listStyle(.plain)
+            .onTapGesture {
+                hideKeyboard()
+            }
+            .onAppear {
+                Task {
+                    if viewModel.comments.isEmpty {
+                        guard let anecdoteId = anecdote.id else { return }
+                        viewModel.getComment(anecdoteId: anecdoteId)
+                    }
+                }
+            }
+            .onAppear {
+                //                    viewModel.updateUserConnexionState()
+                decodeUser(userData: user)
+            }
+        }
             .onChange(of: user, perform: { _ in
                     decodeUser(userData: user)
                 })
@@ -149,6 +150,7 @@ struct DetailAnecdoteView: View {
                 )
             })
             .navigationTitle("Detail")
+            .navigationBarTitleDisplayMode(.large)
 //        }
     }
     
