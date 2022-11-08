@@ -54,7 +54,9 @@ struct WordView: View {
                 }
                 .buttonStyle(.plain)
                 .sheet(isPresented: $isShareSheetPresented) {
-                    ShareSheetView(activityItems: ["Voici un mot que j'ai trouvée sur l'application Fabula:\n\(word.word)"])
+                    if let url = URL(string: "https://apps.apple.com/us/app/fabula/id6443920494") {
+                        ShareSheetView(activityItems: ["Voici un mot que j'ai trouvée sur l'application Fabula:\n\(word.word)", url])
+                    }
                 }
             }
             .padding(.bottom, 20)

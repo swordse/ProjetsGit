@@ -64,9 +64,11 @@ struct AnecdoteView: View {
                     .padding(.bottom, 20)
                     .fixedSize(horizontal: false, vertical: true)
             }
-            .sheet(isPresented: $isShareSheetPresented) {
-                ShareSheetView(activityItems: ["Voici une anecdote que j'ai trouvé sur l'application Fabula: \n\(anecdote.text)"])
-            }
+//            .sheet(isPresented: $isShareSheetPresented) {
+//                if let url = URL(string: "https://apps.apple.com/us/app/fabula/id6443920494") {
+//                    ShareSheetView(activityItems: ["Voici une anecdote que j'ai trouvé sur l'application Fabula: \n\(anecdote.text)", url])
+//                }
+//            }
     }
     
     func favButtonTapped(anecdote: Anecdote) {

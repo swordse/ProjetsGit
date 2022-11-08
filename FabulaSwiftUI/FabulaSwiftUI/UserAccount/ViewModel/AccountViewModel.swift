@@ -85,7 +85,12 @@ extension AccountView {
         }
         
         private func checkConnexionForm() {
-            signIn(password: password, email: email)
+            if isValidEmail {
+                signIn(password: password, email: email)
+            } else {
+                showAlert = true
+                alertMessage = ("Erreur", "L'email n'est pas correct")
+            }
         }
         
         private func checkCreationForm() {

@@ -22,15 +22,18 @@ struct Anecdote: Identifiable, Hashable, Codable, Equatable, FavorisProtocol {
     enum Category: String, Codable, CaseIterable {
         case nouveautes = "Nouveautés"
         case favoris = "Favoris"
-        case litterature = "Littérature"
-        case science = "Science"
-        case histoire = "Histoire"
         case arts = "Art"
-        case geographie = "Géographie"
         case divertissement = "Divertissement"
-        case sport = "Sport"
-        case nature = "Nature"
+        case geographie = "Géographie"
+        case histoire = "Histoire"
+        case inclassable = "Inclassable"
         case insolite = "Insolite"
+        case litterature = "Littérature"
+        case nature = "Nature"
+        case science = "Science"
+        case societe = "Société"
+        case sport = "Sport"
+        case viePratique = "Vie pratique"
     }
     
 }

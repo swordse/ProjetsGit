@@ -74,7 +74,7 @@ struct QuoteView: View {
 struct QuoteView_Previews: PreviewProvider {
     static var previews: some View {
         
-        QuoteView(quote: .constant(Quote(author: "François Rabelais", text: "Le rire est le propre de l'homme.", category: .amour, isFavorite: false)))
+        QuoteView(quote: .constant(Quote(author: "François Rabelais", text: "Le rire est le propre de l'homme.", category: .vie, isFavorite: false)))
     }
     
 }

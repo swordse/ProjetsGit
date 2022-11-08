@@ -41,8 +41,10 @@ extension AllQuotesView {
         if filterBy == .favoris {
             return
         }
-        if filterBy == .nouveautes {
+        else if filterBy == .nouveautes {
             getQuote(filterBy: nil)
+        } else {
+            getQuote(filterBy: filterBy)
         }
     }
     

@@ -49,6 +49,9 @@ struct AllQuotesView: View {
                     .listRowBackground(Color.background)
                     .hideRowSeparator()
                 }
+                .refreshView(action: {
+                    await viewModel.refresh(filterBy: selectedCategory)
+                })
 //                .refreshable(action: {
 //                    viewModel.refresh(filterBy: selectedCategory)
 //                })
@@ -57,7 +60,7 @@ struct AllQuotesView: View {
                 .listStyle(.plain)
                 
                 .onAppear {
-                    selectedCategory = isFromSettings ? .favoris : .nouveautes
+                    selectedCategory = isFromSettings ? .favoris : selectedCategory
                     viewModel.selectedQuoteChanged(selectedCategorie: selectedCategory)
                 }
                 .onChange(of: selectedCategory) { category in

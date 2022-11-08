@@ -27,52 +27,65 @@ struct AllWordsView: View {
                 ScrollViewReader { proxy in
                     ScrollCategoryView(selectedCategory: $selectedCategory, categoryColor: Color.blue)
                     List {
-                        Section {
-                            if selectedCategory == WordCategoriesMenu.favoris && viewModel.words.isEmpty {
-                                Spacer()
-                                    LottieView(name: "empty-state", numberOfRepeat: 1, height: 100)
-                                        .frame(height: 100)
-                                    Text("Vous n'avez pas de favoris.\nPour ajouter un mot dans vos favoris cliquez sur le coeur.")
-                                        .multilineTextAlignment(.center)
-                                        .frame(maxWidth: .infinity, alignment: .center)
-                                        .listRowBackground(Color.background)
-                            }
-                            else if selectedCategory == WordCategoriesMenu.allWord {
-                                if viewModel.allWordsList.isEmpty {
-                                    CustomProgressView()
-                                }
-                                ForEach($viewModel.allWordsList, id: \.letter) { $wordsForLetter in
-                                    Section {
-                                        ForEach($wordsForLetter.words, id: \.self) { $word in
-                                            NavigationLink {
-                                                SingleWordView(wordString: $word)
-                                            } label: {
-                                                Text(word)
-                                                    .padding(.leading)
-                                            }
-                                        }
-                                    } header: {
-                                        Text(wordsForLetter.letter)
-                                            .font(.headline)
-                                            .fontWeight(.bold)
-                                    }
-                                }
-                            } else {
-                                if viewModel.words.isEmpty {
-                                    CustomProgressView()
-                                    }
-                                ForEach($viewModel.words, id: \.word) { $word in
-                                    WordView(word: $word)
-                                }
+                        if viewModel.isLoading {
+                            CustomProgressView()
                                 .listRowBackground(Color.background)
+                        } else {
+                            Section {
+                                if selectedCategory == WordCategoriesMenu.favoris {
+                                    if viewModel.favoriteWords.isEmpty {
+                                        Spacer()
+                                        LottieView(name: "empty-state", numberOfRepeat: 1, height: 100)
+                                            .frame(height: 100)
+                                        Text("Vous n'avez pas de favoris.\nPour ajouter un mot dans vos favoris cliquez sur le coeur.")
+                                            .multilineTextAlignment(.center)
+                                            .frame(maxWidth: .infinity, alignment: .center)
+                                            .listRowBackground(Color.background)
+                                    } else {
+                                        ForEach($viewModel.favoriteWords, id: \.word) { $word in
+                                            WordView(word: $word)
+                                        }
+                                        .listRowBackground(Color.background)
+                                    }
+                                }
+                                else if selectedCategory == WordCategoriesMenu.allWord {
+//                                    if viewModel.allWordsList.isEmpty {
+//                                        CustomProgressView()
+//                                    }
+                                    ForEach($viewModel.allWordsList, id: \.letter) { $wordsForLetter in
+                                        Section {
+                                            ForEach($wordsForLetter.words, id: \.self) { $word in
+                                                NavigationLink {
+                                                    SingleWordView(wordString: $word)
+                                                } label: {
+                                                    Text(word)
+                                                        .padding(.leading)
+                                                }
+                                            }
+                                        } header: {
+                                            Text(wordsForLetter.letter)
+                                                .font(.headline)
+                                                .fontWeight(.bold)
+                                        }
+                                    }
+                                } else {
+//                                    if viewModel.words.isEmpty {
+//                                        CustomProgressView()
+//                                    }
+                                    ForEach($viewModel.words, id: \.word) { $word in
+                                        WordView(word: $word)
+                                    }
+                                    .id("scroll_to_top")
+                                    .listRowBackground(Color.background)
+                                }
                             }
-                        }
-                        .listRowBackground(Color.background)
-                        .hideRowSeparator()
-                        .alert(isPresented: $viewModel.isErrorOccured) {
-                            Alert(title: Text("Une erreur est survenue"), message: Text("Une erreur s'est produite. Vérifiez votre connexion ou réessayer."), dismissButton: .default(Text("OK")))
+                            .listRowBackground(Color.background)
+                            .hideRowSeparator()
                         }
                     }
+                    .refreshView(action: {
+                        await viewModel.refresh(filterBy: selectedCategory)
+                    })
                     .padding(.bottom, 30)
                     .hideScrollBackground()
                     .listStyle(.plain)
@@ -103,6 +116,9 @@ struct AllWordsView: View {
                         withAnimation {
                             interstitial.showAd()
                         }
+                    }
+                    .alert(isPresented: $viewModel.isErrorOccured) {
+                        Alert(title: Text("Une erreur est survenue"), message: Text("Une erreur s'est produite. Vérifiez votre connexion ou réessayer."), dismissButton: .default(Text("OK")))
                     }
                 }
                 if !viewModel.words.isEmpty && selectedCategory == .nouveautes {

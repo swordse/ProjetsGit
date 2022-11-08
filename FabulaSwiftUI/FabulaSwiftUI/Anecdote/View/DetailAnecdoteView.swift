@@ -40,18 +40,26 @@ struct DetailAnecdoteView: View {
                 .listRowBackground(Color.background)
                 // Share Button Section
                 Section {
-                    Button {
-                        isShareSheetPresented.toggle()
-                    } label: {
-                        ButtonView(text: "PARTAGER", isShare: true)
+                    VStack {
+                        Button {
+                            isShareSheetPresented.toggle()
+                        } label: {
+                            ButtonView(text: "PARTAGER", isShare: true)
+                        }
+                        .buttonStyle(.plain)
+                        .sheet(isPresented: $isShareSheetPresented) {
+                            if let url = URL(string: "https://apps.apple.com/us/app/fabula/id6443920494") {
+                                ShareSheetView(activityItems: ["Voici une anecdote que j'ai trouvé sur l'application Fabula: \n\(anecdote.text)", url])
+                            }
+                        }
                     }
-                    .buttonStyle(.plain)
                 }
-                .padding(.vertical)
                 .listRowBackground(Color.background)
-                .sheet(isPresented: $isShareSheetPresented) {
-                    ShareSheetView(activityItems: ["Voici une anecdote que j'ai trouvé sur l'application Fabula: \n\(anecdote.text)"])
-                }
+                .padding(.vertical)
+                
+//                .sheet(isPresented: $isShareSheetPresented) {
+//                    ShareSheetView(activityItems: ["Voici une anecdote que j'ai trouvé sur l'application Fabula: \n\(anecdote.text)"])
+//                }
                 // Source Section
                 Section {
                     if anecdote.source != nil {
@@ -106,8 +114,8 @@ struct DetailAnecdoteView: View {
                             }
                         }
                     }.padding(.top, 5)
-                        .padding(.bottom, 5)
-                        .listRowBackground(Color.background)
+                    .padding(.bottom, 5)
+                    .listRowBackground(Color.background)
                 }
             }
             .hideScrollBackground()

@@ -18,8 +18,8 @@ struct BannerAd: UIViewRepresentable {
     
     func makeUIView(context: Context) -> GADBannerView {
         
-        let adView = GADBannerView(adSize: GADAdSizeBanner)
-        adView.backgroundColor = UIColor.red
+        let adView = GADBannerView(adSize: GADAdSizeLargeBanner)
+        adView.backgroundColor = UIColor(named: "deepBlue")
         adView.adUnitID = unitID
         adView.rootViewController = UIApplication.shared.getRootViewController()
         

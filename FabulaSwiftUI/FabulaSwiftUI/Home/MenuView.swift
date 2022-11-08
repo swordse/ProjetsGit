@@ -21,7 +21,7 @@ struct MenuView: View {
                 GeometryReader {
                     geometry in
                     VStack(spacing: 50) {
-                        Text("Qu'allez-vous apprendre aujourd'hui?")
+                        Text("Qu'allez-vous apprendre aujourd'hui ?")
                             .font(.system(.title2, design: .rounded))
                             .bold()
                             .padding(.horizontal)

@@ -18,7 +18,7 @@ struct ScoreView: View {
                 LottieView(name: "trophy", numberOfRepeat: 2, height: 200)
                     .frame(height: 200)
             } else {
-                LottieView(name: "missed", numberOfRepeat: 2, height: 300)
+                LottieView(name: "missed2", numberOfRepeat: 2, height: 300)
                     .frame(height: 200)
             }
             Text("\(score) réponses correctes")

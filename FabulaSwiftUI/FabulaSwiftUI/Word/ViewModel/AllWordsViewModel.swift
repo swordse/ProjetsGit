@@ -11,13 +11,14 @@ extension AllWordsView {
     
 @MainActor class AllWordsViewModel: ObservableObject {
     
-    
     @Published var words = [Word]()
+    @Published var favoriteWords = [Word]()
     @Published var isErrorOccured = false
     @Published var pageNumber = 1
     @Published var isNextHidden = false
     @Published var isPreviousHidden = true
     @Published var allWordsList = [WordsForLetter]()
+    @Published var isLoading = false
 
     var wordService = WordService()
     let dataController = DataController.shared
@@ -25,6 +26,7 @@ extension AllWordsView {
     var cacheWords = WordCache.shared
     
     func selectedWordChanged(selectedCategorie: WordCategoriesMenu) {
+        isLoading = true
         switch selectedCategorie {
         case .nouveautes:
             if isWordSaved(selectedCategorie: selectedCategorie) == false {
@@ -35,6 +37,8 @@ extension AllWordsView {
         default:
             if allWordsList.isEmpty {
                 getAllWordsList()
+            } else {
+                isLoading = false
             }
         }
     }
@@ -46,6 +50,7 @@ extension AllWordsView {
         pageNumber = wordState.page
         setNavButton(numberOfWords: updatedWords.count, wordState: wordState)
         words = updatedWords.count > Constant.dataToPresent ? updatedWords.dropLast() : updatedWords
+        isLoading = false
         return true
     }
 
@@ -94,13 +99,26 @@ extension AllWordsView {
         }
     }
 
+    func refresh(filterBy: WordCategoriesMenu) {
+        if filterBy == .favoris {
+            return
+        } else if filterBy == .allWord {
+            getAllWordsList()
+        }
+        else {
+            getWord()
+        }
+    }
 
     func getWord() {
         Task {
             do {
                 let result = try await wordService.getWords()
 
-                if result.words.isEmpty { isErrorOccured = true }
+                if result.words.isEmpty {
+                    isErrorOccured = true
+                    isLoading = false
+                }
                 let updatedWords = updateWordFav(words: result.words)
 
                 setNavButton(numberOfWords: updatedWords.count, wordState: nil)
@@ -110,11 +128,12 @@ extension AllWordsView {
                 cacheWords.saveWordState(wordState: wordState)
 
                 pageNumber = 1
-
                 words = updatedWords.count > Constant.dataToPresent ? updatedWords.dropLast() : updatedWords
+                isLoading = false
             }
             catch {
                 isErrorOccured = true
+                isLoading = false
                 print("ERREUR")
             }
         }
@@ -137,9 +156,11 @@ extension AllWordsView {
                 setNavButton(numberOfWords: updatedWords.count, wordState: wordState)
                 pageNumber = currentWordState.page + 1
                 words = updatedWords.count > Constant.dataToPresent ? updatedWords.dropLast() : updatedWords
+                isLoading = false
 
             } catch {
                 isErrorOccured = true
+                isLoading = false
                 print("Error when try to getNewAnecdotes: \(error.localizedDescription)")
             }
         }
@@ -163,9 +184,10 @@ extension AllWordsView {
 
                 setNavButton(numberOfWords: updatedWords.count, wordState: wordState)
                 words = updatedWords.count > Constant.dataToPresent ? updatedWords.dropLast() : updatedWords
-
+                isLoading = false
             } catch {
                 isErrorOccured = true
+                isLoading = false
             }
         }
     }
@@ -206,19 +228,26 @@ extension AllWordsView {
                 result.append(wordsForLetter)
             }
             allWordsList = result
+            isLoading = false
         } catch {
             isErrorOccured = true
+            isLoading = false
             print(error.localizedDescription)
         }
         }
     }
 
     func getAllFav() {
-        dataController.fetchWordFav()
-        let wordFav = dataController.savedFavWords.map { fav -> Word in
-            return Word(word: fav.word ?? "", definition: fav.definition ?? "", qualifier: fav.qualifier ?? "", example: fav.example ?? "", isFavorite: true)
+        Task {
+            dataController.fetchWordFav()
+            let wordFav = dataController.savedFavWords.map { fav -> Word in
+                return Word(word: fav.word ?? "", definition: fav.definition ?? "", qualifier: fav.qualifier ?? "", example: fav.example ?? "", isFavorite: true)
+            }
+            
+            favoriteWords = wordFav
+            isLoading = false
+//            words = wordFav
         }
-        words = wordFav
     }
 
 }

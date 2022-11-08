@@ -13,9 +13,8 @@ struct CustomProgressView: View {
         .progressViewStyle(.circular)
         .scaleEffect(2)
         .frame(maxWidth: .infinity, alignment: .center)
-        .background(Color.background)
+        .background(Color.clear)
         .padding(.top, 50)
-//        .background(Color.background)
     }
 }
 

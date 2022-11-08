@@ -73,6 +73,7 @@
 		4766140D28633E5500F22B43 /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766140C28633E5500F22B43 /* AccountView.swift */; };
 		47661410286364F600F22B43 /* SubmitProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766140F286364F600F22B43 /* SubmitProposalView.swift */; };
 		476614122863AEEA00F22B43 /* SubmitForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476614112863AEEA00F22B43 /* SubmitForm.swift */; };
+		476E154F29105FBD002F9F5F /* missed2.json in Resources */ = {isa = PBXBuildFile; fileRef = 476E154E29105FBD002F9F5F /* missed2.json */; };
 		478A9BD328FDC80300A447D8 /* missed.json in Resources */ = {isa = PBXBuildFile; fileRef = 478A9BD228FDC80300A447D8 /* missed.json */; };
 		47A162A228E2E96F00CAA89B /* empty-state.json in Resources */ = {isa = PBXBuildFile; fileRef = 47A162A128E2E96F00CAA89B /* empty-state.json */; };
 		47A162A528E3000500CAA89B /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A162A428E3000500CAA89B /* LegalView.swift */; };
@@ -219,6 +220,7 @@
 		4766140C28633E5500F22B43 /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		4766140F286364F600F22B43 /* SubmitProposalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitProposalView.swift; sourceTree = "<group>"; };
 		476614112863AEEA00F22B43 /* SubmitForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitForm.swift; sourceTree = "<group>"; };
+		476E154E29105FBD002F9F5F /* missed2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missed2.json; sourceTree = "<group>"; };
 		478A9BD228FDC80300A447D8 /* missed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missed.json; sourceTree = "<group>"; };
 		47A162A128E2E96F00CAA89B /* empty-state.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "empty-state.json"; sourceTree = "<group>"; };
 		47A162A428E3000500CAA89B /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
@@ -443,9 +445,9 @@
 			children = (
 				4701DCFB284767550069B8AE /* AllAnecdotesView.swift */,
 				4701DCF7284755660069B8AE /* AnecdoteView.swift */,
+				475F22ED284943550058B030 /* SourceView.swift */,
 				475F22E32848DA010058B030 /* DetailAnecdoteView.swift */,
 				475F22EB284917A60058B030 /* CommentView.swift */,
-				475F22ED284943550058B030 /* SourceView.swift */,
 				47BB687A2889E26600D576CE /* ChangeCommentView.swift */,
 			);
 			path = View;
@@ -609,6 +611,7 @@
 			children = (
 				47F614A628E0B87D0054CAE2 /* stars.json */,
 				47F614A228DDEFE30054CAE2 /* trophy.json */,
+				476E154E29105FBD002F9F5F /* missed2.json */,
 				478A9BD228FDC80300A447D8 /* missed.json */,
 				47F614A428DDF0680054CAE2 /* login-and-sign-up.json */,
 				47A162A128E2E96F00CAA89B /* empty-state.json */,
@@ -966,6 +969,7 @@
 				47F614A328DDEFE30054CAE2 /* trophy.json in Resources */,
 				47553B7E286E155800D86B04 /* quizzs.json in Resources */,
 				47A162A228E2E96F00CAA89B /* empty-state.json in Resources */,
+				476E154F29105FBD002F9F5F /* missed2.json in Resources */,
 				47553B7C286E144800D86B04 /* categories.json in Resources */,
 				47F614A528DDF0680054CAE2 /* login-and-sign-up.json in Resources */,
 				4701DCEC28466E710069B8AE /* Preview Assets.xcassets in Resources */,
@@ -1235,7 +1239,7 @@
 				CODE_SIGN_ENTITLEMENTS = FabulaSwiftUI/FabulaSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"FabulaSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = SA2BACU3UM;
 				ENABLE_PREVIEWS = YES;
@@ -1277,7 +1281,7 @@
 				CODE_SIGN_ENTITLEMENTS = FabulaSwiftUI/FabulaSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 2;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_ASSET_PATHS = "\"FabulaSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = SA2BACU3UM;
 				ENABLE_PREVIEWS = YES;

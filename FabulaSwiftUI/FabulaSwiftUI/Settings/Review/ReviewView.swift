@@ -23,15 +23,17 @@ struct ReviewView: View {
                 Text("En soumettant votre avis sur notre application, vous soutenez nos efforts.")
                     .multilineTextAlignment(.center)
                 Button {
+                            
                     guard let scene = UIApplication.shared.connectedScenes.first(where: { $0.activationState == .foregroundActive}) as? UIWindowScene else { return }
                     SKStoreReviewController.requestReview(in: scene)
                 } label: {
                     Text("Soumettre une évaluation.")
                 }
             }
+            .padding()
         }
-        
     }
+    
 }
 
 

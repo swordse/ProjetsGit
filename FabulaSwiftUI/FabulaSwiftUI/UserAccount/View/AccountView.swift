@@ -22,6 +22,8 @@ struct AccountView: View {
     @State private var image: UIImage?
     @State private var showImagePicker = false
     @State private var showAccountManagerView = false
+//    @State private var showAlert = false
+//    @State private var alertMessage = (title: "", message: "")
     
     @State private var faceIdError: Authentification.AuthentificationError?
     
@@ -98,9 +100,13 @@ struct AccountView: View {
                                         viewModel.dispatcher()
                                     } label: {
                                         ButtonView(text: viewModel.isConnexion ? "CONNEXION": "CREER UN COMPTE")
+                                        
                                     }
                                     .buttonStyle(.plain)
                                     .disabled(buttonDisabled())
+                                    .alert(isPresented: $viewModel.showAlert) {
+                                        Alert(title: Text(viewModel.alertMessage.title), message: Text(viewModel.alertMessage.message), dismissButton: .default(Text("OK")))
+                                    }
                                     
                                     Button {
                                         withAnimation(.linear(duration: 0.5)) {
@@ -128,6 +134,16 @@ struct AccountView: View {
                                                 .resizable()
                                                 .frame(width: 50, height: 50)
                                             
+                                        }
+                                        .alert(item: $faceIdError) { error in
+                                            if error == .credentialsNotSaved {
+                                                return Alert(title: Text("Identifiants non sauvés"), message: Text(error.localizedDescription), primaryButton: .default(Text("OK"), action: {
+                                                    viewModel.storeCredentialsNext = true
+                                                }),
+                                                             secondaryButton: .cancel())
+                                            } else {
+                                                return Alert(title: Text(error.localizedDescription))
+                                            }
                                         }
                                     }
                                 }
@@ -215,19 +231,19 @@ struct AccountView: View {
                                 }
                             }
                         }
-                    .alert(isPresented: $viewModel.showAlert) {
-                        Alert(title: Text(viewModel.alertMessage.title), message: Text(viewModel.alertMessage.message), dismissButton: .default(Text("OK")))
-                    }
-                    .alert(item: $faceIdError) { error in
-                        if error == .credentialsNotSaved {
-                            return Alert(title: Text("Identifiants non sauvés"), message: Text(error.localizedDescription), primaryButton: .default(Text("OK"), action: {
-                                viewModel.storeCredentialsNext = true
-                            }),
-                                         secondaryButton: .cancel())
-                        } else {
-                            return Alert(title: Text(error.localizedDescription))
-                        }
-                    }
+//                    .alert(isPresented: $viewModel.showAlert) {
+//                        Alert(title: Text(viewModel.alertMessage.title), message: Text(viewModel.alertMessage.message), dismissButton: .default(Text("OK")))
+//                    }
+//                    .alert(item: $faceIdError) { error in
+//                        if error == .credentialsNotSaved {
+//                            return Alert(title: Text("Identifiants non sauvés"), message: Text(error.localizedDescription), primaryButton: .default(Text("OK"), action: {
+//                                viewModel.storeCredentialsNext = true
+//                            }),
+//                                         secondaryButton: .cancel())
+//                        } else {
+//                            return Alert(title: Text(error.localizedDescription))
+//                        }
+//                    }
                     .sheet(isPresented: $showPasswordReset) {
                         PasswordResetView()
                     }

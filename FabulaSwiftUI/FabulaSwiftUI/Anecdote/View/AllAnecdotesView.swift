@@ -46,7 +46,7 @@ struct AllAnecdotesView: View {
                                 } else {
                                     ForEach($viewModel.anecdotes) { $anecdote in
                                         if anecdote.title == "" {
-                                            BannerAd(unitID: "ca-app-pub-3940256099942544/2934735716")
+                                            BannerAd(unitID: "ca-app-pub-3940256099942544/2934735716").frame(height: 100)
                                         } else {
                                             
                                             NavigationLink {

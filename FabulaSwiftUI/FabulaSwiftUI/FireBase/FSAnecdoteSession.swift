@@ -41,7 +41,7 @@ final class AnecdoteSession: FSAnecdoteSession {
         if filterBy == nil {
             docRef = dataBase.collection(DataRequest.anecdotes.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
         } else {
-            docRef = dataBase.collection(DataRequest.anecdotes.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).limit(to: limitNumber)
+            docRef = dataBase.collection(DataRequest.anecdotes.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
         }
         do {
             let callResult = try await docRef.getDocuments()
@@ -73,7 +73,7 @@ final class AnecdoteSession: FSAnecdoteSession {
         var newSnapshots = snapshots
         var docRef : Query
         if filterBy != nil {
-            docRef = dataBase.collection(DataRequest.anecdotes.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).limit(to: limitNumber).start(atDocument: lastSnapshot)
+            docRef = dataBase.collection(DataRequest.anecdotes.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).order(by: "date", descending: true).limit(to: limitNumber).start(atDocument: lastSnapshot)
         } else {
             docRef = dataBase.collection(DataRequest.anecdotes.rawValue).order(by: "date", descending: true).limit(to: limitNumber).start(atDocument: lastSnapshot)
         }
@@ -109,7 +109,7 @@ final class AnecdoteSession: FSAnecdoteSession {
             if filterBy == nil {
                 docRef = dataBase.collection(DataRequest.anecdotes.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
             } else {
-                docRef = dataBase.collection(DataRequest.anecdotes.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).limit(to: limitNumber)
+                docRef = dataBase.collection(DataRequest.anecdotes.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
             }
             // else we have to remove the 2 last (the last obtained at the end of each request)
         } else {

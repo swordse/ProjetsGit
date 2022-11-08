@@ -87,6 +87,7 @@ class AllAnecdotesViewModel: ObservableObject {
             }
             catch {
                 isErrorOccured = true
+                print("Error when try to getNextAnecdotes: \(error.localizedDescription)")
             }
         }
     }

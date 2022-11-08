@@ -28,7 +28,6 @@ struct ButtonView: View {
                 RoundedRectangle(cornerRadius: 10, style: .circular)
                     .fill(color)
                     .frame(height: 40)
-                    
             )
     }
 }

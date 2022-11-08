@@ -2,37 +2,37 @@
     "categories": [{
             "categorieName": "Histoire",
             "themes": [
-                "Rois", "Assassins"
+                "Rois", "Assassins", "Dates historiques (France)", "Le Moyen-Age"
             ]
         },{
             "categorieName": "Géographie",
             "themes": [
-                "Capitales Européennes", "Fleuves, Rivières (France)"
+                "Capitales Européennes", "Fleuves, Rivières (France)", "Capitales Africaines", "Montagnes"
             ]
         },{
             "categorieName": "Science",
             "themes": [
-                "Volcan"
+                "Volcan", "Astronomie", "Chercheurs/Médecins"
             ]
         },{
             "categorieName": "Nature",
             "themes": [
-                "Grand dauphin"
+                "Grand dauphin", "Les océans", "La Terre", "Les félins"
             ]
         },{
             "categorieName": "Art",
             "themes": [
-                "Picasso"
+                "Picasso", "Impressionisme", "Fauvisme", "Qui a peint"
             ]
         },{
             "categorieName": "Loisirs",
             "themes": ["Films d'action", "Séries télés", "Les Rolling Stones"]
         },{
             "categorieName": "Littérature",
-            "themes": ["Hugo"]
+            "themes": ["Hugo", "Maupassant", "Oscar Wilde", "Emile Zola", "Gustave Flaubert"]
         },{
             "categorieName": "Sport",
-            "themes": ["Basket"]
+            "themes": ["Basket", "Football"]
         }
     ]
 }
