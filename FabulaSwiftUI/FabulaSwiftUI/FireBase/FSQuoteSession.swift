@@ -11,8 +11,6 @@ import FirebaseFirestoreSwift
 
 protocol FSQuoteSession {
     
-//    func getThemes() async throws -> [String]
-    
     func getQuotes(filterBy: QuoteCategoriesMenu?) async throws -> (quotes: [Quote], snapshots: [QueryDocumentSnapshot?])
     
     func getNewQuotes(filterBy: QuoteCategoriesMenu?, snapshots: [QueryDocumentSnapshot?]) async throws -> (quotes: [Quote], snapshots: [QueryDocumentSnapshot?])
@@ -47,7 +45,6 @@ final class QuoteSession: FSQuoteSession {
             return (quotes: quotes, snapshots: [lastSnapshot])
         }
         catch {
-            print(error)
             throw error
         }
     }

@@ -56,7 +56,6 @@ final class AnecdoteSession: FSAnecdoteSession {
             return (anecdotes: anecdotes, snapshots: [lastSnapshot])
         }
         catch {
-            print(error)
             throw error
         }
     }

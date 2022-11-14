@@ -17,7 +17,6 @@ import FirebaseMessaging
 struct FabulaSwiftUIApp: App {
     
     @UIApplicationDelegateAdaptor private var appDelegate: AppDelegate
-//    @UIApplicationDelegateAdaptor(AppDelegate.self) var delegateadsize
 
     init() {
         isAuthentificate()
@@ -44,34 +43,12 @@ struct FabulaSwiftUIApp: App {
             }
         }
     }
-    
-    // register app delegate for Firebase setup
-//      @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
-    
-//    @StateObject private var userDefaultsManager = UserDefaultsManager()
-//    @State private var isShowingWelcome = false
-    
     var body: some Scene {
         WindowGroup {
-//            if UserDefaultsManager.manager.isNewUser() {
-//                WelcomeVie
-//            }
-            
-//                MainTabView()
-
             MainView()
-//                .environmentObject(userDefaultsManager)
-//                .environment(\.managedObjectContext, dataController.container.viewContext)
         }
     }
 }
-
-//class AppDelegate: NSObject, UIApplicationDelegate {
-//  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey : Any]? = nil) -> Bool {
-//    FirebaseApp.configure()
-//    return true
-//  }
-//}
 
 class AppDelegate: NSObject, UIApplicationDelegate {
 
@@ -123,8 +100,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
               }
 
               application.registerForRemoteNotifications()
-              
-//    GADMobileAds.sharedInstance().start(completionHandler: nil)
+      
     return true
   }
     
@@ -145,18 +121,16 @@ class AppDelegate: NSObject, UIApplicationDelegate {
         if loadError != nil {
           // Handle the error.
         } else {
-          // Present the form. You can also hold on to the reference to present
-          // later.
+          // Present the form. You can also hold on to the reference to present later.
           if UMPConsentInformation.sharedInstance.consentStatus == UMPConsentStatus.required {
               form?.present(from: UIApplication.shared.windows.first!.rootViewController! as UIViewController, completionHandler: { dimissError in
                                           if UMPConsentInformation.sharedInstance.consentStatus == UMPConsentStatus.obtained {
                                               // App can start requesting ads.
                                               GADMobileAds.sharedInstance().start(completionHandler: nil)
                                           }
-
                 })
           } else {
-            // Keep the form available for changes to user consent.
+            
           }
         }
       })
@@ -166,8 +140,8 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 extension AppDelegate: MessagingDelegate {
     func messaging(_ messaging: Messaging, didReceiveRegistrationToken fcmToken: String?) {
 
-      let deviceToken:[String: String] = ["token": fcmToken ?? ""]
-        print("Device token: ", deviceToken) // This token can be used for testing notifications on FCM
+//      let deviceToken:[String: String] = ["token": fcmToken ?? ""]
+//        print("Device token: ", deviceToken) // This token can be used for testing notifications on FCM
     }
 }
 

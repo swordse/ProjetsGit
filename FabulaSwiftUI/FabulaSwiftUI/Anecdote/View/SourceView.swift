@@ -45,10 +45,6 @@ struct SourceView: View {
     }
     
     func getShortUrl(stringUrl: String?) -> String {
-        //        guard stringUrl != nil else { return ""}
-        //        guard let url = URL(string: stringUrl!) else { return "lien"}
-        //        guard let hostUrl = url.host else { return "lien"}
-        //        return hostUrl
         var result = ""
         
         if let url = URL(string: stringUrl!) {

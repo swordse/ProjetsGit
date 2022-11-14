@@ -134,7 +134,6 @@ extension AllWordsView {
                 catch {
                     isErrorOccured = true
                     isLoading = false
-                    print("ERREUR")
                 }
             }
         }

@@ -42,7 +42,6 @@ extension HomeQuizzView {
         // theme contains name of each quizz by category
         @Published var theme = [String: [String]]()
         @Published var gameScores = [GameScore]()
-        //        @Published var networkError = false
         @Published var quizzs = [Quizz]()
         @Published var errorOccured = false
         

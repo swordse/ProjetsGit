@@ -10,8 +10,6 @@ import GoogleMobileAds
 
 struct AllAnecdotesView: View {
     
-//    var isFromSettings = false
-    
     @StateObject private var viewModel = AllAnecdotesViewModel()
     @State private var selectedCategory =
     Anecdote.Category.nouveautes

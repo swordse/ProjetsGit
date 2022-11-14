@@ -22,9 +22,6 @@ struct AccountView: View {
     @State private var image: UIImage?
     @State private var showImagePicker = false
     @State private var showAccountManagerView = false
-//    @State private var showAlert = false
-//    @State private var alertMessage = (title: "", message: "")
-    
     @State private var faceIdError: Authentification.AuthentificationError?
     
     @AppStorage(Keys.currentUserSaved) var user: Data = Data()
@@ -227,19 +224,6 @@ struct AccountView: View {
                                 }
                             }
                         }
-//                    .alert(isPresented: $viewModel.showAlert) {
-//                        Alert(title: Text(viewModel.alertMessage.title), message: Text(viewModel.alertMessage.message), dismissButton: .default(Text("OK")))
-//                    }
-//                    .alert(item: $faceIdError) { error in
-//                        if error == .credentialsNotSaved {
-//                            return Alert(title: Text("Identifiants non sauvés"), message: Text(error.localizedDescription), primaryButton: .default(Text("OK"), action: {
-//                                viewModel.storeCredentialsNext = true
-//                            }),
-//                                         secondaryButton: .cancel())
-//                        } else {
-//                            return Alert(title: Text(error.localizedDescription))
-//                        }
-//                    }
                     .sheet(isPresented: $showPasswordReset) {
                         PasswordResetView()
                     }

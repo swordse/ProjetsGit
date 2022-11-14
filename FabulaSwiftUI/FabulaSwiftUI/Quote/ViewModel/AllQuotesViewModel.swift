@@ -125,7 +125,6 @@ extension AllQuotesView {
                 }
                 catch {
                     isErrorOccured = true
-                    print("ERREUR")
                 }
             }
         }

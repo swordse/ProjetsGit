@@ -8,9 +8,8 @@
 import Foundation
 import GoogleMobileAds
 
-class SharedValues:ObservableObject{
-    
-//    @Published var interstitial = GADInterstitialAd
-    @Published var popInterstitial = false
-
-}
+//class SharedValues:ObservableObject{
+//    
+//    @Published var popInterstitial = false
+//
+//}

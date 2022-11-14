@@ -126,20 +126,6 @@ class DataController: ObservableObject {
         saveQuoteFav()
     }
     
-//    func checkIfIsFavorite(quote: Quote) -> Bool {
-//        let request = NSFetchRequest<QuoteFav>(entityName: "QuoteFav")
-//        request.predicate = NSPredicate(format: "text == %@", quote.text)
-//        do {
-//        let result = try container.viewContext.fetch(request)
-//            if result.isEmpty { return false }
-//            else { return true }
-//        }
-//        catch {
-//            print("Error when fetch core data: \(error.localizedDescription)")
-//            return false
-//        }
-//    }
-    
     //MARK: Words
     
     func fetchWordFav() {

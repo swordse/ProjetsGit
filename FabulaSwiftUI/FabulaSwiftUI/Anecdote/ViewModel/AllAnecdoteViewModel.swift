@@ -167,7 +167,6 @@ final class AllAnecdotesViewModel: ObservableObject {
     private func anecdoteIsSaved(selectedCategorie: Anecdote.Category) -> Bool {
         
         guard let anecdoteState = AnecdoteCache.shared.getAnecdoteState(key: selectedCategorie.rawValue) else {
-            print("FALSE NO CACHE")
             return false }
         
         pageNumber = anecdoteState.page

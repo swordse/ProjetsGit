@@ -94,8 +94,6 @@
 		47B8947F2892CB6400C29A2A /* InterstitialAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8947E2892CB6400C29A2A /* InterstitialAd.swift */; };
 		47B894812892CC0200C29A2A /* InterstitialAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B894802892CC0200C29A2A /* InterstitialAdView.swift */; };
 		47B894832892CD4B00C29A2A /* FullScreenModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B894822892CD4B00C29A2A /* FullScreenModifier.swift */; };
-		47B894882892D3A800C29A2A /* RewardedAd.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B894872892D3A800C29A2A /* RewardedAd.swift */; };
-		47B8948A2892D3D500C29A2A /* RewardedAdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B894892892D3D500C29A2A /* RewardedAdView.swift */; };
 		47B8948C2892F63500C29A2A /* Color+customColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8948B2892F63500C29A2A /* Color+customColor.swift */; };
 		47B8949128959E5600C29A2A /* ButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47B8949028959E5600C29A2A /* ButtonView.swift */; };
 		47BB6875288978F100D576CE /* AccountManagerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BB6874288978F100D576CE /* AccountManagerView.swift */; };
@@ -106,7 +104,6 @@
 		47BC3D7C290D5FA3001D29E8 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC3D7B290D5FA3001D29E8 /* AuthView.swift */; };
 		47BC3D7F290D7191001D29E8 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 47BC3D7E290D7191001D29E8 /* SwiftKeychainWrapper */; };
 		47BC3D81290D74E1001D29E8 /* KeyChainStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC3D80290D74E1001D29E8 /* KeyChainStorage.swift */; };
-		47BC692E2885624700258032 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC692D2885624700258032 /* MainTabView.swift */; };
 		47BC69302885EA1B00258032 /* PasswordResetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC692F2885EA1B00258032 /* PasswordResetView.swift */; };
 		47BC69322885F00100258032 /* PasswordResetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC69312885F00100258032 /* PasswordResetViewModel.swift */; };
 		47BC69342887105700258032 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47BC69332887105700258032 /* ImagePicker.swift */; };
@@ -236,8 +233,6 @@
 		47B8947E2892CB6400C29A2A /* InterstitialAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAd.swift; sourceTree = "<group>"; };
 		47B894802892CC0200C29A2A /* InterstitialAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterstitialAdView.swift; sourceTree = "<group>"; };
 		47B894822892CD4B00C29A2A /* FullScreenModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullScreenModifier.swift; sourceTree = "<group>"; };
-		47B894872892D3A800C29A2A /* RewardedAd.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAd.swift; sourceTree = "<group>"; };
-		47B894892892D3D500C29A2A /* RewardedAdView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RewardedAdView.swift; sourceTree = "<group>"; };
 		47B8948B2892F63500C29A2A /* Color+customColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+customColor.swift"; sourceTree = "<group>"; };
 		47B8949028959E5600C29A2A /* ButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonView.swift; sourceTree = "<group>"; };
 		47BB6874288978F100D576CE /* AccountManagerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountManagerView.swift; sourceTree = "<group>"; };
@@ -247,7 +242,6 @@
 		47BC3D79290D5AF7001D29E8 /* Authentification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Authentification.swift; sourceTree = "<group>"; };
 		47BC3D7B290D5FA3001D29E8 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
 		47BC3D80290D74E1001D29E8 /* KeyChainStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainStorage.swift; sourceTree = "<group>"; };
-		47BC692D2885624700258032 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 		47BC692F2885EA1B00258032 /* PasswordResetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetView.swift; sourceTree = "<group>"; };
 		47BC69312885F00100258032 /* PasswordResetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordResetViewModel.swift; sourceTree = "<group>"; };
 		47BC69332887105700258032 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
@@ -337,7 +331,6 @@
 				4701DCE428466E6F0069B8AE /* FabulaSwiftUIApp.swift */,
 				47B8948D28943C7700C29A2A /* ReusableViews */,
 				47EC85442864B56D007B7AEF /* MainView.swift */,
-				47BC692D2885624700258032 /* MainTabView.swift */,
 				47A2DE3D28D9F53E00173DDB /* UserNavBar.swift */,
 				47D62231288EADAA00E242F0 /* Add */,
 				4786E8C628EF69EB000F473E /* Welcome */,
@@ -685,15 +678,6 @@
 			path = InterstitialAdd;
 			sourceTree = "<group>";
 		};
-		47B894862892D38200C29A2A /* RewardAd */ = {
-			isa = PBXGroup;
-			children = (
-				47B894872892D3A800C29A2A /* RewardedAd.swift */,
-				47B894892892D3D500C29A2A /* RewardedAdView.swift */,
-			);
-			path = RewardAd;
-			sourceTree = "<group>";
-		};
 		47B8948D28943C7700C29A2A /* ReusableViews */ = {
 			isa = PBXGroup;
 			children = (
@@ -852,7 +836,6 @@
 		47D62231288EADAA00E242F0 /* Add */ = {
 			isa = PBXGroup;
 			children = (
-				47B894862892D38200C29A2A /* RewardAd */,
 				47B894842892D34700C29A2A /* BannerAd */,
 				47B894852892D35F00C29A2A /* InterstitialAdd */,
 			);
@@ -1023,9 +1006,7 @@
 				47553B5E286B392300D86B04 /* FSWordSession.swift in Sources */,
 				4722A0922855277700436214 /* FSQuoteSession.swift in Sources */,
 				47CB202A28EC8CB400A79F21 /* Interstitial.swift in Sources */,
-				47B894882892D3A800C29A2A /* RewardedAd.swift in Sources */,
 				47BC3D7A290D5AF7001D29E8 /* Authentification.swift in Sources */,
-				47B8948A2892D3D500C29A2A /* RewardedAdView.swift in Sources */,
 				47C600482875D6AC0031D8CA /* SettingsScoreView.swift in Sources */,
 				47CB202428E9F36C00A79F21 /* WordCache.swift in Sources */,
 				47553B80286E15C300D86B04 /* CategorieTitle.swift in Sources */,
@@ -1058,7 +1039,6 @@
 				47CB202628EA17EB00A79F21 /* QuoteCache.swift in Sources */,
 				47C0DE5D2874C09A006D3C67 /* ScoreView.swift in Sources */,
 				472BC3D0285BC35500AE9B18 /* FooterView.swift in Sources */,
-				47BC692E2885624700258032 /* MainTabView.swift in Sources */,
 				471FFBDB2860A6040028A3AA /* UserDefaultsManager.swift in Sources */,
 				4722A09A285675CA00436214 /* AllQuotesViewModel.swift in Sources */,
 				471FFBDD2860E0880028A3AA /* AuthService.swift in Sources */,

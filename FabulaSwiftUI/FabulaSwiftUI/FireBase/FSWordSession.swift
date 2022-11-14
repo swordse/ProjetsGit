@@ -8,7 +8,6 @@
 import Foundation
 import Firebase
 import FirebaseFirestoreSwift
-//import PromisesTestHelpers
 
 protocol FSWordSession {
     
@@ -44,7 +43,6 @@ final class WordSession: FSWordSession {
             return (words: words, snapshots: [lastSnapshot])
         }
         catch {
-            print(error)
             throw error
         }
     }
