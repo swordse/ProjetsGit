@@ -10,13 +10,21 @@ import SwiftUI
 struct PropositionView: View {
     
     var geo : GeometryProxy?
+    
     @Binding var proposition: String
     @Binding var correctAnswer: String
     @Binding var selectedProposition: String
     @Binding var buttonIsDisabled: Bool
+    @Binding var playerHasAnswered: Bool
     
     @State var isSelected = false
-    
+    func showCorrectAnswer() -> Bool {
+        if !isSelected && playerHasAnswered && proposition == correctAnswer {
+            return true
+        } else {
+            return false
+        }
+    }
     var body: some View {
         
         if let geo = geo {
@@ -26,7 +34,6 @@ struct PropositionView: View {
                 buttonIsDisabled = true
             } label: {
                 if isSelected {
-//                if selectedProposition != "" {
                     HStack{
                         Text(proposition)
                             .font(.system(size: 18, weight: .semibold, design: .default))
@@ -64,7 +71,7 @@ struct PropositionView: View {
                     }
                     .frame(width: geo.size.width - 20, height: 60)
                     .overlay(RoundedRectangle(cornerRadius: 10)
-                        .strokeBorder(.white, lineWidth: 1))
+                        .strokeBorder(showCorrectAnswer() ? .green : .white, lineWidth: showCorrectAnswer() ? 2 : 1))
                     .background(Color.lightBackground)
                 }
             }
@@ -78,7 +85,7 @@ struct PropositionView: View {
 struct PropositionView_Previews: PreviewProvider {
     static var previews: some View {
         GeometryReader { proxy in
-            PropositionView(geo: proxy, proposition: .constant("BOB"), correctAnswer: .constant("BOB"), selectedProposition: .constant(""), buttonIsDisabled: .constant(false))
+            PropositionView(geo: proxy, proposition: .constant("BOB"), correctAnswer: .constant("BOB"), selectedProposition: .constant(""), buttonIsDisabled: .constant(false), playerHasAnswered: .constant(false))
         }
         
     }

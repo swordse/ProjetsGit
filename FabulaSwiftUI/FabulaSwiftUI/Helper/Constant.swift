@@ -8,12 +8,7 @@
 import Foundation
 
 class Constant {
-    
-//    static var numberOfData = 5
-//    static var dataToPresent: Int {
-//        return numberOfData - 1
-//    }
-    
+
     static var numberOfData = 8
     static var dataToPresent: Int {
         return numberOfData - 1

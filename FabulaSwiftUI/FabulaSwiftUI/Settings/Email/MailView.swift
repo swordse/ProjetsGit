@@ -12,11 +12,9 @@ struct MailView: UIViewControllerRepresentable {
     
     typealias UIViewControllerType = MFMailComposeViewController
     
-    
     var content: String
     var to: String
     var subject: String
-    
     
     func makeUIViewController(context: Context) -> MFMailComposeViewController {
         if MFMailComposeViewController.canSendMail() {

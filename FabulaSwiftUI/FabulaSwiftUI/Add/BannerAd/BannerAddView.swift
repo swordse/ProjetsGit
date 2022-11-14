@@ -12,7 +12,6 @@ struct BannerAddView: View {
     
     @State var height: CGFloat = 0 //Height of ad
     @State var width: CGFloat = 0 //Width of ad
-//        @State var adPosition: AdPosition
     let adUnitId: String
     
     init(adUnitId: String) {

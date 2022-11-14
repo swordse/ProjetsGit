@@ -56,10 +56,6 @@ struct DetailAnecdoteView: View {
                 }
                 .listRowBackground(Color.background)
                 .padding(.vertical)
-                
-//                .sheet(isPresented: $isShareSheetPresented) {
-//                    ShareSheetView(activityItems: ["Voici une anecdote que j'ai trouvé sur l'application Fabula: \n\(anecdote.text)"])
-//                }
                 // Source Section
                 Section {
                     if anecdote.source != nil {
@@ -132,7 +128,6 @@ struct DetailAnecdoteView: View {
                 }
             }
             .onAppear {
-                //                    viewModel.updateUserConnexionState()
                 decodeUser(userData: user)
             }
         }
@@ -144,9 +139,6 @@ struct DetailAnecdoteView: View {
             }, content: {
                 ChangeCommentView(comment: $selectedComment)
             })
-//            .sheet(isPresented: $isConnexionSheetPresented, onDismiss: { viewModel.updateUserConnexionState() }, content: {
-//                AccountView()
-//            })
             .alert(isPresented: $viewModel.commentError, content: {
                 Alert(title: Text("Erreur"), message: Text("Une erreur est survenue lors du chargement des commenaires."), dismissButton: .default(Text("OK")))
             })
@@ -159,7 +151,6 @@ struct DetailAnecdoteView: View {
             })
             .navigationTitle("Detail")
             .navigationBarTitleDisplayMode(.large)
-//        }
     }
     
     func decodeUser(userData: Data) {

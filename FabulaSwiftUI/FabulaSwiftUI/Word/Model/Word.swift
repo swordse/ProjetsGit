@@ -20,7 +20,7 @@ struct Word: Codable, Equatable {
     
 }
 
-class WordsForLetter: Codable, Equatable {
+final class WordsForLetter: Codable, Equatable {
     static func == (lhs: WordsForLetter, rhs: WordsForLetter) -> Bool {
         lhs.words == rhs.words && lhs.letter == rhs.letter
     }
@@ -34,7 +34,7 @@ class WordsForLetter: Codable, Equatable {
     }
 }
 
-class WordState {
+final class WordState {
     var words: [Word]
     var snapshots: [QueryDocumentSnapshot?]
     var page: Int

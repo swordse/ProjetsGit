@@ -9,9 +9,8 @@ import SwiftUI
 import Lottie
 
 struct LottieView: UIViewRepresentable {
-
+    
     let name: String
-//    var loopMode: LottieLoopMode = .repeat(1)
     var numberOfRepeat: Float
     var height: CGFloat
     
@@ -28,11 +27,11 @@ struct LottieView: UIViewRepresentable {
         view.addSubview(animationView)
         NSLayoutConstraint.activate([animationView.heightAnchor.constraint(equalToConstant: height), animationView.widthAnchor.constraint(equalTo: view.widthAnchor)])
         return view
-        }
-        
+    }
+    
     func updateUIView(_ uiView: UIViewType, context: Context) {
         
     }
-        
-    }
+    
+}
 

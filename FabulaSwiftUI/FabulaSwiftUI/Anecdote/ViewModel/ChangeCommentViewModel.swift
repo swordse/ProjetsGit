@@ -9,7 +9,7 @@ import Foundation
 
 extension ChangeCommentView {
     
-    @MainActor class ChangeCommentViewModel: ObservableObject {
+    @MainActor final class ChangeCommentViewModel: ObservableObject {
         
         let session = CommentService()
         

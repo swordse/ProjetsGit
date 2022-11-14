@@ -35,7 +35,6 @@ final class AnecdoteSession: FSAnecdoteSession {
     
     // MARK: Anecdotes
     func getAnecdotes(filterBy: Anecdote.Category?) async throws -> (anecdotes:  [Anecdote], snapshots: [QueryDocumentSnapshot?]) {
-        
         var docRef: Query
         
         if filterBy == nil {

@@ -9,7 +9,7 @@ import Foundation
 
 extension PasswordResetView {
     
-    @MainActor class PasswordResetViewModel: ObservableObject {
+    @MainActor final class PasswordResetViewModel: ObservableObject {
         
         @Published var alertMessage = (title: "", message: "")
         @Published var showAlert = false

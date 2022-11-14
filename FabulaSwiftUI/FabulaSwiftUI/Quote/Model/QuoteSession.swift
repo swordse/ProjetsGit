@@ -9,17 +9,13 @@ import Foundation
 import Firebase
 
 
-class QuoteService {
+final class QuoteService {
     
     let session: FSQuoteSession
     
     init(session: FSQuoteSession = QuoteSession()) {
         self.session = session
     }
-    
-//    func getThemes() async throws -> [String] {
-//        return try await session.getThemes()
-//    }
     
     func getQuotes(filterBy: QuoteCategoriesMenu?) async throws -> (quotes: [Quote], snapshots: [QueryDocumentSnapshot?]) {
         return try await session.getQuotes(filterBy: filterBy)

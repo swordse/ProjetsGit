@@ -11,7 +11,7 @@ import SwiftUI
 extension AccountView {
     
     @MainActor
-    class AccountViewModel: ObservableObject {
+    final class AccountViewModel: ObservableObject {
         
         let authService = AuthService()
         let userDefaultsManager = UserDefaultsManager.manager
@@ -136,8 +136,8 @@ extension AccountView {
         }
         
         
-       func signIn(password: String, email: String) {
-           isShowingProgress.toggle()
+        func signIn(password: String, email: String) {
+            isShowingProgress.toggle()
             Task {
                 do {
                     authService.signIn(email: email, password: password) { [weak self] fabulaUser, error in
@@ -151,9 +151,9 @@ extension AccountView {
                                 self?.isShowingProgress.toggle()
                                 self?.saveCurrentUser(currentUser: fabulaUser)
                                 if self?.storeCredentialsNext == true {
-                                        if KeychainStorage.saveCredentials(Credentials(password: password, email: email)) {
-                                            self?.storeCredentialsNext = false
-                                        }
+                                    if KeychainStorage.saveCredentials(Credentials(password: password, email: email)) {
+                                        self?.storeCredentialsNext = false
+                                    }
                                 }
                             } else {
                                 self?.isShowingProgress.toggle()

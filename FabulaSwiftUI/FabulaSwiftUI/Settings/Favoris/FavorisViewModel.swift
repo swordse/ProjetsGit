@@ -7,7 +7,7 @@
 
 import Foundation
 
-@MainActor class FavorisViewModel: ObservableObject {
+@MainActor final class FavorisViewModel: ObservableObject {
     
     @Published var anecdoteFav = [Anecdote]()
     @Published var quoteFav = [Quote]()
@@ -18,8 +18,6 @@ import Foundation
     
     func getFavoritesForSettings(for destination: Destination) {
         switch destination {
-//        case .toRGPD:
-//            return
         case.toLegal:
             return
         case .toChangePhoto:
@@ -48,12 +46,6 @@ import Foundation
             title = "Mot du jour Favoris"
         case .toScores:
             return
-//        case .toSubmitRules:
-//            return
-//        case .toCommentRules:
-//            return
-//        case .toCGU:
-//            return
         case .toEmail:
             return
         }

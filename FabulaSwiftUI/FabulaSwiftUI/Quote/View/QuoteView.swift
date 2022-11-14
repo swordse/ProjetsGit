@@ -51,7 +51,7 @@ struct QuoteView: View {
                 }
             }
         }
-
+        
         .background(Color.background)
     }
     

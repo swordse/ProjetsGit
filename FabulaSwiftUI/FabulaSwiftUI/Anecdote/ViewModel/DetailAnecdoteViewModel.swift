@@ -19,7 +19,6 @@ extension DetailAnecdoteView {
         @Published var alertMessage = (title: "", message: "")
         @Published var showAlert = false
         
-        var currentUser: FabulaUser?
         let commentSession = CommentService()
         
         func getShortUrl(stringUrl: String?) {
@@ -45,14 +44,6 @@ extension DetailAnecdoteView {
                 }
             }
         }
-        
-//        func updateUserConnexionState() {
-//            guard let user = UserDefaultsManager.manager.retrieveCurrentUser() else {
-//                currentUser = nil
-//                return
-//            }
-//            currentUser = user
-//        }
         
         func save(commentToSave: String, anecdoteId: String, user: FabulaUser?) {
             
@@ -93,7 +84,6 @@ extension DetailAnecdoteView {
                 }
             }
         }
-        
     }
 }
 

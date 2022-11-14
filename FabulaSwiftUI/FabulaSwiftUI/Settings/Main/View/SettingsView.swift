@@ -10,78 +10,69 @@ import SwiftUI
 struct SettingsView: View {
     
     var body: some View {
-    
+        
         NavigationView {
             ZStack {
-                        Color.background
-                            .ignoresSafeArea()
-                        Form {
-                            ForEach(SettingsSection.settings, id: \.sectionTitle) { settingSection in
-                                Section {
-                                    ForEach(settingSection.settingsOptions, id: \.title) { option in
-                                        NavigationLink {
-                                            switch option.destination {
-                                            case .toChangePhoto:
-                                                AccountManagerView()
-                                            case .toDeleteAccount:
-                                                AccountView(isDeleteAccount: true)
-                                            case .toReview:
-                                                ReviewView()
-                                            case .toAnecdoteFav:
-                                                FavorisView(toDestination: option.destination)
-                                            case .toCitationFav:
-                                                FavorisView(toDestination: option.destination)
-                                            case .toMotduJourFav:
-                                                FavorisView(toDestination: option.destination)
-                                            case .toScores: SettingsScoreView()
-                                            case .toLegal:
-                                                LegalView()
-//                                            case .toSubmitRules:
-//                                                LegalView()
-//                                                }
-//                                                LegalView(settingTitleText: SettingTitleText.submitRulesText, navTitle: "Règles Soumission")
-//                                            case .toCommentRules:
-//                                                LegalView(settingTitleText: SettingTitleText.commentRules, navTitle: "Commentaires")
-//                                            case .toCGU:
-//                                                LegalView(settingTitleText: SettingTitleText.termsAndConditions, navTitle: "CGU")
-//                                            case.toRGPD: LegalView(settingTitleText: SettingTitleText.confidentiality, navTitle: "Données personnelles")
-                                            case .toEmail :
-                                                HomeEmailView()
+                Color.background
+                    .ignoresSafeArea()
+                Form {
+                    ForEach(SettingsSection.settings, id: \.sectionTitle) { settingSection in
+                        Section {
+                            ForEach(settingSection.settingsOptions, id: \.title) { option in
+                                NavigationLink {
+                                    switch option.destination {
+                                    case .toChangePhoto:
+                                        AccountManagerView()
+                                    case .toDeleteAccount:
+                                        AccountView(isDeleteAccount: true)
+                                    case .toReview:
+                                        ReviewView()
+                                    case .toAnecdoteFav:
+                                        FavorisView(toDestination: option.destination)
+                                    case .toCitationFav:
+                                        FavorisView(toDestination: option.destination)
+                                    case .toMotduJourFav:
+                                        FavorisView(toDestination: option.destination)
+                                    case .toScores: SettingsScoreView()
+                                    case .toLegal:
+                                        LegalView()
+                                    case .toEmail :
+                                        HomeEmailView()
+                                    }
+                                } label: {
+                                    GeometryReader { geo in
+                                        HStack {
+                                            ZStack {
+                                                RoundedRectangle(cornerRadius: 10)
+                                                    .fill(option.iconBackgroundColor)
+                                                    .frame(width: geo.size.width/7)
+                                                option.image?
+                                                    .resizable()
+                                                    .aspectRatio(contentMode: .fit)
+                                                    .frame(width: geo.size.width/12)
+                                                    .font(.body.weight(.light))
                                             }
-                                        } label: {
-                                            GeometryReader { geo in
-                                                HStack {
-                                                    ZStack {
-                                                        RoundedRectangle(cornerRadius: 10)
-                                                            .fill(option.iconBackgroundColor)
-                                                            .frame(width: geo.size.width/7)
-                                                        option.image?
-                                                            .resizable()
-                                                            .aspectRatio(contentMode: .fit)
-                                                            .frame(width: geo.size.width/12)
-                                                            .font(.body.weight(.light))
-                                                    }
-                                                    Text(option.title)
-                                                }
-                                            }
+                                            Text(option.title)
                                         }
                                     }
-                                } header: {
-                                    Text(settingSection.sectionTitle)
                                 }
                             }
-                            .listRowBackground(Color.lightBackground)
+                        } header: {
+                            Text(settingSection.sectionTitle)
                         }
-                            .hideScrollBackground()
-                        
                     }
+                    .listRowBackground(Color.lightBackground)
+                }
+                .hideScrollBackground()
+                
+            }
             .navigationTitle(Text("Préférences"))
         }
-            }
     }
-    
-    struct SettingsView_Previews: PreviewProvider {
-        static var previews: some View {
-            SettingsView()
-        }
+}
+
+struct SettingsView_Previews: PreviewProvider {
+    static var previews: some View {
+        SettingsView()
     }
+}

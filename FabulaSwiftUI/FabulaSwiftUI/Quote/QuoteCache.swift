@@ -7,7 +7,7 @@
 
 import Foundation
 
-class QuoteCache {
+final class QuoteCache {
     
     static let shared = QuoteCache()
     let cache = NSCache<NSString, QuoteState>()

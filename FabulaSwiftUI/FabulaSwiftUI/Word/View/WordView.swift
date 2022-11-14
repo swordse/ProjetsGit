@@ -30,11 +30,11 @@ struct WordView: View {
                 .padding(.bottom)
             HStack {
                 Spacer()
-            Text(word.example)
-                .italic()
-                .lineSpacing(5)
-                .multilineTextAlignment(.center)
-                .fixedSize(horizontal: false, vertical: true)
+                Text(word.example)
+                    .italic()
+                    .lineSpacing(5)
+                    .multilineTextAlignment(.center)
+                    .fixedSize(horizontal: false, vertical: true)
                 Spacer()
             }
             .padding(.bottom)
@@ -63,7 +63,7 @@ struct WordView: View {
         }
     }
     
-    func favButtonTapped(word: Word) {
+    private func favButtonTapped(word: Word) {
         if word.isFavorite {
             dataController.addWordFav(word: word)
         } else {

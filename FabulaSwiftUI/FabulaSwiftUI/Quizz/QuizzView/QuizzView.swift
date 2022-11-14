@@ -46,15 +46,15 @@ struct QuizzView: View {
                                 .font(.system(size: 20, weight: .bold, design: .default))
                                 .foregroundColor(Color.white)
                                 .multilineTextAlignment(.center)
-
-                                ForEach($viewModel.propositions, id: \.self) { $proposition in
-                                    HStack {
-                                        Spacer()
-                                        PropositionView(geo: geo, proposition: $proposition, correctAnswer: $viewModel.correctAnswer, selectedProposition: $selectedProposition, buttonIsDisabled: $viewModel.buttonIsDisabled)
-                                            .padding(.vertical, 10)
-                                        Spacer()
-                                    }
+                            
+                            ForEach($viewModel.propositions, id: \.self) { $proposition in
+                                HStack {
+                                    Spacer()
+                                    PropositionView(geo: geo, proposition: $proposition, correctAnswer: $viewModel.correctAnswer, selectedProposition: $selectedProposition, buttonIsDisabled: $viewModel.buttonIsDisabled, playerHasAnswered: $viewModel.playerHasAnswered)
+                                        .padding(.vertical, 10)
+                                    Spacer()
                                 }
+                            }
                             
                         }
                         .opacity(opacity)

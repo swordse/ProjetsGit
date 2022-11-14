@@ -165,7 +165,6 @@ final class AuthSession: FireAuthSession {
         } catch {
             print(error.localizedDescription)
         }
-        
     }
     
     func logOut() {
@@ -190,7 +189,6 @@ final class AuthSession: FireAuthSession {
         
         do {
             try await user?.delete()
-            //        UserDefaultsManager.manager.isConnected = false
             return ((title: "Succès", message: "Votre compte a été supprimé."), nil)
         } catch {
             print(error.localizedDescription)

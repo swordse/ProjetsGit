@@ -7,7 +7,7 @@
 
 import Foundation
 
-class WordCache {
+final class WordCache {
     
     static let shared = WordCache()
     let key: NSString = "Word"

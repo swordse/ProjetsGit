@@ -2,37 +2,37 @@
     "categories": [{
             "categorieName": "Histoire",
             "themes": [
-                "Rois", "Assassins", "Dates historiques (France)", "Le Moyen-Age"
+                "Rois", "Assassins", "Dates historiques (France)", "Le Moyen-Age", "Les merveilles antiques"
             ]
         },{
             "categorieName": "Géographie",
             "themes": [
-                "Capitales Européennes", "Fleuves, Rivières (France)", "Capitales Africaines", "Montagnes"
+                "Capitales Européennes", "Fleuves, Rivières (France)", "Capitales Africaines", "Montagnes", "Paris"
             ]
         },{
             "categorieName": "Science",
             "themes": [
-                "Volcan", "Astronomie", "Chercheurs/Médecins"
+                "Volcan", "Astronomie", "Chercheurs/Médecins", "Chimie"
             ]
         },{
             "categorieName": "Nature",
             "themes": [
-                "Grand dauphin", "Les océans", "La Terre", "Les félins"
+                "Grand dauphin", "Les océans", "La Terre", "Les félins", "La météo"
             ]
         },{
             "categorieName": "Art",
             "themes": [
-                "Picasso", "Impressionisme", "Fauvisme", "Qui a peint"
+                "Picasso", "Impressionisme", "Fauvisme", "Qui a peint", "Sculptures"
             ]
         },{
             "categorieName": "Loisirs",
-            "themes": ["Films d'action", "Séries télés", "Les Rolling Stones"]
+            "themes": ["Films d'action", "Séries télés", "Les Rolling Stones", "Tintin", "Les Beatles"]
         },{
             "categorieName": "Littérature",
             "themes": ["Hugo", "Maupassant", "Oscar Wilde", "Emile Zola", "Gustave Flaubert"]
         },{
             "categorieName": "Sport",
-            "themes": ["Basket", "Football"]
+            "themes": ["Basket", "Football", "Tennis", "Sports collectifs", "Golf"]
         }
     ]
 }

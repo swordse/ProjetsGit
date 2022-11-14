@@ -7,7 +7,7 @@
 
 import Foundation
 
-class SettingsScoreViewModel: ObservableObject {
+final class SettingsScoreViewModel: ObservableObject {
     
     @Published var gameScoreByCategory = [String: [GameScore]]()
     @Published var categories =  [String]()

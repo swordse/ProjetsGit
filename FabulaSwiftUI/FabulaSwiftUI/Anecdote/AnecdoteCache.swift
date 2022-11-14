@@ -24,4 +24,6 @@ class AnecdoteCache {
         let NSStringKey = NSString(string: key)
         return cache.setObject(anecdoteState, forKey: NSStringKey)
     }
+    
+   
 }

@@ -87,7 +87,6 @@ struct HomeQuizzView: View {
                         .listStyle(.plain)
                     }
                 }
-                
             }
         }
         .navigationTitle("Quizz")
@@ -99,7 +98,7 @@ struct HomeQuizzView: View {
         }
     }
     
-    func checkIfThemeHasScore(theme: String) -> Int? {
+    private func checkIfThemeHasScore(theme: String) -> Int? {
         for gameScore in viewModel.gameScores {
             if gameScore.theme == theme {
                 return Int(gameScore.score)

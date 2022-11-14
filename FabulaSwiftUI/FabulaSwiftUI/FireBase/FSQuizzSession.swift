@@ -42,7 +42,6 @@ final class QuizzSession: FSQuizzSession {
         
         do {
             let callResult = try await docRef.getDocuments()
-//            let quizzs: [Quizz] = callResult.documents.map { document in
             guard let result = callResult.documents.first?.data() else { return (nil, NetworkError.errorOccured) }
             let questions = result["questions"] as! [String]
             let propositions = result["propositions"] as! [[String: String]]
@@ -66,19 +65,6 @@ final class QuizzSession: FSQuizzSession {
             } catch {
                         return(nil, NetworkError.errorOccured)
                     }
-        
-//        let docRef = dataBase.collection(dataRequest).whereField("title", isEqualTo: title)
-//
-//        do {
-//            let callResult = try await docRef.getDocuments()
-//            let quizzs: [Quizz] = callResult.documents.map { queryDocumentSnapshot in
-//                let result = queryDocumentSnapshot.data()
-//                return Quizz(question: result["question"] as! String, answer: result["response"] as! String, propositions: result["propositions"] as! [String])
-//            }
-//            return(quizzs, nil)
-//        } catch {
-//            return(nil, NetworkError.errorOccured)
-//        }
     }
     
 }

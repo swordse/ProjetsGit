@@ -8,7 +8,7 @@
 import Foundation
 import Firebase
 
-class WordService {
+final class WordService {
     
     let session: FSWordSession
     

@@ -24,11 +24,11 @@ struct ButtonView: View {
                     .padding(.trailing)
             }
         }
-            .background(
-                RoundedRectangle(cornerRadius: 10, style: .circular)
-                    .fill(color)
-                    .frame(height: 40)
-            )
+        .background(
+            RoundedRectangle(cornerRadius: 10, style: .circular)
+                .fill(color)
+                .frame(height: 40)
+        )
     }
 }
 

@@ -51,18 +51,17 @@ class Authentification: ObservableObject {
         let _ = authContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
         switch authContext.biometryType {
         case .none:
-                return .none
+            return .none
         case .touchID:
-                return .touch
+            return .touch
         case .faceID:
-                return .face
+            return .face
         @unknown default:
-                return .none
+            return .none
         }
     }
     
     func requestBiometricUnlock(completion: @escaping (Result<Credentials, AuthentificationError>) -> Void) {
-//        let credentials: Credentials? = Credentials(password: "motdepasse", userName: "username")
         let credentials = KeychainStorage.getCredentials()
         
         guard let credentials = credentials else {

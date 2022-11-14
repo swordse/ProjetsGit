@@ -32,25 +32,6 @@ enum QuoteCategoriesMenu: String, CaseIterable, ScrollCategories {
     case sport = "Sport"
     case temps = "Temps"
     case travail = "Travail"
-    case vie = "Vie"
-    
-    
-    
-    
-    
-//    case absurde = "Absurde"
-//    case amour = "Amour"
-//    case amitie = "Amitié"
-//    case exigence = "Exigence"
-//    case femme = "Femme"
-//    case homme = "Homme"
-//    case impossible = "Impossible"
-//    case monde = "Monde"
-//    case mort = "Mort"
-//    case success = "Succès"
-//    case temps = "Temps"
-//    case travail = "Travail"
-//    case vie = "Vie"
-    
+    case vie = "Vie"  
 
 }

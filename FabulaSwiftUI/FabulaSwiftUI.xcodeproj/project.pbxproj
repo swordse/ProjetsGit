@@ -74,7 +74,6 @@
 		47661410286364F600F22B43 /* SubmitProposalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4766140F286364F600F22B43 /* SubmitProposalView.swift */; };
 		476614122863AEEA00F22B43 /* SubmitForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 476614112863AEEA00F22B43 /* SubmitForm.swift */; };
 		476E154F29105FBD002F9F5F /* missed2.json in Resources */ = {isa = PBXBuildFile; fileRef = 476E154E29105FBD002F9F5F /* missed2.json */; };
-		478A9BD328FDC80300A447D8 /* missed.json in Resources */ = {isa = PBXBuildFile; fileRef = 478A9BD228FDC80300A447D8 /* missed.json */; };
 		47A162A228E2E96F00CAA89B /* empty-state.json in Resources */ = {isa = PBXBuildFile; fileRef = 47A162A128E2E96F00CAA89B /* empty-state.json */; };
 		47A162A528E3000500CAA89B /* LegalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A162A428E3000500CAA89B /* LegalView.swift */; };
 		47A2DE3128D5028200173DDB /* LottieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47A2DE3028D5028200173DDB /* LottieView.swift */; };
@@ -151,8 +150,6 @@
 		47EC85452864B56D007B7AEF /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC85442864B56D007B7AEF /* MainView.swift */; };
 		47EC854928662863007B7AEF /* View+HideKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47EC854828662863007B7AEF /* View+HideKeyboard.swift */; };
 		47F614A328DDEFE30054CAE2 /* trophy.json in Resources */ = {isa = PBXBuildFile; fileRef = 47F614A228DDEFE30054CAE2 /* trophy.json */; };
-		47F614A528DDF0680054CAE2 /* login-and-sign-up.json in Resources */ = {isa = PBXBuildFile; fileRef = 47F614A428DDF0680054CAE2 /* login-and-sign-up.json */; };
-		47F614A728E0B87E0054CAE2 /* stars.json in Resources */ = {isa = PBXBuildFile; fileRef = 47F614A628E0B87D0054CAE2 /* stars.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -221,7 +218,6 @@
 		4766140F286364F600F22B43 /* SubmitProposalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitProposalView.swift; sourceTree = "<group>"; };
 		476614112863AEEA00F22B43 /* SubmitForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmitForm.swift; sourceTree = "<group>"; };
 		476E154E29105FBD002F9F5F /* missed2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missed2.json; sourceTree = "<group>"; };
-		478A9BD228FDC80300A447D8 /* missed.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = missed.json; sourceTree = "<group>"; };
 		47A162A128E2E96F00CAA89B /* empty-state.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "empty-state.json"; sourceTree = "<group>"; };
 		47A162A428E3000500CAA89B /* LegalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegalView.swift; sourceTree = "<group>"; };
 		47A2DE3028D5028200173DDB /* LottieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LottieView.swift; sourceTree = "<group>"; };
@@ -294,8 +290,6 @@
 		47EC85442864B56D007B7AEF /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		47EC854828662863007B7AEF /* View+HideKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "View+HideKeyboard.swift"; sourceTree = "<group>"; };
 		47F614A228DDEFE30054CAE2 /* trophy.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = trophy.json; sourceTree = "<group>"; };
-		47F614A428DDF0680054CAE2 /* login-and-sign-up.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "login-and-sign-up.json"; sourceTree = "<group>"; };
-		47F614A628E0B87D0054CAE2 /* stars.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = stars.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -342,17 +336,17 @@
 				47A39E0829100CB500AB257A /* FabulaSwiftUI.entitlements */,
 				4701DCE428466E6F0069B8AE /* FabulaSwiftUIApp.swift */,
 				47B8948D28943C7700C29A2A /* ReusableViews */,
-				47D62231288EADAA00E242F0 /* Add */,
 				47EC85442864B56D007B7AEF /* MainView.swift */,
 				47BC692D2885624700258032 /* MainTabView.swift */,
 				47A2DE3D28D9F53E00173DDB /* UserNavBar.swift */,
+				47D62231288EADAA00E242F0 /* Add */,
 				4786E8C628EF69EB000F473E /* Welcome */,
 				4701DCFE2847A1790069B8AE /* Home */,
+				471FFBD3286091F40028A3AA /* UserAccount */,
 				4701DCFD2847A15E0069B8AE /* Anecdote */,
 				4722A0892854D94400436214 /* Quote */,
 				47553B58286B335000D86B04 /* Word */,
 				47553B6F286DC70800D86B04 /* Quizz */,
-				471FFBD3286091F40028A3AA /* UserAccount */,
 				4766140E286364E700F22B43 /* Submit */,
 				47C600402875BB040031D8CA /* Settings */,
 				47AF3F27284E889E00B7FCFC /* Core Data */,
@@ -609,11 +603,8 @@
 		479ED71C28F1E8DD00DBB44D /* LottieFiles */ = {
 			isa = PBXGroup;
 			children = (
-				47F614A628E0B87D0054CAE2 /* stars.json */,
 				47F614A228DDEFE30054CAE2 /* trophy.json */,
 				476E154E29105FBD002F9F5F /* missed2.json */,
-				478A9BD228FDC80300A447D8 /* missed.json */,
-				47F614A428DDF0680054CAE2 /* login-and-sign-up.json */,
 				47A162A128E2E96F00CAA89B /* empty-state.json */,
 			);
 			path = LottieFiles;
@@ -675,6 +666,9 @@
 			isa = PBXGroup;
 			children = (
 				47D62232288EADBD00E242F0 /* BannerAd.swift */,
+				47D86BA028913D1100A28E62 /* BannerAdVC.swift */,
+				47D86BA42891518800A28E62 /* Banner.swift */,
+				47D86BA228914F0500A28E62 /* BannerAddView.swift */,
 			);
 			path = BannerAd;
 			sourceTree = "<group>";
@@ -682,6 +676,8 @@
 		47B894852892D35F00C29A2A /* InterstitialAdd */ = {
 			isa = PBXGroup;
 			children = (
+				47CB202928EC8CB400A79F21 /* Interstitial.swift */,
+				47B894822892CD4B00C29A2A /* FullScreenModifier.swift */,
 				47B78D5228D39CA4002F59A8 /* IntestitialAddNew */,
 				47B8947E2892CB6400C29A2A /* InterstitialAd.swift */,
 				47B894802892CC0200C29A2A /* InterstitialAdView.swift */,
@@ -858,12 +854,7 @@
 			children = (
 				47B894862892D38200C29A2A /* RewardAd */,
 				47B894842892D34700C29A2A /* BannerAd */,
-				47B894822892CD4B00C29A2A /* FullScreenModifier.swift */,
 				47B894852892D35F00C29A2A /* InterstitialAdd */,
-				47D86BA028913D1100A28E62 /* BannerAdVC.swift */,
-				47D86BA42891518800A28E62 /* Banner.swift */,
-				47D86BA228914F0500A28E62 /* BannerAddView.swift */,
-				47CB202928EC8CB400A79F21 /* Interstitial.swift */,
 			);
 			path = Add;
 			sourceTree = "<group>";
@@ -965,16 +956,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				478A9BD328FDC80300A447D8 /* missed.json in Resources */,
 				47F614A328DDEFE30054CAE2 /* trophy.json in Resources */,
 				47553B7E286E155800D86B04 /* quizzs.json in Resources */,
 				47A162A228E2E96F00CAA89B /* empty-state.json in Resources */,
 				476E154F29105FBD002F9F5F /* missed2.json in Resources */,
 				47553B7C286E144800D86B04 /* categories.json in Resources */,
-				47F614A528DDF0680054CAE2 /* login-and-sign-up.json in Resources */,
 				4701DCEC28466E710069B8AE /* Preview Assets.xcassets in Resources */,
 				475F22D22847C2980058B030 /* GoogleService-Info.plist in Resources */,
-				47F614A728E0B87E0054CAE2 /* stars.json in Resources */,
 				47C1F64C28F7481500BAC859 /* Launch Screen.storyboard in Resources */,
 				4701DCE928466E710069B8AE /* Assets.xcassets in Resources */,
 			);
@@ -1239,7 +1227,7 @@
 				CODE_SIGN_ENTITLEMENTS = FabulaSwiftUI/FabulaSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"FabulaSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = SA2BACU3UM;
 				ENABLE_PREVIEWS = YES;
@@ -1281,7 +1269,7 @@
 				CODE_SIGN_ENTITLEMENTS = FabulaSwiftUI/FabulaSwiftUI.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 4;
+				CURRENT_PROJECT_VERSION = 7;
 				DEVELOPMENT_ASSET_PATHS = "\"FabulaSwiftUI/Preview Content\"";
 				DEVELOPMENT_TEAM = SA2BACU3UM;
 				ENABLE_PREVIEWS = YES;

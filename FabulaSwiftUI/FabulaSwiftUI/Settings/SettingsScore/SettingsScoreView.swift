@@ -10,11 +10,9 @@ import SwiftUI
 struct SettingsScoreView: View {
     
     @StateObject var viewModel = SettingsScoreViewModel()
-    @State private var score = 0.0
-    
     
     var body: some View {
-
+        
         ZStack {
             Color.background
                 .ignoresSafeArea()
@@ -23,7 +21,6 @@ struct SettingsScoreView: View {
                     .multilineTextAlignment(.center)
                     .padding()
                     .padding(.bottom, 60)
-                
             }
             else {
                 Form {
@@ -31,11 +28,11 @@ struct SettingsScoreView: View {
                         Section {
                             ForEach(viewModel.gameScoreByCategory[category]!, id: \.theme) { gameScore in
                                 VStack {
-                                HStack {
-                                Text("\(gameScore.theme!):")
-                                    Spacer()
-                                Text("\(gameScore.score)/10")
-                                }
+                                    HStack {
+                                        Text("\(gameScore.theme!):")
+                                        Spacer()
+                                        Text("\(gameScore.score)/10")
+                                    }
                                     ProgressView(value: Double(gameScore.score), total: 10)
                                 }
                             }
@@ -43,20 +40,17 @@ struct SettingsScoreView: View {
                             Text(category.uppercased())
                         }
                         .listRowBackground(Color.lightBackground)
-
                     }
                     .listRowBackground(Color.lightBackground)
                 }
-                    .hideScrollBackground()
-            .navigationTitle("Scores")
+                .hideScrollBackground()
+                .navigationTitle("Scores")
             }
         }.navigationViewStyle(.stack)
             .onAppear {
                 viewModel.getGameScores()
-        }
+            }
     }
-        
-            
 }
 
 struct SettingsScoreView_Previews: PreviewProvider {

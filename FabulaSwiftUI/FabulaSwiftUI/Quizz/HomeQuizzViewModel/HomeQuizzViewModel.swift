@@ -22,7 +22,7 @@ enum JsonData: String {
 
 extension HomeQuizzView {
     
-    @MainActor class HomeQuizzViewModel: ObservableObject {
+    @MainActor final class HomeQuizzViewModel: ObservableObject {
         
         var quizzService = QuizzService()
         var categoriesName = [String]()
@@ -42,7 +42,7 @@ extension HomeQuizzView {
         // theme contains name of each quizz by category
         @Published var theme = [String: [String]]()
         @Published var gameScores = [GameScore]()
-        @Published var networkError = false
+        //        @Published var networkError = false
         @Published var quizzs = [Quizz]()
         @Published var errorOccured = false
         
@@ -75,11 +75,10 @@ extension HomeQuizzView {
                     self?.theme = self?.themeNames ?? [:]
                 }
             }
-            
         }
         
         // retrieve category and theme from Json Files
-        func getJsonData() {
+        private func getJsonData() {
             let categorieTitle: CategorieTitle = Bundle.main.decode(JsonData.categories.string)
             for categorie in categorieTitle.categories {
                 let themeName = categorie.categorieName
@@ -92,7 +91,7 @@ extension HomeQuizzView {
         }
         
         // based on category name, create a QuizzCategoryInfo to have requested info to display (color, image...)
-        func getCategoryInfo(category: [String]) {
+        private func getCategoryInfo(category: [String]) {
             var quizzCategoryInfo: QuizzCategoryInfo?
             var quizzCategoryInfos = [QuizzCategoryInfo]()
             for item in category {
@@ -125,7 +124,7 @@ extension HomeQuizzView {
         }
         
         //  retrieve quizz for TestQuizz
-        func retrieveQuizz(theme: String) {
+        private func retrieveQuizz(theme: String) {
             if jsonThemes.contains(theme) {
                 retrieveJsonQuizz(theme: theme)
             } else {
@@ -133,7 +132,7 @@ extension HomeQuizzView {
             }
         }
         
-        func getQuizzsFireStore(theme: String)  {
+        private func getQuizzsFireStore(theme: String)  {
             
             Task { () -> [Quizz] in
                 do {
@@ -148,14 +147,14 @@ extension HomeQuizzView {
         }
         
         // retrieve quizz for specific theme in JSON file
-        func retrieveJsonQuizz(theme: String) {
+        private func retrieveJsonQuizz(theme: String) {
             let allQuizzs: [String: AllQuizzs] = Bundle.main.decode(JsonData.quizzs.string)
             guard let quizzs = allQuizzs[theme]?.quizzs else { return }
             self.quizzs = quizzs
         }
         
         // retrieve game score to show in the theme button
-        func retrieveGameScore() {
+        private func retrieveGameScore() {
             DataController.shared.fetchGameScore()
             gameScores = DataController.shared.gameScores
         }

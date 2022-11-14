@@ -22,13 +22,13 @@ struct ScoreView: View {
                     .frame(height: 200)
             }
             Text("\(score) réponses correctes")
-                           .font(.title3)
-                           .fontWeight(.bold)
-                           .multilineTextAlignment(.center)
+                .font(.title3)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
             Text("\(10 - score) réponses incorrectes")
-                           .font(.title3)
-                           .fontWeight(.bold)
-                           .multilineTextAlignment(.center)
+                .font(.title3)
+                .fontWeight(.bold)
+                .multilineTextAlignment(.center)
         }
     }
 }

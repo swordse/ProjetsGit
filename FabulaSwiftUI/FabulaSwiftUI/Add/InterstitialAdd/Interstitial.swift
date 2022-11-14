@@ -15,6 +15,10 @@ final class Interstitial: NSObject, GADFullScreenContentDelegate {
     private var interstitial: GADInterstitialAd?
     private let adUnitID = "ca-app-pub-3940256099942544/4411468910"
     
+//    "ca-app-pub-8419450680227145/8592876432"
+    
+    
+    
     override init() {
         super.init()
         loadInterstitial()

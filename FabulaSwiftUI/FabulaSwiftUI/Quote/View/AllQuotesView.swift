@@ -27,6 +27,9 @@ struct AllQuotesView: View {
                 ScrollCategoryView(selectedCategory: $selectedCategory, categoryColor: Color.purple)
                 List {
                     Section {
+                        if selectedCategory != .favoris && viewModel.quotes.isEmpty {
+                            CustomProgressView()
+                        }
                         if selectedCategory == QuoteCategoriesMenu.favoris && viewModel.quotes.isEmpty {
                             Spacer()
                             LottieView(name: "empty-state", numberOfRepeat: 1, height: 100)
@@ -36,9 +39,6 @@ struct AllQuotesView: View {
                                 .frame(maxWidth: .infinity, alignment: .center)
                                 .listRowBackground(Color.background)
                         }
-//                        else if viewModel.quotes.isEmpty {
-//                                CustomProgressView()
-//                        }
                         else {
                             ForEach($viewModel.quotes, id: \.text) { $quote in
                                 QuoteView(quote: $quote)
@@ -52,9 +52,6 @@ struct AllQuotesView: View {
                 .refreshView(action: {
                     await viewModel.refresh(filterBy: selectedCategory)
                 })
-//                .refreshable(action: {
-//                    viewModel.refresh(filterBy: selectedCategory)
-//                })
                 .padding(.bottom, 30)
                 .hideScrollBackground()
                 .listStyle(.plain)

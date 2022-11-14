@@ -28,8 +28,6 @@ class DataController: ObservableObject {
     }
     
     // MARK: Anecdote
-    
-    
     func fetchFavAnecdote() {
         let request = NSFetchRequest<AnecdoteFav>(entityName: "AnecdoteFav")
         do {
@@ -61,7 +59,7 @@ class DataController: ObservableObject {
         saveData()
     }
     
-    func saveData() {
+    private func saveData() {
         do {
             try container.viewContext.save()
             fetchFavAnecdote()
@@ -113,7 +111,7 @@ class DataController: ObservableObject {
         saveQuoteFav()
     }
     
-    func saveQuoteFav() {
+    private func saveQuoteFav() {
         do {
             try container.viewContext.save()
             fetchQuoteFav()
@@ -128,19 +126,19 @@ class DataController: ObservableObject {
         saveQuoteFav()
     }
     
-    func checkIfIsFavorite(quote: Quote) -> Bool {
-        let request = NSFetchRequest<QuoteFav>(entityName: "QuoteFav")
-        request.predicate = NSPredicate(format: "text == %@", quote.text)
-        do {
-        let result = try container.viewContext.fetch(request)
-            if result.isEmpty { return false }
-            else { return true }
-        }
-        catch {
-            print("Error when fetch core data: \(error.localizedDescription)")
-            return false
-        }
-    }
+//    func checkIfIsFavorite(quote: Quote) -> Bool {
+//        let request = NSFetchRequest<QuoteFav>(entityName: "QuoteFav")
+//        request.predicate = NSPredicate(format: "text == %@", quote.text)
+//        do {
+//        let result = try container.viewContext.fetch(request)
+//            if result.isEmpty { return false }
+//            else { return true }
+//        }
+//        catch {
+//            print("Error when fetch core data: \(error.localizedDescription)")
+//            return false
+//        }
+//    }
     
     //MARK: Words
     
@@ -165,7 +163,7 @@ class DataController: ObservableObject {
         saveWordFav()
     }
     
-    func saveWordFav() {
+    private func saveWordFav() {
         do {
             try container.viewContext.save()
             fetchWordFav()
@@ -207,7 +205,7 @@ class DataController: ObservableObject {
         saveGameScore()
     }
     
-    func saveGameScore() {
+    private func saveGameScore() {
         do {
             try container.viewContext.save()
             fetchGameScore()
@@ -217,12 +215,12 @@ class DataController: ObservableObject {
         }
     }
     
-    func deleteGameScore(gameScore: GameScore) {
+    private func deleteGameScore(gameScore: GameScore) {
         container.viewContext.delete(gameScore)
         saveGameScore()
     }
 
-    func findTheme(theme: String) -> GameScore? {
+    private func findTheme(theme: String) -> GameScore? {
         
         if gameScores.isEmpty { return nil }
         

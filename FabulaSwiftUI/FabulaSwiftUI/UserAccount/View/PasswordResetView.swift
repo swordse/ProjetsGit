@@ -46,7 +46,6 @@ struct PasswordResetView: View {
                         } label: {
                             Image(systemName: "x.circle.fill")
                                 .foregroundColor(.white)
-                                .font(.caption)
                         }
                     }
                 }

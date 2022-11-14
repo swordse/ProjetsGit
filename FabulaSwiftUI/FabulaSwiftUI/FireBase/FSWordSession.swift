@@ -24,7 +24,7 @@ protocol FSWordSession {
 }
 
 final class WordSession: FSWordSession {
-   
+    
     let dataBase = Firestore.firestore()
     
     private var limitNumber = Constant.numberOfData
@@ -86,7 +86,7 @@ final class WordSession: FSWordSession {
         // if number of snapshot < 3, go back implies to restart from start
         if currentSnapshots.count < 3 {
             currentSnapshots.removeAll()
-         docRef = dataBase.collection(DataRequest.words.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
+            docRef = dataBase.collection(DataRequest.words.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
             
             // else we have to remove the 2 last (the last obtained at the end of each request)
         } else {
@@ -94,10 +94,10 @@ final class WordSession: FSWordSession {
             currentSnapshots.removeLast()
             
             if let snapshot = currentSnapshots.last  {
-                    docRef = dataBase.collection(DataRequest.words.rawValue).order(by: "date", descending: true).limit(to: limitNumber).start(atDocument: snapshot!)
+                docRef = dataBase.collection(DataRequest.words.rawValue).order(by: "date", descending: true).limit(to: limitNumber).start(atDocument: snapshot!)
             }
             else {
-                    docRef = dataBase.collection(DataRequest.words.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
+                docRef = dataBase.collection(DataRequest.words.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
             }
         }
         
@@ -111,7 +111,7 @@ final class WordSession: FSWordSession {
             
             let lastSnapshot = callResult.documents.last
             currentSnapshots.append(lastSnapshot)
-
+            
             return (words: words, snapshots: currentSnapshots)
         }
         catch {
@@ -129,8 +129,8 @@ final class WordSession: FSWordSession {
         }
         guard allWords.count > 0 else { return [] }
         return allWords[0]
-        }
-       
+    }
+    
     func getSpecificWord(word: String) async throws -> Word {
         let docRef = dataBase.collection(DataRequest.words.rawValue).whereField("word", isEqualTo: word)
         
@@ -144,7 +144,7 @@ final class WordSession: FSWordSession {
         if words.isEmpty {
             throw NetworkError.errorOccured
         } else {
-        return words.first!
+            return words.first!
         }
     }
     

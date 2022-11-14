@@ -21,7 +21,7 @@ struct TextEditorBackGround: ViewModifier {
                 }
                 .background(Color.lightBackground)
         }
-    
+        
     }
 }
 
@@ -87,24 +87,21 @@ struct TintOrAccentColor: ViewModifier {
             content.accentColor(color)
         }
     }
-    
-    
 }
 
 struct HideScrollBackground: ViewModifier {
     
     func body(content: Content) -> some View {
-            if #available(iOS 16.0, *) {
-                content
-                    .scrollContentBackground(.hidden)
-            } else {
-                content.background(Color.background)
-            }
+        if #available(iOS 16.0, *) {
+            content
+                .scrollContentBackground(.hidden)
+        } else {
+            content.background(Color.background)
+        }
     }
 }
 
 extension View {
-
     
     func textEditorBackGround() -> some View {
         modifier(TextEditorBackGround())
@@ -117,7 +114,7 @@ extension View {
     func hideRowSeparator() -> some View {
         modifier(HiddeRowSeparator())
     }
-
+    
     
     func rowSeparatorColor(color: Color) -> some View {
         modifier(RowSeparatorColor(color: color))

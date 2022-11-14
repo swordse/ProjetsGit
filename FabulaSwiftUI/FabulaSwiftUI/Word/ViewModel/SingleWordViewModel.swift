@@ -9,34 +9,33 @@ import Foundation
 
 extension SingleWordView {
     
-@MainActor class SingleWordViewModel: ObservableObject {
-    
-    @Published var specificWord = Word()
-    @Published var errorOccured = false
-    
-    let service = WordService()
-    let dataController = DataController.shared
-    
-    func getSpecificWord(word: String) {
+    @MainActor final class SingleWordViewModel: ObservableObject {
         
-        Task {
-            do {
-               let word = try await service.getSpecificWord(word: word)
-                updateWordFav(word: word)
-            } catch NetworkError.errorOccured {
-                errorOccured = true
-            } catch {
-                errorOccured = true
+        @Published var specificWord = Word()
+        @Published var errorOccured = false
+        
+        let service = WordService()
+        let dataController = DataController.shared
+        
+        func getSpecificWord(word: String) {
+            Task {
+                do {
+                    let word = try await service.getSpecificWord(word: word)
+                    updateWordFav(word: word)
+                } catch NetworkError.errorOccured {
+                    errorOccured = true
+                } catch {
+                    errorOccured = true
+                }
             }
         }
-    }
-    
-    func updateWordFav(word: Word) {
-        dataController.fetchWordFav()
         
-        var newWord = word
-        
-        let wordIsFav = dataController.savedFavWords.contains { wordFav in
+        private func updateWordFav(word: Word) {
+            dataController.fetchWordFav()
+            
+            var newWord = word
+            
+            let wordIsFav = dataController.savedFavWords.contains { wordFav in
                 wordFav.word == word.word
             }
             if wordIsFav {

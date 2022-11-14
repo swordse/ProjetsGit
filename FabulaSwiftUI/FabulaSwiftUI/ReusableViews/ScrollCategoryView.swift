@@ -14,29 +14,6 @@ struct ScrollCategoryView<T: Hashable & RawRepresentable & CaseIterable>: View w
     
     var body: some View {
         
-//        ScrollView(.horizontal, showsIndicators: false) {
-//            LazyHStack {
-//                ForEach(Array(T.allCases), id: \.self ) { categorie in
-//                        Button {
-//                            selectedCategory = categorie
-//                        } label: {
-//                                Text(categorie.rawValue)
-////                                .fontWeight(.medium)
-//                                    .foregroundColor(.white)
-//                                    .frame(width: 50, height: 10)
-//                                    .background(categoryColor)
-//                                    .clipShape(RoundedRectangle(cornerRadius: 15))
-//                                    .overlay(RoundedRectangle(cornerRadius: 15)
-//                                        .stroke(selectedCategory == categorie ? .white : categoryColor, lineWidth: 1))
-//                    }
-//                    .padding(.vertical, 1)
-//                    .padding(.leading, 5)
-//                }
-////                .hideRowSeparator()
-//            }
-//        }
-//            .background(Color.background.opacity(0.7))
-        
         ScrollView(.horizontal, showsIndicators: false) {
             LazyHStack {
                 ForEach(Array(T.allCases), id: \.self ) { categorie in

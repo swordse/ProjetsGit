@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class LegalData {
+final class LegalData {
     var title: String
     var url: String
     
@@ -19,8 +19,6 @@ class LegalData {
 }
 struct LegalView: View {
     
-//    var settingTitleText: [SettingTitleText]
-//    var navTitle: String
     let legalDatas = [LegalData(title: "Conditions générales d'utilisation", url: "https://www.sites.google.com/view/appfabula/accueil/conditions-générales-dutilisation"), LegalData(title:"Données personnelles", url: "https://www.sites.google.com/view/appfabula/accueil/données-personnelles"), LegalData(title:"Règles de soumission", url: "https://www.sites.google.com/view/appfabula/accueil/règles-de-soumission"), LegalData(title: "Règles relatives aux commentaires", url: "https://www.sites.google.com/view/appfabula/accueil/règles-soumission-des-commentaires"), LegalData(title: "Licence Apple", url: "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/")]
     
     var body: some View {

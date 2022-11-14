@@ -50,3 +50,23 @@ class AnecdoteState {
     }
 }
 
+extension AnecdoteState: NSDiscardableContent {
+    func beginContentAccess() -> Bool {
+        true
+    }
+    
+    func endContentAccess() {
+        
+    }
+    
+    func discardContentIfPossible() {
+        
+    }
+    
+    func isContentDiscarded() -> Bool {
+        false
+    }
+    
+    
+}
+

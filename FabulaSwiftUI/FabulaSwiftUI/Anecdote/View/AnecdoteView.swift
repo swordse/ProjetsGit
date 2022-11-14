@@ -18,57 +18,50 @@ struct AnecdoteView: View {
     @State var anecdote: Anecdote
     
     var body: some View {
-            LazyVStack {
-                HStack(alignment: .firstTextBaseline) {
-                    VStack(alignment: .leading) {
-                        Text(anecdote.title)
-                            .font(.headline)
-                            .foregroundColor(.primary)
-                            .padding([.top, .bottom], 5)
-                        Rectangle()
-                            .frame(width: 60,height: 0.5, alignment: .leading)
-                            .foregroundColor(.pink)
-                        Text(anecdote.category.rawValue)
-                            .font(.body)
-                            .foregroundColor(.secondary)
-                            .padding(.bottom, 5)
-                    }
-                    Spacer()
-                    if isDetail{
-                        Button {
-                            anecdote.isFavorite.toggle()
-                            favButtonTapped(anecdote: anecdote)
-                        } label: {
-                            Image(systemName: anecdote.isFavorite ? "suit.heart.fill" : "suit.heart")
-                        }
-                        .buttonStyle(PlainButtonStyle())
-                        .onAppear {
-                            anecdote.isFavorite = checkIfIsFavorite(anecdote: anecdote)
-                        }
-                    } else {
-                        Text(anecdote.date != nil ?
-                             anecdote.date!.transformTimeStampToString() : "")
-                        .font(.caption)
+        LazyVStack {
+            HStack(alignment: .firstTextBaseline) {
+                VStack(alignment: .leading) {
+                    Text(anecdote.title)
+                        .font(.headline)
                         .foregroundColor(.primary)
                         .padding([.top, .bottom], 5)
-                    }
+                    Rectangle()
+                        .frame(width: 60,height: 0.5, alignment: .leading)
+                        .foregroundColor(.pink)
+                    Text(anecdote.category.rawValue)
+                        .font(.body)
+                        .foregroundColor(.secondary)
+                        .padding(.bottom, 5)
                 }
-                Text(anecdote.text
-                    .replacingOccurrences(of: "\\n", with: "\n"))
-//                    .font(.headline)
-//                    .fontWeight(.regular)
-                    .lineLimit(isLineLimit ? 5 : nil)
-                    .lineSpacing(5)
+                Spacer()
+                if isDetail{
+                    Button {
+                        anecdote.isFavorite.toggle()
+                        favButtonTapped(anecdote: anecdote)
+                    } label: {
+                        Image(systemName: anecdote.isFavorite ? "suit.heart.fill" : "suit.heart")
+                    }
+                    .buttonStyle(PlainButtonStyle())
+                    .onAppear {
+                        anecdote.isFavorite = checkIfIsFavorite(anecdote: anecdote)
+                    }
+                } else {
+                    Text(anecdote.date != nil ?
+                         anecdote.date!.transformTimeStampToString() : "")
+                    .font(.caption)
                     .foregroundColor(.primary)
-                    .padding(.top, 5)
-                    .padding(.bottom, 20)
-                    .fixedSize(horizontal: false, vertical: true)
+                    .padding([.top, .bottom], 5)
+                }
             }
-//            .sheet(isPresented: $isShareSheetPresented) {
-//                if let url = URL(string: "https://apps.apple.com/us/app/fabula/id6443920494") {
-//                    ShareSheetView(activityItems: ["Voici une anecdote que j'ai trouvé sur l'application Fabula: \n\(anecdote.text)", url])
-//                }
-//            }
+            Text(anecdote.text
+                .replacingOccurrences(of: "\\n", with: "\n"))
+            .lineLimit(isLineLimit ? 5 : nil)
+            .lineSpacing(5)
+            .foregroundColor(.primary)
+            .padding(.top, 5)
+            .padding(.bottom, 20)
+            .fixedSize(horizontal: false, vertical: true)
+        }
     }
     
     func favButtonTapped(anecdote: Anecdote) {

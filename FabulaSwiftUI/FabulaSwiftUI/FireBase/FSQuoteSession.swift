@@ -26,23 +26,6 @@ final class QuoteSession: FSQuoteSession {
     
     private var limitNumber = Constant.numberOfData
     
-//    func getThemes() async throws -> [String] {
-//        let docRef = dataBase.collection(DataRequest.themesCitation.rawValue)
-//        var themes = [String]()
-//        do {
-//            let callResult = try await docRef.getDocuments()
-//            themes = callResult.documents.compactMap { queryDoc in
-//                let theme = try! queryDoc.data(as: String.self)
-//                return theme
-//            }
-//        }
-//        catch {
-//            print(error)
-//            throw error
-//        }
-//        return themes
-//    }
-    
     func getQuotes(filterBy: QuoteCategoriesMenu?) async throws -> (quotes: [Quote], snapshots: [QueryDocumentSnapshot?]) {
         
         var docRef: Query
@@ -50,7 +33,7 @@ final class QuoteSession: FSQuoteSession {
         if filterBy == nil {
             docRef = dataBase.collection(DataRequest.citations.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
         } else {
-            docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).limit(to: limitNumber)
+            docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
         }
         do {
             let callResult = try await docRef.getDocuments()
@@ -80,7 +63,7 @@ final class QuoteSession: FSQuoteSession {
         var newSnapshots = snapshots
         var docRef : Query
         if filterBy != nil {
-            docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).limit(to: limitNumber).start(atDocument: lastSnapshot)
+            docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).order(by: "date", descending: true).limit(to: limitNumber).start(atDocument: lastSnapshot)
         } else {
             docRef = dataBase.collection(DataRequest.citations.rawValue).order(by: "date", descending: true).limit(to: limitNumber).start(atDocument: lastSnapshot)
         }
@@ -114,7 +97,7 @@ final class QuoteSession: FSQuoteSession {
             if filterBy == nil {
                 docRef = dataBase.collection(DataRequest.citations.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
             } else {
-                docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).limit(to: limitNumber)
+                docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
             }
             // else we have to remove the 2 last (the last obtained at the end of each request)
         } else {
@@ -125,14 +108,14 @@ final class QuoteSession: FSQuoteSession {
                 if filterBy == nil {
                     docRef = dataBase.collection(DataRequest.citations.rawValue).order(by: "date", descending: true).limit(to: limitNumber).start(atDocument: snapshot!)
                 } else {
-                    docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).limit(to: limitNumber).start(atDocument: snapshot!)
+                    docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).order(by: "date", descending: true).limit(to: limitNumber).start(atDocument: snapshot!)
                 }
             }
             else {
                 if filterBy == nil {
                     docRef = dataBase.collection(DataRequest.citations.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
                 } else {
-                    docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).limit(to: limitNumber)
+                    docRef = dataBase.collection(DataRequest.citations.rawValue).whereField("category", isEqualTo: filterBy!.rawValue).order(by: "date", descending: true).limit(to: limitNumber)
                 }
             }
         }

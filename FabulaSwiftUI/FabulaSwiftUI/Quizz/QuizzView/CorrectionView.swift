@@ -20,14 +20,6 @@ struct CorrectionView: View {
                 Color.background
                     .ignoresSafeArea()
                 ScrollView {
-                    
-//                    Text("Correction")
-//                        .font(.title)
-//                        .fontWeight(.bold)
-//                        .frame(maxWidth: .infinity, alignment: .leading)
-//                        .padding(.horizontal)
-//                        .padding(.bottom, 20)
-                    
                     ForEach(0..<quizzs.count, id: \.self) { index in
                         
                         Text(quizzs[index].question)
@@ -61,13 +53,13 @@ struct CorrectionView: View {
             }
             .toolbar {
                 ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
-                        Button {
-                            presentationMode.wrappedValue.dismiss()
-                        } label: {
-                            Image(systemName: "x.circle.fill")
-                        }
+                    Button {
+                        presentationMode.wrappedValue.dismiss()
+                    } label: {
+                        Image(systemName: "x.circle.fill")
                     }
                 }
+            }
         }
         .tintOrAccentColor(color: .white)
     }

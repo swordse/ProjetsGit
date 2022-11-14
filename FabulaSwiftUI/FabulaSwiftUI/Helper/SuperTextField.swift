@@ -23,21 +23,21 @@ struct SuperTextField: View {
     var body: some View {
         ZStack(alignment: .leading) {
             if isLightBlue {
-            Color.lightBackground
-                .cornerRadius(10)
-                .frame(height: 40)
+                Color.lightBackground
+                    .cornerRadius(10)
+                    .frame(height: 40)
                 
             }
             if text.isEmpty { placeholder }
             if isSecured {
                 if isHidden {
-            SecureField("", text: $text, onCommit: commit)
-                .font(.system(size: 20, weight: .bold, design: .monospaced))
-                .textContentType(.password)
-                .autocapitalization(.none)
-                .keyboardType(keyboardType)
-                .disableAutocorrection(true)
-                .padding(.leading, 10)
+                    SecureField("", text: $text, onCommit: commit)
+                        .font(.system(size: 20, weight: .bold, design: .monospaced))
+                        .textContentType(.password)
+                        .autocapitalization(.none)
+                        .keyboardType(keyboardType)
+                        .disableAutocorrection(true)
+                        .padding(.leading, 10)
                 } else {
                     TextField("", text: $text, onEditingChanged: editingChanged, onCommit: commit)
                         .textContentType(textContentType)

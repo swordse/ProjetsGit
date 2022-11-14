@@ -27,8 +27,14 @@ struct SourceView: View {
             
             Button {
                 guard let stringUrl = anecdote.source else { return }
-                guard let url = URL(string: stringUrl) else { return }
-                UIApplication.shared.open(url)
+                if let url = URL(string: stringUrl) {
+                    UIApplication.shared.open(url)
+                } else {
+                    if let validString = stringUrl.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed), let url = URL(string: validString) {
+                        UIApplication.shared.open(url)
+                    }
+                }
+                
             } label: {
                 Text(getShortUrl(stringUrl: anecdote.source))
                     .foregroundColor(.blue)
@@ -39,10 +45,22 @@ struct SourceView: View {
     }
     
     func getShortUrl(stringUrl: String?) -> String {
-        guard stringUrl != nil else { return ""}
-        guard let url = URL(string: stringUrl!) else { return ""}
-        guard let hostUrl = url.host else { return ""}
-        return hostUrl
+        //        guard stringUrl != nil else { return ""}
+        //        guard let url = URL(string: stringUrl!) else { return "lien"}
+        //        guard let hostUrl = url.host else { return "lien"}
+        //        return hostUrl
+        var result = ""
+        
+        if let url = URL(string: stringUrl!) {
+            guard let hostUrl = url.host else { return ""}
+            result = hostUrl
+        } else {
+            if let validString = stringUrl!.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed), let url = URL(string: validString) {
+                guard let hostUrl = url.host else { return ""}
+                result = hostUrl
+            }
+        }
+        return result
     }
 }
 

@@ -9,21 +9,19 @@ import SwiftUI
 
 struct SingleWordView: View {
     
-    @Environment(\.presentationMode) var presentationMode
-
     @StateObject var viewModel = SingleWordViewModel()
     @Binding var wordString: String
     
     var body: some View {
         NavigationView {
-        ZStack {
-            Color.background
-                .ignoresSafeArea()
-            ScrollView {
-                WordView(word: $viewModel.specificWord)
-                    .padding()
+            ZStack {
+                Color.background
+                    .ignoresSafeArea()
+                ScrollView {
+                    WordView(word: $viewModel.specificWord)
+                        .padding()
+                }
             }
-        }
         }.onAppear {
             viewModel.getSpecificWord(word: wordString)
         }

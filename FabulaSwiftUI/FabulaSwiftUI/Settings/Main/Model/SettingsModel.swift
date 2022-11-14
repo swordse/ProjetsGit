@@ -26,6 +26,11 @@ struct SettingsSection {
     var settingsOptions: [SettingsOption]
     
     static var settings: [SettingsSection] = [
+        SettingsSection(sectionTitle: "Favoris", settingsOptions: [
+            SettingsOption(title: "Anecdote", image: Image("book"), iconBackgroundColor: .pink, destination: .toAnecdoteFav),
+            SettingsOption(title: "Citations", image: Image("quote"), iconBackgroundColor: .purple, destination: .toCitationFav),
+            SettingsOption(title: "Mot du jour", image: Image("bubble"), iconBackgroundColor: .blue, destination: .toMotduJourFav)
+            ]),
     SettingsSection(sectionTitle: "Gérez votre compte", settingsOptions: [
         SettingsOption(title: "Modifiez votre profil", image: Image(systemName: "camera") , iconBackgroundColor: .green, destination: .toChangePhoto),
         SettingsOption(title: "Supprimez votre compte", image: Image(systemName: "person"), iconBackgroundColor: .red, destination: .toDeleteAccount)
@@ -33,15 +38,9 @@ struct SettingsSection {
     SettingsSection(sectionTitle: "Notez Fabula", settingsOptions: [
         SettingsOption(title: "Vous aimez Fabula, notez la.", image: Image(systemName: "star") , iconBackgroundColor: Color.purple, destination: .toReview)
         ]),
-    SettingsSection(sectionTitle: "Favoris", settingsOptions: [
-        SettingsOption(title: "Anecdote", image: Image("book"), iconBackgroundColor: .pink, destination: .toAnecdoteFav),
-        SettingsOption(title: "Citations", image: Image("quote"), iconBackgroundColor: .purple, destination: .toCitationFav),
-        SettingsOption(title: "Mot du jour", image: Image("bubble"), iconBackgroundColor: .blue, destination: .toMotduJourFav)
-        ]),
     SettingsSection(sectionTitle: "Scores", settingsOptions: [
         SettingsOption(title: "Vos scores aux quizz", image: Image("game"), iconBackgroundColor: Color("orange"), destination: .toScores)]),
     SettingsSection(sectionTitle: "Juridique", settingsOptions: [SettingsOption(title: "Mentions légales/ GCU", image: Image(systemName: "doc.plaintext"), iconBackgroundColor: .gray, destination: .toLegal)]),
-//    SettingsSection(sectionTitle: "Mentions légales", settingsOptions: [SettingsOption(title: "Règles soumission", image: Image(systemName: "info.circle"), iconBackgroundColor: .yellow, destination: .toSubmitRules), SettingsOption(title: "Commentaires", image: Image(systemName: "bubble.right"), iconBackgroundColor: Color("pink"), destination: .toCommentRules), SettingsOption(title: "CGU", image: Image(systemName: "doc.plaintext"), iconBackgroundColor: .gray, destination: .toCGU), SettingsOption(title: "Données personnelles", image: Image(systemName: "person"), iconBackgroundColor: Color.black, destination: .toRGPD)]),
     SettingsSection(sectionTitle: "Contact", settingsOptions: [SettingsOption(title: "Email", image: Image(systemName: "mail"), iconBackgroundColor: Color("nature"), destination: .toEmail)])
     
     ]
@@ -64,8 +63,4 @@ enum Destination {
     case toScores
     case toLegal
     case toEmail
-//    case toSubmitRules
-//    case toCommentRules
-//    case toCGU
-//    case toRGPD
 }

@@ -11,7 +11,7 @@ import FirebaseStorage
 
 extension AccountManagerView {
     
-    class AccountManagerViewModel: ObservableObject {
+    final class AccountManagerViewModel: ObservableObject {
         
         @Published var photo : UIImage?
         @Published var userName = ""
@@ -123,8 +123,6 @@ extension AccountManagerView {
                     UserDefaultsManager.manager.saveCurrentUser(user: self.currentUser!)
                 }
             }
-            
         }
     }
-    
 }
