@@ -19,4 +19,5 @@ enum DataRequest: String {
     case categoryQuizz = "categoryQuizz"
     case quizzs = "quizzs"
     case submitData = "submitData"
+    case reportComment = "reportComments"
 }

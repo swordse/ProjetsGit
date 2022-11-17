@@ -11,6 +11,7 @@ import SwiftUI
 public enum Keys {
         static let hasSeenAppIntroduction = "hasSeenAppIntroduction"
         static let currentUserSaved = "currentUserSaved"
+        static let saveAbuseCommentUserId = "saveAbuseCommentUserId"
     }
 
 
@@ -53,6 +54,26 @@ class UserDefaultsManager: ObservableObject {
     
     func removeCurrentUser() {
         UserDefaults.standard.removeObject(forKey: Keys.currentUserSaved)
+    }
+    
+    func saveAbuseCommentUser(userId: String) {
+        if let declaredUsersId = UserDefaults.standard.object(forKey: Keys.saveAbuseCommentUserId)  {
+            var decoded = try? JSONDecoder().decode([String].self, from: declaredUsersId as! Data)
+            decoded?.append(userId)
+            if let encoded = try? JSONEncoder().encode(decoded) {
+                UserDefaults.standard.set(encoded, forKey: Keys.saveAbuseCommentUserId)
+            } else {
+                print("Error encoding saveAbuseCommentUser")
+            }
+        } else {
+            var declaredUsersId = [String]()
+            declaredUsersId.append(userId)
+            if let encoded = try? JSONEncoder().encode(declaredUsersId) {
+                UserDefaults.standard.set(encoded, forKey: Keys.saveAbuseCommentUserId)
+            } else {
+                print("Error encoding saveAbuseCommentUser")
+            }
+        }
     }
     
 }

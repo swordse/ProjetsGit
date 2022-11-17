@@ -23,6 +23,8 @@ protocol FSAnecdoteSession {
     func save(commentToSave: [String: Any], completion: @escaping (Result<Bool, NetworkError>) -> Void)
     
     func update(comment: Comment, completion: @escaping (Result<Bool, NetworkError>) -> Void)
+    
+    func commentReport(comment: [String: Any], completion: @escaping (Result<Bool, NetworkError>) -> Void)
 }
 
 
@@ -188,6 +190,19 @@ final class AnecdoteSession: FSAnecdoteSession {
         commentRef.updateData(["commentText" : comment.commentText]) { err in
             if let err = err {
                 print("Error updating document: \(err)")
+                completion(.failure(NetworkError.errorOccured))
+            } else {
+                completion(.success(true))
+            }
+        }
+    }
+    
+    func commentReport(comment: [String: Any], completion: @escaping (Result<Bool, NetworkError>) -> Void) {
+        
+        let ref = dataBase.collection(DataRequest.reportComment.rawValue).document()
+        ref.setData(comment) { err in
+            if let err = err {
+                print("Error submitting comment report: \(err)")
                 completion(.failure(NetworkError.errorOccured))
             } else {
                 completion(.success(true))

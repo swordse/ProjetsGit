@@ -13,8 +13,8 @@ import GoogleMobileAds
 final class Interstitial: NSObject, GADFullScreenContentDelegate {
     
     private var interstitial: GADInterstitialAd?
-    private let adUnitID = "ca-app-pub-3940256099942544/4411468910"
-
+    private let adUnitID = ""
+//    ADD INTERSTITIAL ID HERE
     override init() {
         super.init()
         loadInterstitial()

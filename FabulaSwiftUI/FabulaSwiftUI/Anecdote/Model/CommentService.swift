@@ -28,5 +28,9 @@ final class CommentService {
     func update(comment: Comment, completion: @escaping (Result<Bool, NetworkError>) -> Void) {
         session.update(comment: comment, completion: completion)
     }
+    
+    func commentReport(comment: [String: Any], completion: @escaping (Result<Bool, NetworkError>) -> Void) {
+        session.commentReport(comment: comment, completion: completion)
+    }
 
 }

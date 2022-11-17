@@ -70,7 +70,7 @@ class AppDelegate: NSObject, UIApplicationDelegate {
           with: parameters,
           completionHandler: { [self] error in
             if error != nil {
-                print(error)
+                print(error!)
               // Handle the error.
             } else {
               // The consent information state was updated.

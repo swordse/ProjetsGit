@@ -59,7 +59,7 @@ struct AnecdoteView: View {
             .lineSpacing(5)
             .foregroundColor(.primary)
             .padding(.top, 5)
-            .padding(.bottom, 20)
+            .padding(.bottom, 10)
             .fixedSize(horizontal: false, vertical: true)
         }
     }

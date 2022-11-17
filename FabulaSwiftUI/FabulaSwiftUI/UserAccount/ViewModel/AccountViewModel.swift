@@ -97,19 +97,19 @@ extension AccountView {
             if isValidEmail && isPasswordStrong && isConfirmationCorrect {
                 createUser()
             } else if email.isEmpty || password.isEmpty || confirmationPassword.isEmpty {
-                isShowingProgress.toggle()
+//                isShowingProgress.toggle()
                 alertMessage = (title: "Erreur", message: AlertMessage.empty.rawValue)
                 showAlert = true
             } else if !isValidEmail {
-                isShowingProgress.toggle()
+//                isShowingProgress.toggle()
                 alertMessage = (title: "Erreur", message:AlertMessage.invalidEmail.rawValue)
                 showAlert = true
             } else if !isPasswordStrong {
-                isShowingProgress.toggle()
+//                isShowingProgress.toggle()
                 alertMessage = (title: "Erreur", message:AlertMessage.weakPassword.rawValue)
                 showAlert = true
             } else if !isConfirmationCorrect {
-                isShowingProgress.toggle()
+//                isShowingProgress.toggle()
                 alertMessage = (title: "Erreur", message:AlertMessage.differentPassword.rawValue)
                 showAlert = true
             }
@@ -190,7 +190,9 @@ extension AccountView {
                     let currentUser = FabulaUser(userName: self!.userName, userId: userId!, userEmail: self!.email, userImage: photoUrl)
                     self?.saveCurrentUser(currentUser: currentUser)
                 } else {
-                    guard let errorOccured = error else { return }
+                    guard let errorOccured = error else {
+                        self?.isShowingProgress.toggle()
+                        return }
                     self?.isShowingProgress.toggle()
                     self?.alertMessage = (title: "Erreur", message: errorOccured.rawValue)
                     self?.showAlert = true

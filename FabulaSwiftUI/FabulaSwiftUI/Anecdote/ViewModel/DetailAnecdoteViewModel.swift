@@ -84,6 +84,30 @@ extension DetailAnecdoteView {
                 }
             }
         }
+        
+//        func reportComment(comment: Comment) {
+//            
+//            showProgressView = true
+//            
+//            let commentToSave: [String: Any] = [
+//                "reportCommentId": comment.commentId,
+//                "reportCommentText": comment.commentText,
+//                "commentUserId": comment.userId,
+//                "commentUserName": comment.userName,
+//                "anecdoteId": comment.anecdoteId]
+//            
+//            commentSession.commentReport(comment: commentToSave) { [weak self] result in
+//                switch result {
+//                case.success:
+//                    self?.showProgressView = false
+//                case.failure(_):
+//                    self?.commentError = true
+//                    self?.alertMessage = (title: "Erreur", message: "Une erreur s'est produite. Veuillez réessayer ultérieurement et vérifiez votre connexion internet.")
+//                    self?.showAlert = true
+//                    self?.showProgressView = false
+//                }
+//            }
+//        }
     }
 }
 

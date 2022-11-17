@@ -40,7 +40,7 @@ struct SourceView: View {
                     .foregroundColor(.blue)
             }.buttonStyle(PlainButtonStyle())
         }.padding(.top, 5)
-            .padding(.bottom, 5)
+//            .padding(.bottom, 5)
         
     }
     

@@ -6,13 +6,15 @@
 //
 
 import SwiftUI
-import AVFoundation
 
 struct ChangeCommentView: View {
     
     @Environment(\.presentationMode) var presentationMode
     
     @StateObject var viewModel = ChangeCommentViewModel()
+    
+    @State private var acceptBoxIsCheck = false
+    @State private var showRulesAlert = false
     
     @Binding var comment: Comment
     
@@ -28,8 +30,34 @@ struct ChangeCommentView: View {
                         .textEditorBackGround()
                         .cornerRadius(10)
                         .padding()
+                    HStack {
+                        Button {
+                            acceptBoxIsCheck.toggle()
+                        } label: {
+                            Image(systemName: acceptBoxIsCheck ? "checkmark.square" : "square")
+                                .foregroundColor(.white)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        Button {
+                            let stringUrl = "https://www.sites.google.com/view/appfabula/accueil/règles-soumission-des-commentaires?pli=1"
+                            let encoded = stringUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+                            let url = URL(string: encoded!)
+                            UIApplication.shared.open(url!)
+                        } label: {
+                            Text("J'accepte les règles de soumission")
+                                .foregroundColor(.blue)
+                                .frame(maxWidth: .infinity, alignment: .center)
+                        }
+                        .buttonStyle(PlainButtonStyle())
+                        .alert(isPresented: $showRulesAlert) {
+                            Alert(title: Text("Vos changements sont prêts."), message: Text("Si votre commentaire ne respecte pas les règles de soumission, il sera supprimé. Dans une telle situation, votre compte pourra également être supprimé."), primaryButton: .default(Text("J'AI COMPRIS"), action: {
+                                viewModel.updateComment(comment: comment)
+                                acceptBoxIsCheck = false
+                            }), secondaryButton: .cancel())
+                        }
+                    }.padding(.horizontal)
                     Button {
-                        viewModel.updateComment(comment: comment)
+                        showRulesAlert = true
                     } label: {
                         ZStack {
                             Color( .systemBlue)
@@ -41,7 +69,13 @@ struct ChangeCommentView: View {
                         }
                         .padding(.horizontal)
                         .frame(height: 40)
-                        .buttonStyle(.plain)
+                    }
+                    .buttonStyle(.plain)
+                    .disabled(!acceptBoxIsCheck)
+                    .alert(isPresented: $viewModel.showAlert) {
+                        Alert(title: Text(viewModel.alertMessage.title), message: Text((viewModel.alertMessage.message)), dismissButton: .default(Text("OK"), action: {
+                            presentationMode.wrappedValue.dismiss()
+                        }))
                     }
                 }
                 .toolbar {
@@ -59,12 +93,10 @@ struct ChangeCommentView: View {
                     CustomProgressView()
                 }
             }
-            .alert(isPresented: $viewModel.showAlert) {
-                Alert(title: Text(viewModel.alertMessage.title), message: Text((viewModel.alertMessage.message)), dismissButton: .default(Text("OK"), action: {
-                    presentationMode.wrappedValue.dismiss()
-                }))
+        }.tintOrAccentColor(color: .white)
+            .onChange(of: viewModel.showAlert) { newValue in
+                print(viewModel.showAlert)
             }
-        }
     }
 }
 

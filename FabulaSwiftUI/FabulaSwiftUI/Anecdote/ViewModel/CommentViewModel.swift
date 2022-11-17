@@ -12,13 +12,16 @@ struct CacheImage: @unchecked Sendable {
     static var cache = NSCache<NSString, UIImage>()
 }
 
-
 extension CommentView {
     
     final class CommentViewModel: ObservableObject {
         
         @Published var image: Image?
+        @Published var showProgressView = false
+        @Published var showResultAlert = false
+        @Published var alertMessage = (title: "", message: "")
         
+        let commentSession = CommentService()
         let cache = CacheImage.cache
         
         func downsample(imageAt imageURL: URL,
@@ -50,7 +53,6 @@ extension CommentView {
                         return
                     }
                     
-                    
                     // Return the downsampled image as UIImage
                     let UIImage = UIImage(cgImage: downsampledImage)
                     self.cache.setObject(UIImage, forKey: NSString(string: imageURL.absoluteString))
@@ -62,5 +64,30 @@ extension CommentView {
                 }
             }
         }
+        
+        func reportComment(comment: Comment) {
+            showProgressView = true
+            
+            let commentToSave: [String: Any] = [
+                "reportCommentId": comment.commentId,
+                "reportCommentText": comment.commentText,
+                "commentUserId": comment.userId,
+                "commentUserName": comment.userName,
+                "anecdoteId": comment.anecdoteId]
+            
+            commentSession.commentReport(comment: commentToSave) {  result in
+                switch result {
+                case.success:
+                    self.showProgressView = false
+                    self.showResultAlert = true
+                    self.alertMessage = (title: "Merci", message: "Nous étudierons ce signalement sous 24 heures.")
+                case.failure(_):
+                    self.showResultAlert.toggle()
+                    self.alertMessage = (title: "Erreur", message: "Une erreur s'est produite. Veuillez réessayer ultérieurement et vérifiez votre connexion internet.")
+                    self.showProgressView = false
+                }
+            }
+        }
     }
 }
+

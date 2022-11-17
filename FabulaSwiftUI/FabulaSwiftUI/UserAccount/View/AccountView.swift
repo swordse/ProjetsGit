@@ -23,6 +23,7 @@ struct AccountView: View {
     @State private var showImagePicker = false
     @State private var showAccountManagerView = false
     @State private var faceIdError: Authentification.AuthentificationError?
+    @State private var acceptBoxIsCheck = false
     
     @AppStorage(Keys.currentUserSaved) var user: Data = Data()
     
@@ -74,7 +75,7 @@ struct AccountView: View {
                                 FormField(text: $viewModel.password, isSecured: true, placeholderString: "  Mot de passe", imageToDisplay: DisplayImage.lock, textContentType: .password, keyboardType: .default)
                                 
                                 if !viewModel.isConnexion {
-                                    Text("Au moins 6 caractères, 1 majuscule, un chiffre ou un caractère spécial")
+                                    Text("Au moins 6 caractères, 1 majuscule, un chiffre et un caractère spécial")
                                         .font(.caption)
                                         .foregroundColor(.gray)
                                 }
@@ -89,6 +90,28 @@ struct AccountView: View {
                                     FormField(text: $viewModel.confirmationPassword, isSecured: true, placeholderString: "  Confirmation mot de passe", imageToDisplay: DisplayImage.lock, textContentType: .password, keyboardType: .default)
                                 }
                                 LazyVStack(spacing: 30) {
+                                    if !viewModel.isConnexion {
+                                        HStack {
+                                            Button {
+                                                acceptBoxIsCheck.toggle()
+                                            } label: {
+                                                Image(systemName: acceptBoxIsCheck ? "checkmark.square" : "square")
+                                                    .foregroundColor(.white)
+                                            }
+                                            .buttonStyle(PlainButtonStyle())
+                                            Button {
+                                                let stringUrl = "https://www.sites.google.com/view/appfabula/accueil/conditions-générales-dutilisation?pli=1"
+                                                let encoded = stringUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+                                                let url = URL(string: encoded!)
+                                                UIApplication.shared.open(url!)
+                                            } label: {
+                                                Text("J'accepte les conditions générales")
+                                                    .foregroundColor(.blue)
+                                                    .frame(maxWidth: .infinity, alignment: .center)
+                                            }
+                                            .buttonStyle(PlainButtonStyle())
+                                        }
+                                    }
                                     Button {
                                         viewModel.dispatcher()
                                     } label: {
@@ -215,7 +238,6 @@ struct AccountView: View {
                         .toolbar {
                             ToolbarItem(placement: ToolbarItemPlacement.navigationBarTrailing) {
                                 if !isDeleteAccount || !isAccountManager {
-//                                    if !isAccountManager {
                                     Button {
                                         presentationMode.wrappedValue.dismiss()
                                     } label: {
@@ -255,7 +277,7 @@ struct AccountView: View {
                 return true
             } else { return false }
         } else {
-            if viewModel.userName.isEmpty || viewModel.email.isEmpty || viewModel.password.isEmpty || viewModel.confirmationPassword.isEmpty  {
+            if viewModel.userName.isEmpty || viewModel.email.isEmpty || viewModel.password.isEmpty || viewModel.confirmationPassword.isEmpty || !acceptBoxIsCheck  {
                 return true
             } else { return false }
         }

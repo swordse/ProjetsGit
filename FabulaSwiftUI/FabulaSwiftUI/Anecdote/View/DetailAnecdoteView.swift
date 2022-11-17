@@ -13,15 +13,21 @@ struct DetailAnecdoteView: View {
     @Binding var anecdote: Anecdote
     @StateObject var viewModel = DetailAnecdoteViewModel()
     
-    @State private var selectedComment = Comment(commentId: "", anecdoteId: "", commentText: "", date: nil, userName: "", userId: "", userImage: nil)
+    @State private var selectedComment = Comment(commentId: "", anecdoteId: "ssss", commentText: "", date: Timestamp(seconds: 1643151600, nanoseconds: 0), userName: "", userId: "")
     @State private var isConnexionSheetPresented = false
     @State private var isShareSheetPresented = false
     @State private var newComment = ""
     @State private var showChangeCommentView = false
     @State private var showCommentSubmitAlert = false
+    @State private var acceptBoxIsCheck = false
     
     @AppStorage(Keys.currentUserSaved) var user: Data = Data()
+    
     @State private var fabulaUser: FabulaUser?
+    
+    @AppStorage(Keys.saveAbuseCommentUserId, store: .standard) var saveAbuseCommentUserId: Data = Data()
+    
+    @State private var abuseUsers: [String]?
     
     var body: some View {
 
@@ -53,20 +59,20 @@ struct DetailAnecdoteView: View {
                             }
                         }
                     }
+                    .hideRowSeparator()
                 }
                 .listRowBackground(Color.background)
-                .padding(.vertical)
                 // Source Section
                 Section {
                     if anecdote.source != nil {
                         SourceView(anecdote: anecdote, viewModel: viewModel)
+                            .hideRowSeparator()
                     }
                 }
-                .padding(.vertical)
                 .listRowBackground(Color.background)
                 // Comment Section
                 Section {
-                    LazyVStack(alignment: .leading){
+                    VStack(alignment: .leading){
                         HStack {
                             Image(systemName: "pencil")
                                 .font(.headline)
@@ -82,6 +88,27 @@ struct DetailAnecdoteView: View {
                                     hideKeyboard()
                                 }
                             }
+                        HStack {
+                            Button {
+                                acceptBoxIsCheck.toggle()
+                            } label: {
+                                Image(systemName: acceptBoxIsCheck ? "checkmark.square" : "square")
+                                    .foregroundColor(.white)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                            Button {
+                                let stringUrl = "https://www.sites.google.com/view/appfabula/accueil/règles-soumission-des-commentaires?pli=1"
+                                let encoded = stringUrl.addingPercentEncoding(withAllowedCharacters: .urlFragmentAllowed)
+                                let url = URL(string: encoded!)
+                                UIApplication.shared.open(url!)
+                            } label: {
+                                Text("J'accepte les règles de soumission")
+                                    .foregroundColor(.blue)
+                                    .frame(maxWidth: .infinity, alignment: .center)
+                            }
+                            .buttonStyle(PlainButtonStyle())
+                        }
+        
                         Button {
                             guard !newComment.isEmpty else { return }
                             showCommentSubmitAlert.toggle()
@@ -90,32 +117,30 @@ struct DetailAnecdoteView: View {
                         }
                         .padding(.vertical)
                         .buttonStyle(.plain)
-                        .disabled(fabulaUser == nil)
+                        .disabled(fabulaUser == nil || newComment.isEmpty || !acceptBoxIsCheck)
                         
                         Spacer()
                         
-                        ForEach($viewModel.comments, id: \.commentText) { $comment in
-                            if fabulaUser?.userId == comment.userId {
-                                CommentView(showCommentChangeButton: true, comment: comment)
-                                    .rowSeparatorColor(color: .black)
-                                    .fixedSize(horizontal: false, vertical: true)
-                                    .onTapGesture {
-                                        selectedComment = comment
-                                        showChangeCommentView.toggle()
+                        ForEach($viewModel.comments, id: \.commentId) { $comment in
+                                    if abuseUsers == nil {
+                                        CommentView(comment: comment, fabulaUserId: fabulaUser?.userId, showChangeCommentView: $showChangeCommentView, selectedComment: $selectedComment)
+                                    } else if abuseUsers!.contains(comment.userId) == false {
+                                        CommentView(comment: comment, fabulaUserId: fabulaUser?.userId, showChangeCommentView: $showChangeCommentView, selectedComment: $selectedComment)
                                     }
-                            } else {
-                                CommentView(comment: comment)
-                                    .rowSeparatorColor(color: .black)
-                                    .fixedSize(horizontal: false, vertical: true)
-                            }
+                                }
+                        .sheet(isPresented: $showChangeCommentView, onDismiss: {
+                                        viewModel.updateCommentAfterChange(comment: selectedComment)
+                                    }, content: {
+                                            ChangeCommentView(comment: $selectedComment)
+                                    })
                         }
-                    }.padding(.top, 5)
-                    .padding(.bottom, 5)
+                    }
                     .listRowBackground(Color.background)
+                    .hideRowSeparator()
                 }
             }
             .hideScrollBackground()
-            .listStyle(.plain)
+            .listStyle(.grouped)
             .onTapGesture {
                 hideKeyboard()
             }
@@ -129,23 +154,25 @@ struct DetailAnecdoteView: View {
             }
             .onAppear {
                 decodeUser(userData: user)
+                decodeSaveAbuseCommentUserId(userData: saveAbuseCommentUserId)
             }
-        }
+        .onChange(of: saveAbuseCommentUserId, perform: { newValue in
+            decodeSaveAbuseCommentUserId(userData: newValue)
+        })
             .onChange(of: user, perform: { _ in
                     decodeUser(userData: user)
                 })
-            .sheet(isPresented: $showChangeCommentView, onDismiss: {
-                viewModel.updateCommentAfterChange(comment: selectedComment)
-            }, content: {
-                ChangeCommentView(comment: $selectedComment)
+            .sheet(isPresented: $isConnexionSheetPresented, content: {
+                AccountView()
             })
             .alert(isPresented: $viewModel.commentError, content: {
-                Alert(title: Text("Erreur"), message: Text("Une erreur est survenue lors du chargement des commenaires."), dismissButton: .default(Text("OK")))
+                Alert(title: Text("Erreur"), message: Text("Une erreur est survenue lors du chargement des commentaires."), dismissButton: .default(Text("OK")))
             })
             .alert(isPresented: $showCommentSubmitAlert, content: {
-                Alert(title: Text("Votre commentaire est prêt."), message: Text("En le soumettant vous acceptez les règles d'utilisation de l'application."), primaryButton: .default(Text("ACCEPTER"), action: {
+                Alert(title: Text("Votre commentaire est prêt."), message: Text("Si votre commentaire ne respecte pas les règles de soumission, il sera supprimé. Dans une telle situation, votre compte pourra également être supprimé."), primaryButton: .default(Text("J'AI COMPRIS"), action: {
                     viewModel.save(commentToSave: newComment, anecdoteId: anecdote.id ?? "", user: fabulaUser)
                     newComment = ""
+                    acceptBoxIsCheck = false
                 }), secondaryButton: .cancel()
                 )
             })
@@ -158,6 +185,17 @@ struct DetailAnecdoteView: View {
             fabulaUser = decoded
         } else {
             fabulaUser = nil
+        }
+    }
+    
+    func decodeSaveAbuseCommentUserId(userData: Data) {
+        if let decoded = try? JSONDecoder().decode([String].self, from: userData) {
+            print("ABUSE USER est décodé")
+            abuseUsers = decoded
+            print("CONTENU D'ABUSE USE: \(decoded)")
+        } else {
+            abuseUsers = nil
+            print("ABUSE USER est NILLLL")
         }
     }
 }
