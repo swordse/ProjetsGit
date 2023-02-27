@@ -1,0 +1,3289 @@
+{
+        "Hugo": {
+            "quizzs": [{
+                    "question": "Quel était le titre initial des Misérables ?",
+                    "answer": "Les Misères",
+                    "propositions": [
+                        "Les Malheurs",
+                        "Les Misères",
+                        "Les Galères"
+                    ]
+                },{
+                    "question": "Où se trouve la tombe de Victor Hugo ?",
+                    "answer": "Au Panthéon",
+                    "propositions": [
+                        "Au Père-Lachaise",
+                        "Au Panthéon",
+                        "Au cimetière du Montparnasse"
+                    ]
+                },{
+                    "question": "Quel est le nom de son premier roman ?",
+                    "answer": "Bug-Jargal",
+                    "propositions": [
+                        "Notre-Dame de Paris",
+                        "Les Misérables",
+                        "Bug-Jargal"
+                    ]
+                },{
+                    "question": "Quel était le nom de sa femme ?",
+                    "answer": "Adèle Foucher",
+                    "propositions": [
+                        "Adèle Boucher",
+                        "Adèle Bouler",
+                        "Adèle Foucher"
+                    ]
+                },{
+                    "question": "Quel était le nom de sa plus célèbre maîtresse ?",
+                    "answer": "Juliette Drouet",
+                    "propositions": [
+                        "Juliette Drouet",
+                        "Julienne Drouet",
+                        "Julie Drouet"
+                    ]
+                },{
+                    "question": "Il affirma à 17 ans vouloir être :",
+                    "answer": "Chateaubriand ou rien",
+                    "propositions": [
+                        "Napoléon ou rien",
+                        "Chateaubriand ou rien",
+                        "Écrivain ou rien"
+                    ]
+                },{
+                    "question": "Qu'a permis la publication de « Notre-Dame de Paris » ?",
+                    "answer": "De restaurer la cathédrale",
+                    "propositions": [
+                        "De restaurer la cathédrale",
+                        "D'accroitre le nombre de touriste",
+                        "De sauver Victor Hugo de la banqueroute"
+                    ]
+                },{
+                    "question": "Quelle était sa devise ? ",
+                    "answer": "Ego Hugo",
+                    "propositions": [
+                        "Ego Hugo",
+                        "Hugo Iubeo",
+                        "Hugo Dicerno"
+                    ]
+                },{
+                    "question": "En 1845, il est nommé : ",
+                    "answer": "Pair de France",
+                    "propositions": [
+                        "Pair de France",
+                        "Maire de France",
+                        "Père de France"
+                    ]
+                },{
+                    "question": "Quelle pièce déclenchera la célèbre « bataille » entre les romantiques et les classiques ?",
+                    "answer": "Hernani",
+                    "propositions": [
+                        "Hernani",
+                        "Le roi s'amuse",
+                        "Ruy Blas"
+                    ]
+                }
+            ]
+    },
+        "Maupassant": {
+            "quizzs": [{
+                    "question": "Quand est né Guy de Maupassant ?",
+                    "answer": "5 août 1850",
+                    "propositions": [
+                        "5 août 1750",
+                        "5 août 1850",
+                        "5 août 1950"
+                    ]
+                },{
+                    "question": "Qui était le mentor de Maupassant ?",
+                    "answer": "Gustave Flaubert",
+                    "propositions": [
+                        "Gustave Flaubert",
+                        "Emile Zola",
+                        "Stéphane Mallarmé"
+                    ]
+                },{
+                    "question": "A 17 ans, il sauve de la noyade un écrivain anglais à Etretat :",
+                    "answer": "Charles Algernon Swinburne",
+                    "propositions": [
+                        "Charles Algernon Swinburne",
+                        "Edgard Alan Poe",
+                        "Lord Byron"
+                    ]
+                },{
+                    "question": "Combien a-t-il eu d'enfants non reconnus ?",
+                    "answer": "3",
+                    "propositions": [
+                        "3",
+                        "5",
+                        "6"
+                    ]
+                },{
+                    "question": "Lequel de ces romans n'est pas de Maupassant ?",
+                    "answer": "Un coeur simple",
+                    "propositions": [
+                        "Une vie",
+                        "Bel-Ami",
+                        "Un coeur simple"
+                    ]
+                },{
+                    "question": "Laquelle de ces nouvelles raconte l'histoire d'une prostituée ?",
+                    "answer": "Boule de Suif",
+                    "propositions": [
+                        "Epaves",
+                        "Jadis",
+                        "Boule de Suif"
+                    ]
+                },{
+                    "question": "Qui est Georges Duroy, héros du roman « Bel Ami » ?",
+                    "answer": "Un ancien militaire devenu journaliste",
+                    "propositions": [
+                        "Un sportif sombrant dans l'alcool",
+                        "Un ancien militaire devenu journaliste",
+                        "Un ministre contraint de démissionner"
+                    ]
+                },{
+                    "question": "Opposé à la construction de la Tour Eiffel, il y déjeunait cependant souvent, pourquoi ?",
+                    "answer": "« C'est le seul endroit de la ville où je ne la vois pas. »",
+                    "propositions": [
+                        "« C'est le seul endroit de la ville où je ne la vois pas. »",
+                        "« Ici, je peux la piétiner à mon aise. »",
+                        "« Elle est laide, mais on y dîne bien. »"
+                    ]
+                },{
+                    "question": "A la fin de sa vie, il est atteint par la folie en raison : ",
+                    "answer": "de la syphilis",
+                    "propositions": [
+                        "d'une maladie congénitale",
+                        "de l'abus d'absinthe",
+                        "de la syphilis"
+                    ]
+                },{
+                    "question": "A quel âge est-il mort ?",
+                    "answer": "42 ans",
+                    "propositions": [
+                        "42 ans",
+                        "52 ans",
+                        "62 ans"
+                    ]
+                }
+            ]
+    },
+        "Oscar Wilde": {
+            "quizzs": [{
+                    "question": "Quand est né Oscar Wilde ?",
+                    "answer": "16 octobre 1854",
+                    "propositions": [
+                        "16 octobre 1754",
+                        "16 octobre 1854",
+                        "16 octobre 1954"
+                    ]
+                },{
+                    "question": "Où est-il né ?",
+                    "answer": "Dublin",
+                    "propositions": [
+                        "Dublin",
+                        "Londres",
+                        "Edimbourg"
+                    ]
+                },{
+                    "question": "Que lui est-il arrivé jusqu'à l'âge de 7 ans ?",
+                    "answer": "Sa mère l'a élevé comme une fille",
+                    "propositions": [
+                        "Il a été confié à ses grands-parents",
+                        "Il ne savait pas marcher",
+                        "Sa mère l'a élevé comme une fille"
+                    ]
+                },{
+                    "question": "Quel est son premier roman ?",
+                    "answer": "Le portrait de Dorian Gray",
+                    "propositions": [
+                        "Le Fantôme de Canterville",
+                        "Une maison de grenades",
+                        "Le portrait de Dorian Gray"
+                    ]
+                },{
+                    "question": "Laquelle de ces oeuvres a été écrite en français ?",
+                    "answer": "Salomé",
+                    "propositions": [
+                        "Salomé",
+                        "L'importance d'être constant",
+                        "Le portrait de Dorian Gray"
+                    ]
+                },{
+                    "question": "Lors d'une tournée aux Etats-Unis, il fait des conférences sur : ",
+                    "answer": "L'esthétisme",
+                    "propositions": [
+                        "La littérature anglaise",
+                        "L'esthétisme",
+                        "La Grèce antique"
+                    ]
+                },{
+                    "question": "Il est condamné à 2 ans de bagne en raison :",
+                    "answer": "de son homosexualité",
+                    "propositions": [
+                        "de dettes de jeux",
+                        "de son homosexualité",
+                        "d'un vol"
+                    ]
+                },{
+                    "question": "Quelle oeuvre écrit-il pendant ses années de bagne ? ",
+                    "answer": "De Profondis",
+                    "propositions": [
+                        "De Profondis",
+                        "Intentions",
+                        "Le déclin du mensonge"
+                    ]
+                },{
+                    "question": "A sa sortie du bagne, déchu de ses droits civils, il change d'identité pour devenir :",
+                    "answer": "Sébastien Melmot",
+                    "propositions": [
+                        "Arthur Deschamps",
+                        "Laurent Polchire",
+                        "Sébastien Melmot"
+                    ]
+                },{
+                    "question": "Où est-il enterré ?",
+                    "answer": "Cimetière du MontParnasse",
+                    "propositions": [
+                        "Cimetière du MontParnasse",
+                        "Cimetière du Père-Lachaise",
+                        "Cimetière des Batignolles"
+                    ]
+                }
+            ]
+    },
+        "Emile Zola": {
+            "quizzs": [{
+                    "question": "Où est né Emile Zola en 1840 ?",
+                    "answer": "Paris",
+                    "propositions": [
+                        "Paris",
+                        "Lyon",
+                        "Marseille"
+                    ]
+                },{
+                    "question": "Emile Zola est le chef de file de quel mouvement littéraire ?",
+                    "answer": "Le Naturalisme",
+                    "propositions": [
+                        "Le Romantisme",
+                        "Le Réalisme",
+                        "Le Naturalisme"
+                    ]
+                },{
+                    "question": "La série des Rougon-Macquart est constitué de combien de romans ?",
+                    "answer": "20",
+                    "propositions": [
+                        "15",
+                        "20",
+                        "30"
+                    ]
+                },{
+                    "question": "Lequel de ces romans ne fait pas partie des Rougon-Macquart ?",
+                    "answer": "Le père Goriot",
+                    "propositions": [
+                        "Nana",
+                        "Germinal",
+                        "Le père Goriot"
+                    ]
+                },{
+                    "question": "De quel peintre était-il un ami très proche avant leur dispute ?",
+                    "answer": "Paul Cézanne",
+                    "propositions": [
+                        "Auguste Renoir",
+                        "Claude Monet",
+                        "Paul Cézanne"
+                    ]
+                },{
+                    "question": "Qui est Nana, l'héroïne du roman éponyme ?",
+                    "answer": "Une prostituée",
+                    "propositions": [
+                        "Une lingère",
+                        "Une prostituée",
+                        "Une boulangère"
+                    ]
+                },{
+                    "question": "Où se déroule l'action du « Ventre de Paris » ?",
+                    "answer": "Aux halles",
+                    "propositions": [
+                        "Aux halles",
+                        "Dans les catacombes",
+                        "Dans les égouts"
+                    ]
+                },{
+                    "question": "Dans quel journal est publié le célèbre « J'accuse » ? ",
+                    "answer": "L'Aurore",
+                    "propositions": [
+                        "L'Aurore",
+                        "Le Petit Journal",
+                        "Le Matin"
+                    ]
+                },{
+                    "question": "Quel est le premier roman des Rougon-Macquart ?",
+                    "answer": "La Fortune des Rougon",
+                    "propositions": [
+                        "La Terre",
+                        "La Fortune des Rougon",
+                        "Germinal"
+                    ]
+                },{
+                    "question": "Comment est-il mort ?",
+                    "answer": "Asphyxié dans son sommeil",
+                    "propositions": [
+                        "Asphyxié dans son sommeil",
+                        "De vieillesse",
+                        "Assassiné par les anti-dreyfusards"
+                    ]
+                }
+            ]
+    },
+        "Gustave Flaubert": {
+            "quizzs": [{
+                    "question": "En quelle année est né Gustave Flaubert ?",
+                    "answer": "1821",
+                    "propositions": [
+                        "1821",
+                        "1861",
+                        "1881"
+                    ]
+                },{
+                    "question": "Il avait pour habitude de travailler :",
+                    "answer": "Dans son lit",
+                    "propositions": [
+                        "Debout, devant un pupitre",
+                        "Dehors",
+                        "Dans son lit"
+                    ]
+                },{
+                    "question": "Lequel de ces romans n'a-t-il pas écrit ?",
+                    "answer": "Une vie",
+                    "propositions": [
+                        "Un coeur simple",
+                        "Salammbô",
+                        "Une vie"
+                    ]
+                },{
+                    "question": "Quel était son surnom ?",
+                    "answer": "L'ermite du Croisset",
+                    "propositions": [
+                        "L'ermite de Paris",
+                        "L'ermite du Croisset",
+                        "L'ermite de Lille"
+                    ]
+                },{
+                    "question": "Grâce à quelle oeuvre devient-il célèbre ?",
+                    "answer": "Madame Bovary",
+                    "propositions": [
+                        "Bouvard et Pécuchet",
+                        "Salammbô",
+                        "Madame Bovary"
+                    ]
+                },{
+                    "question": "Où se déroule l'action de Salammbô ?",
+                    "answer": "A Carthage",
+                    "propositions": [
+                        "A Rabat",
+                        "A Alger",
+                        "A Carthage"
+                    ]
+                },{
+                    "question": "Quel est le prénom de l'héroïne de Madame Bovary ?",
+                    "answer": "Emma",
+                    "propositions": [
+                        "Anna",
+                        "Nana",
+                        "Emma"
+                    ]
+                },{
+                    "question": "Quel roman n'a-t-il pas pu achever ? ",
+                    "answer": "Bouvard et Pécuchet",
+                    "propositions": [
+                        "Bouvard et Pécuchet",
+                        "L'éducation sentimentale'",
+                        "Un coeur simple"
+                    ]
+                },{
+                    "question": "Qui a été la femme de sa vie ?",
+                    "answer": "Elisa Schlésinger",
+                    "propositions": [
+                        "George Sand",
+                        "Léonie D'Aunet",
+                        "Elisa Schlésinger"
+                    ]
+                },{
+                    "question": "Quelle profession exercent Bouvard et Pécuchet ?",
+                    "answer": "Copiste",
+                    "propositions": [
+                        "Copiste",
+                        "Rémouleur",
+                        "Avocat"
+                    ]
+                }
+            ]
+    },
+        "Picasso": {
+            "quizzs": [{
+                    "question": "Dans quel parti politique Picasso s’engage en 1944 ?",
+                    "answer": "Le parti Radical",
+                    "propositions": [
+                        "Le parti Communiste",
+                        "Le parti Socialiste",
+                        "Le parti Radical"
+                    ]
+                },{
+                    "question": "Quel événement a inspiré à Picasso sa toile intitulée « Guernica » ?",
+                    "answer": "Le bombardement du village basque de Gernica",
+                    "propositions": [
+                        "La rencontre Franco-Hitler à Guernica",
+                        "La rencontre Franco-Mussolini à Guernica",
+                        "Le bombardement du village basque de Gernica"
+                    ]
+                },{
+                    "question": "Quelle est la toile de Picasso qui fut à l'origine du mouvement cubiste, en 1907 ?",
+                    "answer": "Les Demoiselles d’Avignon",
+                    "propositions": [
+                        "Guernica",
+                        "Les Demoiselles d’Avignon",
+                        "La carrière de Bibemus"
+                    ]
+                },{
+                    "question": "Quelle fut la première compagne parisienne de Picasso ?",
+                    "answer": "Fernande Olivier",
+                    "propositions": [
+                        "Eva Gouel",
+                        "Fernande Olivier",
+                        "Peggy Guggenheim"
+                    ]
+                },{
+                    "question": "Comment nomme-t-on la période artistique qui caractérisa sa production de 1901 à 1904 ?",
+                    "answer": "La période bleue",
+                    "propositions": [
+                        "La période bleue",
+                        "La période rouge",
+                        "La période rose"
+                    ]
+                },{
+                    "question": "Dans quel atelier parisien va-t-il s’installer en 1905 ?",
+                    "answer": "Le Bateau Lavoir",
+                    "propositions": [
+                        "Le Bateau Ivre",
+                        "Le Bateau Lavoir",
+                        "Le Bateau Vert"
+                    ]
+                },{
+                    "question": "Dans quelle ville est enterré Picasso ?",
+                    "answer": "Vauvenargues",
+                    "propositions": [
+                        "Mougins",
+                        "Guernica",
+                        "Vauvenargues"
+                    ]
+                },{
+                    "question": "De quel tableau, peint à 8 ans, refusera-t-il toujours de se séparer ?",
+                    "answer": "Le picador",
+                    "propositions": [
+                        "Le picador",
+                        "Le matador",
+                        "Le toreador"
+                    ]
+                },{
+                    "question": "Quel était le prénom de Picasso ?",
+                    "answer": "Pablo",
+                    "propositions": [
+                        "Pedro",
+                        "Pablo",
+                        "Antonio"
+                    ]
+                },{
+                    "question": "Dans quelle ville Espagnole est-il né en 1881 ?",
+                    "answer": "Malaga",
+                    "propositions": [
+                        "Barcelone",
+                        "Cadaques",
+                        "Malaga"
+                    ]
+                }
+            ]
+    },
+        "Impressionisme": {
+            "quizzs": [{
+                    "question": "Qui a peint le tableau « Impression, soleil levant » ?",
+                    "answer": "Claude Monet",
+                    "propositions": [
+                        "Claude Monet",
+                        "Camille Pissaro",
+                        "Alfred Sisley"
+                    ]
+                },{
+                    "question": "Il était surnommé « le peintre des danseuses » :",
+                    "answer": "Edgar Degas",
+                    "propositions": [
+                        "Edgar Degas",
+                        "Edouard Manet",
+                        "Auguste Renoir"
+                    ]
+                },{
+                    "question": "Où est né Paul Cézanne ?",
+                    "answer": "Aix-en-Provence",
+                    "propositions": [
+                        "Aix-en-Provence",
+                        "Marseille",
+                        "Lille"
+                    ]
+                },{
+                    "question": "Dans quel musée trouve-t-on le plus d'oeuvres impressionnistes ?",
+                    "answer": "Le musée d'Orsay à Paris",
+                    "propositions": [
+                        "Le musée d'Orsay à Paris",
+                        "Le MOMA à New-York",
+                        "Le British Museum"
+                    ]
+                },{
+                    "question": "Qui a peint « Les raboteurs de parquet » ?",
+                    "answer": "Gustave Caillebotte",
+                    "propositions": [
+                        "Paul Cézanne",
+                        "Eugène Boudin",
+                        "Gustave Caillebotte"
+                    ]
+                },{
+                    "question": "Quelle femme est une impressionniste renommée ?",
+                    "answer": "Berthe Morisot",
+                    "propositions": [
+                        "Berthe Morisot",
+                        "Marie Laurencin",
+                        "Rosa Bonheur"
+                    ]
+                },{
+                    "question": "« L'Oeuvre » de Zola a brouillé l'auteur avec son ami :",
+                    "answer": "Paul Cézanne",
+                    "propositions": [
+                        "Edouard Manet",
+                        "Auguste Renoir",
+                        "Paul Cézanne"
+                    ]
+                },{
+                    "question": "Quelle oeuvre a été vendue 274 millions de dollars ?",
+                    "answer": "« Les joueurs de cartes » de Paul Cézanne",
+                    "propositions": [
+                        "« Les joueurs de cartes » de Paul Cézanne",
+                        "« La Nuit Etoilée » de Van Gogh",
+                        "« La classe de Danse » de Edgar Degas"
+                    ]
+                },{
+                    "question": "Qui était Paul Durant-Ruel ?",
+                    "answer": "Un marchand d'art, soutien des impressionnistes",
+                    "propositions": [
+                        "Un marchand d'art, soutien des impressionnistes",
+                        "Un critique d'art, adversaire des impressionnistes",
+                        "Un peintre adversaire, des impressionnistes"
+                    ]
+                },{
+                    "question": "Qui a peint « Le déjeuner sur l'herbe » ?",
+                    "answer": "Edouard Manet",
+                    "propositions": [
+                        "Edouard Manet",
+                        "Auguste Renoir",
+                        "Alfred Sisley"
+                    ]
+                }
+            ]
+    },
+        "Qui a peint": {
+            "quizzs": [{
+                    "question": "Qui a peint « Le Déjeuner des canotiers » ?",
+                    "answer": "Auguste Renoir",
+                    "propositions": [
+                        "Claude Monet",
+                        "Auguste Renoir",
+                        "Alfred Sisley"
+                    ]
+                },{
+                    "question": "Qui a peint « La Nuit étoilée » ?",
+                    "answer": "Vincent van Gogh",
+                    "propositions": [
+                        "Salvador Dali",
+                        "Edouard Manet",
+                        "Vincent van Gogh"
+                    ]
+                },{
+                    "question": "Qui a peint « Le Désespéré » ?",
+                    "answer": "Gustave Courbet",
+                    "propositions": [
+                        "Pablo Picasso",
+                        "Gustave Courbet",
+                        "Vassily Kandinsky"
+                    ]
+                },{
+                    "question": "Qui a peint « Le Serment des Horaces » ?",
+                    "answer": "Jacques-Louis David",
+                    "propositions": [
+                        "Jacques-Louis David",
+                        "Francisco de Goya",
+                        "Jean-Baptiste Camille Corot"
+                    ]
+                },{
+                    "question": "Qui a peint « La Jeune fille à la perle » ?",
+                    "answer": "Johannes Vermeer",
+                    "propositions": [
+                        "Georges Seurat",
+                        "Johannes Vermeer",
+                        "Gustave Caillebotte"
+                    ]
+                },{
+                    "question": "Qui a peint « Le Baiser » ?",
+                    "answer": "Gustav Klimt",
+                    "propositions": [
+                        "Gustav Klimt",
+                        "Marie Laurencin",
+                        "Paul Klee"
+                    ]
+                },{
+                    "question": "Qui a peint « La Naissance de Vénus » ?",
+                    "answer": "Sandro Botticelli",
+                    "propositions": [
+                        "Michel Ange",
+                        "Raphaël",
+                        "Sandro Botticelli"
+                    ]
+                },{
+                    "question": "Qui a peint « La Grande vague de Kanagawa » ?",
+                    "answer": "Hokusai",
+                    "propositions": [
+                        "Tomioka Tessai",
+                        "Zhang Xiaogang",
+                        "Hokusai"
+                    ]
+                },{
+                    "question": "Qui a peint « La Liberté guidant le peuple » ?",
+                    "answer": "Eugène Delacroix",
+                    "propositions": [
+                        "Eugène Delacroix",
+                        "Jacques-Louis David",
+                        "Charles Le Brun"
+                    ]
+                },{
+                    "question": "Qui a peint « Le déjeuner sur l'herbe » ?",
+                    "answer": "Edouard Manet",
+                    "propositions": [
+                        "Edouard Manet",
+                        "Auguste Renoir",
+                        "Alfred Sisley"
+                    ]
+                }
+            ]
+    },
+        "Fauvisme": {
+            "quizzs": [{
+                    "question": "Qui était le chef de file des fauvistes ?",
+                    "answer": "Henri Matisse",
+                    "propositions": [
+                        "Georges Braque",
+                        "Henri Matisse",
+                        "Maurice Vlaminck"
+                    ]
+                },{
+                    "question": "D'où vient le nom « fauvisme » ?",
+                    "answer": "Des couleurs très vives utilisées",
+                    "propositions": [
+                        "De leur prédilection pour les animaux sauvages",
+                        "Des couleurs très vives utilisées",
+                        "De leur comportement de voyou"
+                    ]
+                },{
+                    "question": "Quel peintre fauviste s'orienta ensuite vers le cubisme ?",
+                    "answer": "Georges Braque",
+                    "propositions": [
+                        "Georges Braque",
+                        "André Derain",
+                        "Charles Camoin"
+                    ]
+                },{
+                    "question": "Qui a peint « La fée électricité » ?",
+                    "answer": "Raoul Dufy",
+                    "propositions": [
+                        "Raoul Dufy",
+                        "Henri Matisse",
+                        "Maurice de Vlaminck"
+                    ]
+                },{
+                    "question": "Combien de temps a duré le mouvement fauviste ?",
+                    "answer": "10 ans",
+                    "propositions": [
+                        "10 ans",
+                        "20 ans",
+                        "30 ans"
+                    ]
+                },{
+                    "question": "Qui a peint « La Danse » ?",
+                    "answer": "Henri Matisse",
+                    "propositions": [
+                        "André Derain",
+                        "Henri Matisse",
+                        "Charles Camoin"
+                    ]
+                },{
+                    "question": "Lequel de ces fauves a été mécanicien ?",
+                    "answer": "Maurice de Vlaminck",
+                    "propositions": [
+                        "Louis Valtat",
+                        "Raoul Dufy",
+                        "Maurice de Vlaminck"
+                    ]
+                },{
+                    "question": "Lequel de ces artistes a été exposé au Louvre de son vivant ?",
+                    "answer": "Georges Braque",
+                    "propositions": [
+                        "Georges Braque",
+                        "André Derain",
+                        "Henri Matisse"
+                    ]
+                },{
+                    "question": "Lequel de ces artistes n'a pas influencé le fauvisme ?",
+                    "answer": "Rosa Bonheur",
+                    "propositions": [
+                        "Vincent Van Gogh",
+                        "Paul Gauguin",
+                        "Rosa Bonheur"
+                    ]
+                },{
+                    "question": "Qui a dit « Picasso brise les formes. Moi, j'en suis le créateur. » ?",
+                    "answer": "Henri Matisse",
+                    "propositions": [
+                        "Georges Braque",
+                        "André Derain",
+                        "Henri Matisse"
+                    ]
+                }
+            ]
+    },
+        "Sculptures": {
+            "quizzs": [{
+                    "question": "Qui a réalisé Le Penseur ?",
+                    "answer": "Auguste Rodin",
+                    "propositions": [
+                        "Le Bernin",
+                        "Camille Claudel",
+                        "Auguste Rodin"
+                    ]
+                },{
+                    "question": "Qui est l'auteur de La petite Sirène à Copenhague ?",
+                    "answer": "Edvard Eriksen",
+                    "propositions": [
+                        "Hans Christian Andersen ",
+                        "Edvard Eriksen",
+                        "Niels Hansen Jacobsen"
+                    ]
+                },{
+                    "question": "Qui a sculpté le David exposé à Florence ?",
+                    "answer": "Michel-Ange",
+                    "propositions": [
+                        "Michel-Ange",
+                        "Donatello",
+                        "Léonard de Vinci"
+                    ]
+                },{
+                    "question": "Qui est connu pour ses sculptures d'hommes très maigres et allongés ?",
+                    "answer": "Alberto Giacometti",
+                    "propositions": [
+                        "Louise Bourgeois",
+                        "Alexander Calder",
+                        "Alberto Giacometti"
+                    ]
+                },{
+                    "question": "Qui est le sculpture des Nanas ?",
+                    "answer": "Niki de Saint Phalle",
+                    "propositions": [
+                        "Niki de Saint Phalle",
+                        "Fernando Botero",
+                        "Jaume Plensa"
+                    ]
+                },{
+                    "question": "Qui a réalisé l'Enlèvement de Proserpine ?",
+                    "answer": "François Girardon",
+                    "propositions": [
+                        "Pierre Legros",
+                        "François Girardon",
+                        "Guillaume Coustou"
+                    ]
+                },{
+                    "question": "Comment s'appellent les sculptures de l'île de Pâques ?",
+                    "answer": "Les Moaï",
+                    "propositions": [
+                        "Les Moaï",
+                        "Les Maori",
+                        "Les Monoï"
+                    ]
+                },{
+                    "question": "Quelle est la sculpture qui symbolise Bruxelles ?",
+                    "answer": "Manneken Pis",
+                    "propositions": [
+                        "La petite sirène",
+                        "Le David",
+                        "Manneken Pis"
+                    ]
+                },{
+                    "question": "Avec Gustave Eiffel, qui a réalisé la Statue de la Liberté ?",
+                    "answer": "Frédéric-Auguste Bartholdi",
+                    "propositions": [
+                        "Alexander Calder",
+                        "Fernando Botero",
+                        "Frédéric-Auguste Bartholdi"
+                    ]
+                },{
+                    "question": "Où se trouve Milo, l'île où a été trouvée la Venus de Milo ?",
+                    "answer": "Grèce",
+                    "propositions": [
+                        "Grèce",
+                        "Turquie",
+                        "Crète"
+                    ]
+                }
+            ]
+    },
+        "Le Quizz de 2022": {
+            "quizzs": [{
+                    "question": "Quand a débuté l’invasion de l’Ukraine par la Russie ?",
+                    "answer": "24 février 2022",
+                    "propositions": [
+                        "24 janvier 2022",
+                        "24 février 2022",
+                        "24 mars 2022"
+                    ]
+                },{
+                    "question": "Qui était président du Conseil de l’Union européenne pendant les 6 premiers mois de l’année ?",
+                    "answer": "Emmanuel Macron",
+                    "propositions": [
+                        "Olaf Scholz",
+                        "Ursula von der Leyen",
+                        "Emmanuel Macron"
+                    ]
+                },{
+                    "question": "Qui a gagné le prix Goncourt en 2022 ?",
+                    "answer": "Brigitte Giraud",
+                    "propositions": [
+                        "Cloé Korman",
+                        "Brigitte Giraud",
+                        "Makenzy Orcel"
+                    ]
+                },{
+                    "question": "Décédée le 8 septembre 2022, Elisabeth II aura connu combien de Premiers ministres ?",
+                    "answer": "15",
+                    "propositions": [
+                        "10",
+                        "12",
+                        "15"
+                    ]
+                },{
+                    "question": "Qu'est parvenu à faire la Nasa dans le cadre de la mission Dart ?",
+                    "answer": "Dévier un astéroïde de sa trajectoire",
+                    "propositions": [
+                        "Dévier un astéroïde de sa trajectoire",
+                        "Trouver de l’eau sur Mars",
+                        "Envoyer une fusée autour de la Lune"
+                    ]
+                },{
+                    "question": "La population mondiale a dépassé en novembre :",
+                    "answer": "8 milliards",
+                    "propositions": [
+                        "7 milliards",
+                        "8 milliards",
+                        "9 milliards"
+                    ]
+                },{
+                    "question": "Qui a été élu président du Brésil en 2022 ?",
+                    "answer": "Luiz Inàcio Lula da Silva",
+                    "propositions": [
+                        "Dilma Rousseff",
+                        "Jair Bolsonaro",
+                        "Luiz Inàcio Lula da Silva"
+                    ]
+                },{
+                    "question": "Dans quel pays ont eu lieu des inondations ayant causé la mort de 1700 personnes ?",
+                    "answer": "Pakistan",
+                    "propositions": [
+                        "Pakistan",
+                        "Vietnam",
+                        "Brésil"
+                    ]
+                },{
+                    "question": "Où ont eu lieu les Jeux Olympiques d’Hiver ?",
+                    "answer": "Chine",
+                    "propositions": [
+                        "Japon",
+                        "Corée du Sud",
+                        "Chine"
+                    ]
+                },{
+                    "question": "A qui a été décerné le prix Nobel de littérature ?",
+                    "answer": "Annie Ernaux",
+                    "propositions": [
+                        "Annie Ernaux",
+                        "Maryse Condé",
+                        "Margaret Atwood"
+                    ]
+                }
+            ]
+    },
+        "Rois": {
+            "quizzs": [{
+                    "question": "De quel roi Richelieu était-il le ministre ?",
+                    "answer": "Louis XIII",
+                    "propositions": [
+                        "Louis XIII",
+                        "Charles VII",
+                        "Louis XIV"
+                    ]
+                },{
+                    "question": "Pour arriver au pouvoir Henri IV doit renoncer :",
+                    "answer": "A sa foi protestante",
+                    "propositions": [
+                        "A monter sur le trône d’Espagne",
+                        "A sa foi protestante",
+                        "A Marie de Medicis"
+                    ]
+                },{
+                    "question": "A quel roi doit-on ce fameux mot « l'exactitude est la politesse des rois » ?",
+                    "answer": "Louis XVIII",
+                    "propositions": [
+                        "Louis XVIII",
+                        "Louis XIV",
+                        "Henri IV"
+                    ]
+                },{
+                    "question": "Quelle grande victoire de Philippe Auguste est restée dans les mémoires ?",
+                    "answer": "Bouvines",
+                    "propositions": [
+                        "Crécy",
+                        "Marignan",
+                        "Bouvines"
+                    ]
+                },{
+                    "question": "Quel roi promulgua l’Edit de Nantes ?",
+                    "answer": "Henri IV",
+                    "propositions": [
+                        "Henri IV",
+                        "Charles X",
+                        "Louis XIV"
+                    ]
+                },{
+                    "question": "La marquise de Pompadour était la favorite de quel roi ?",
+                    "answer": "Louis XV",
+                    "propositions": [
+                        "Louis-Philippe I",
+                        "Louis XV",
+                        "Louis III"
+                    ]
+                },{
+                    "question": "Quel roi de France est communément appelé Saint Louis ?",
+                    "answer": "Louis IX",
+                    "propositions": [
+                        "Louis IX",
+                        "Louis XI",
+                        "Louis VI"
+                    ]
+                },{
+                    "question": "Sur quel pays règnent encore les Bourbons ?",
+                    "answer": "Espagne",
+                    "propositions": [
+                        "Pays-Bas",
+                        "Espagne",
+                        "Suède"
+                    ]
+                },{
+                    "question": "Quel roi avait pour devise « Qui s’y frotte, s’y pique » ?",
+                    "answer": "Louis XII",
+                    "propositions": [
+                        "Charles VII",
+                        "Louis XII",
+                        "Philippe Auguste"
+                    ]
+                },{
+                    "question": "Pourquoi Louis XI était surnommé « l'universelle arragne » ?",
+                    "answer": "Car il régnait par la ruse",
+                    "propositions": [
+                        "Car il régnait par la ruse",
+                        "Car il était cruel",
+                        "Car il était laid"
+                    ]
+                }
+            ]
+        
+    },
+        "Le Moyen-Age": {
+            "quizzs": [{
+                    "question": "En quelle année a commencé le Moyen-Age ?",
+                    "answer": "En 476",
+                    "propositions": [
+                        "En 476",
+                        "En 596",
+                        "En 696"
+                    ]
+                },{
+                    "question": "Combien de temps a duré le Moyen-Age?",
+                    "answer": "1 000 ans",
+                    "propositions": [
+                        "200 ans",
+                        "400 ans",
+                        "1 000 ans"
+                    ]
+                },{
+                    "question": "Quel était le nom de la cérémonie qui permettait de devenir chevalier ?",
+                    "answer": "Adoubement",
+                    "propositions": [
+                        "Adoublement",
+                        "Adoubement",
+                        "Adoblement"
+                    ]
+                },{
+                    "question": "En quelle année a eu lieu la première croisade ?",
+                    "answer": "1095",
+                    "propositions": [
+                        "990",
+                        "1095",
+                        "1145"
+                    ]
+                },{
+                    "question": "Combien de victimes a fait la peste noire au 13ème siècle ?",
+                    "answer": "25 millions",
+                    "propositions": [
+                        "25 millions",
+                        "35 millions",
+                        "45 millions"
+                    ]
+                },{
+                    "question": "Qu'était l'estampie ?",
+                    "answer": "Une danse avec des sauts",
+                    "propositions": [
+                        "Une danse avec des sauts",
+                        "L'ancêtre du timbre",
+                        "Une arme"
+                    ]
+                },{
+                    "question": "Qui était la favorite de Charles VII ?",
+                    "answer": "Agnès Sorel",
+                    "propositions": [
+                        "Marie de Clèves",
+                        "Diane de Poitiers",
+                        "Agnès Sorel"
+                    ]
+                },{
+                    "question": "Qui était le maître de l'ordre des Templiers, condamné à être brulé sur un bûcher ?",
+                    "answer": "Jacques de Molay",
+                    "propositions": [
+                        "Jacques de Molay",
+                        "Godefroy de Bouillon",
+                        "Hugues de Payns"
+                    ]
+                },{
+                    "question": "Qui sont les Cathares ?",
+                    "answer": "Un mouvement hérétique du sud de la France",
+                    "propositions": [
+                        "Un groupe de paysans révolutionnaires",
+                        "Un mouvement hérétique du sud de la France",
+                        "Des vikings du nord du Danemark"
+                    ]
+                },{
+                    "question": "Qu'est-ce que l'ost ?",
+                    "answer": "Le service militaire dû par les vassaux au suzerain",
+                    "propositions": [
+                        "Une pièce de théatre courte",
+                        "Une monnaie locale",
+                        "Le service militaire dû par les vassaux au suzerain"
+                    ]
+                }
+            ]
+        
+    },
+        "Assassins": {
+        "quizzs": [{
+            "question": "Quel roi Ravaillac a-t-il assassiné ? ",
+            "answer": "Henri IV",
+            "propositions": [
+                "François Ier",
+                "Henri II",
+                "Henri IV"
+            ]
+        },{
+            "question": "Qui a assassiné Henri III ?",
+            "answer": "Jacques Clément",
+            "propositions": ["Paul Clément","Jacques Clément","Henri Clément"
+            ]
+        },{
+            "question": "Qui a assassiné Yitzhak Rabin ?",
+            "answer": "Yigal Amir",
+            "propositions": [
+                "Yigal Amir",
+                "Sada Abe",
+                "Friedrich Adler"
+            ]
+        },{
+            "question": "Qui a été assassiné par Charlotte Corday ?",
+            "answer": "Jean-Paul Marat",
+            "propositions": [
+                "Jean-Paul Marat",
+                "Georges Jacques Danton",
+                "Maximilien Robespierre"
+            ]
+        },{
+            "question": "Qui a assassiné Lee Harvey Oswald ?",
+            "answer": "Jack Ruby",
+            "propositions": [
+                "James Robert",
+                "Jack Ruby",
+                "Kenneth Carol"
+            ]
+        },{
+            "question": "Qui a été assassiné par John Wilkes Booth ?",
+            "answer": "Abraham Lincoln",
+            "propositions": [
+                "Abraham Lincoln",
+                "Malcom X",
+                "James A. Garfield"
+            ]
+        },{
+            "question": "Quel était l'un des assassins de Jules Cesar ?",
+            "answer": "Brutus",
+            "propositions": [
+                "Julius",
+                "Britannicus",
+                "Brutus"
+            ]
+        },{
+            "question": "Qui a assassiné Martin Luther King ?",
+            "answer": "James Earl Ray",
+            "propositions": [
+                "James Earl Ray",
+                "John Felton",
+                "Richard Remington"
+            ]
+        },{
+            "question": "Bob Kennedy a été assassiné par :",
+            "answer": "Shiran Shiran",
+            "propositions": [
+                "Harry Bolton",
+                "Shiran Shiran",
+                "Allen Lee Davis"
+            ]
+        },{
+            "question": "Qui a assassiné Versace ?",
+            "answer": "Andrew Cunanan",
+            "propositions": [
+                "Andrew Cunanan",
+                "Sheryl Miller",
+                "Mathew Tilmor"
+            ]
+        }
+    ]
+    },
+        "Les merveilles antiques": {
+            "quizzs": [{
+                "question": "Combien compte-t-on de merveilles du monde antique ? ",
+                "answer": "7",
+                "propositions": [
+                    "5",
+                    "6",
+                    "7"
+                ]
+            },{
+                "question": "Quelle est la seule merveille qui existe encore de nos jours ?",
+                "answer": "La pyramide de Khéops à Gizeh",
+                "propositions": ["Le temple d'Artémis à Ephèse","Le phare d'Alexandrie","La pyramide de Khéops à Gizeh"
+                ]
+            },{
+                "question": "Quel monument ne fait pas partie des 7 merveilles ?",
+                "answer": "Le Colisée de Rome",
+                "propositions": [
+                    "Le mausolée d'Halicarnasse",
+                    "Le Colisée de Rome",
+                    "Les jardins suspendus de Babylone"
+                ]
+            },{
+                "question": "Quelle est la plus récente des 7 merveilles ?",
+                "answer": "Le phare d'Alexandrie",
+                "propositions": [
+                    "Le phare d'Alexandrie",
+                    "La statue de Zeus à Olympie",
+                    "Le colosse de Rhodes"
+                ]
+            },{
+                "question": "Quelle est la merveille dont l'existence n'a pas été prouvée par des fouilles ?",
+                "answer": "Les jardins suspendus de Babylone",
+                "propositions": [
+                    "Les jardins suspendus de Babylone",
+                    "Le tombeau de Mausole à Halicarnasse",
+                    "Le temple d'Artémis à Ephèse"
+                ]
+            },{
+                "question": "Quelle est la plus ancienne des 7 merveilles ?",
+                "answer": "La pyramide de Khéops à Gizeh",
+                "propositions": [
+                    "La pyramide de Khéops à Gizeh",
+                    "Le colosse de Rhodes",
+                    "Le temple d'Artémis à Ephèse"
+                ]
+            },{
+                "question": "La statue de Zeus à Olympie était chryséléphantine, c'est-à-dire :",
+                "answer": "Faite en ivoire et en or",
+                "propositions": [
+                    "Faite en ivoire et en or",
+                    "Faite en marbre et en or",
+                    "Faite en argent et en or"
+                ]
+            },{
+                "question": "Le mausolée d'Halicarnasse était le tombeau de quel roi ?",
+                "answer": "Mausole",
+                "propositions": [
+                    "Mausole",
+                    "Alexandre le Grand",
+                    "Mansa Moussa"
+                ]
+            },{
+                "question": "Qui représentait le colosse de Rhodes ?",
+                "answer": "Hélios",
+                "propositions": [
+                    "Zeus",
+                    "Hélios",
+                    "Appolon"
+                ]
+            },{
+                "question": "Où se trouvait le temple d'Artémis ?",
+                "answer": "En Turquie",
+                "propositions": [
+                    "En Grèce",
+                    "En Turquie",
+                    "En Egypte"
+                ]
+            }
+        ]
+        },
+        "Dates historiques (France)": {
+        "quizzs": [{
+            "question": "Que s'est-il passé en 732 ?",
+            "answer": "Défaite des musulmans à Poitiers",
+            "propositions": [
+                "Sacre de Pépin le Bref",
+                "Défaite des musulmans à Poitiers",
+                "Sacre d'Hugues Capet"
+            ]
+        },{
+            "question": "En quelle année Charlemagne a-t-il été sacré empereur ?",
+            "answer": "800",
+            "propositions": [
+                "800",
+                "805",
+                "810"
+            ]
+        },{
+            "question": "En quelle année Philippe-Auguste remporta la bataille de Bouvines ?",
+            "answer": "1214",
+            "propositions": [
+                "1114",
+                "1214",
+                "1314"
+            ]
+        },{
+            "question": "Que s'est-il passé le 24 août 1572 ?",
+            "answer": "Massacre des protestants lors de la nuit de la Saint Barthelemy",
+            "propositions": ["Massacre des protestants lors de la nuit de la Saint Barthelemy","Assassinat d'Henri IV par Ravaillac","Début du règne de Louis XIV"
+            ]
+        },{
+            "question": "Que s'est-il passé en 1804 ?",
+            "answer": "Sacre de Napoléon comme Empereur",
+            "propositions": [
+                "Défaite de Waterloo",
+                "Victoire d'Austerlitz",
+                "Sacre de Napoléon comme Empereur"
+            ]
+        },{
+            "question": "Que s'est-il passé en 1870 ?",
+            "answer": "Défaite de Sedan",
+            "propositions": [
+                "Proclamation de la 2ème république",
+                "Insurrection de la Commune de Paris",
+                "Défaite de Sedan"
+            ]
+        },{
+            "question": "En quelle année l'ordonnance de Villers-Cotterêts, imposant le français comme langue officielle, a été signée ?",
+            "answer": "1539",
+            "propositions": [
+                "1439",
+                "1539",
+                "1639"
+            ]
+        },{
+            "question": "En quelle année Louis XVI a-t-il été guillotiné ?",
+            "answer": "1793",
+            "propositions": [
+                "1789",
+                "1791",
+                "1793"
+            ]
+        },{
+            "question": "En quelle année l'encyclopédie de Diderot fut-elle achevée ?",
+            "answer": "1772",
+            "propositions": [
+                "1672",
+                "1772",
+                "1872"
+            ]
+        },{
+            "question": "En quelle année commence la Vème République ?",
+            "answer": "1958",
+            "propositions": [
+                "1948",
+                "1958",
+                "1968"
+            ]
+        }
+    ]
+    },
+        "Volcan": {
+            "quizzs": [{
+                    "question": "Quel mythe est né de l’éruption du volcan de Santorin dans l’Antiquité ?",
+                    "answer": "L’Atlantide",
+                    "propositions": [
+                        "Le Déluge",
+                        "Le Léviathan",
+                        "L’Atlantide"
+                    ]
+                },{
+                    "question": "Qu’a recraché la lave du Volcan Kilauea à Hawaï ?",
+                    "answer": "Des pierres précieuses vertes",
+                    "propositions": [
+                        "Des ossements de dinosaures",
+                        "Des pierres précieuses vertes",
+                        "Des pépites d’or"
+                    ]
+                },{
+                    "question": "Avec 70 000 victimes, son éruption détient un triste record. Il s'agit...",
+                    "answer": "Du Tambora en Indonésie en 1815",
+                    "propositions": [
+                        "Du Tambora en Indonésie en 1815",
+                        "Du Nevado de Ruiz en Colombie en 1985",
+                        "De la Montagne Pelée en Martinique en 1902"
+                    ]
+                },{
+                    "question": "Combien y-a-t-il de volcans actifs ?",
+                    "answer": "1500",
+                    "propositions": ["500","1500","2000"
+                    ]
+                },{
+                    "question": "Quel est le nom de l'autre ville engloutie, comme Pompéi, par l'éruption du Vésuve en 79 ap. J.-C. ?",
+                    "answer": "Herculanum",
+                    "propositions": [
+                        "Laudanum",
+                        "Triclinium",
+                        "Herculanum"
+                    ]
+                },{
+                    "question": "Quelle est la température de la lave en fusion ?",
+                    "answer": "1 200°C",
+                    "propositions": [
+                        "2 000°C",
+                        "2 500°C",
+                        "1 200°C"
+                    ]
+                },{
+                    "question": "Où se trouve le plus haut volcan du monde ?",
+                    "answer": "Hawaï",
+                    "propositions": [
+                        "Hawaï",
+                        "Philippines",
+                        "Indes"
+                    ]
+                },{
+                    "question": "Où se situe le volcan Eyjafjallajökull qui est entré en éruption en 2010 ?",
+                    "answer": "En Islande",
+                    "propositions": [
+                        "En Finlande",
+                        "Au Groenland",
+                        "En Islande"
+                    ]
+                },{
+                    "question": "Comment se nomme le volcan actif de la Réunion ?",
+                    "answer": "Le Piton de la Fournaise",
+                    "propositions": [
+                        "La Soufrière",
+                        "La Montagne Pelée",
+                        "Le Piton de la Fournaise"
+                    ]
+                },{
+                    "question": "A quand remonte la dernière éruption des volcans d’Auvergne ?",
+                    "answer": "6 700 ans",
+                    "propositions": [
+                        "6 700 ans",
+                        "67 000 ans",
+                        "80 000 ans"
+                    ]
+                }
+            ]
+        },
+        "Astronomie": {
+            "quizzs": [{
+                    "question": "Quelle planète ne fait officiellement plus partie des planètes du sytème solaire ?",
+                    "answer": "Pluton",
+                    "propositions": [
+                        "Pluton",
+                        "Neptune",
+                        "Io"
+                    ]
+                },{
+                    "question": "Qu'est en réalité l'étoile du Berger ?",
+                    "answer": "Vénus",
+                    "propositions": [
+                        "Vénus",
+                        "Mars",
+                        "Mercure"
+                    ]
+                },{
+                    "question": "Quel est le diamètre du Soleil ?",
+                    "answer": "1 392 000 km",
+                    "propositions": [
+                        "1 000 392 km",
+                        "1 392 000 km",
+                        "2 392 000 km"
+                    ]
+                },{
+                    "question": "Sur quelle planète les jours sont plus longs que les années ?",
+                    "answer": "Vénus",
+                    "propositions": ["Vénus","Jupiter","Saturne"
+                    ]
+                },{
+                    "question": "En quelle année la comète de Haley sera à nouveau visible depuis la Terre ?",
+                    "answer": "2061",
+                    "propositions": [
+                        "2061",
+                        "2110",
+                        "2205"
+                    ]
+                },{
+                    "question": "Quelle est la galaxie la plus proche de la notre ?",
+                    "answer": "Andromède",
+                    "propositions": [
+                        "Télémaque",
+                        "Andromaque",
+                        "Andromède"
+                    ]
+                },{
+                    "question": "Combien de temps la lumière du Soleil met pour atteindre la Terre ?",
+                    "answer": "8 minutes",
+                    "propositions": [
+                        "2 secondes",
+                        "3 minutes",
+                        "8 minutes"
+                    ]
+                },{
+                    "question": "Quelle est la planète la plus éloignée du Soleil ?",
+                    "answer": "Neptune",
+                    "propositions": [
+                        "Mercure",
+                        "Neptune",
+                        "Vénus"
+                    ]
+                },{
+                    "question": "Quelle étoile est la plus proche de nous après le Soleil ?",
+                    "answer": "Proxima du Centaure",
+                    "propositions": [
+                        "Proxima du Centaure",
+                        "Véga",
+                        "Altaïr"
+                    ]
+                },{
+                    "question": "Quelle est la vitesse de la lumière ?",
+                    "answer": "299 792 458 m/s",
+                    "propositions": [
+                        "199 792 458 m/s",
+                        "299 792 458 m/s",
+                        "399 792 458 m/s"
+                    ]
+                }
+            ]
+        },
+        "Chimie": {
+            "quizzs": [{
+                    "question": "Comment s'appelle l'appareil qui permet de chauffer les préparations en chimie ?",
+                    "answer": "Bec Bunsen",
+                    "propositions": [
+                        "Bec Bunchen",
+                        "Bec Bunsen",
+                        "Bec à Benzène"
+                    ]
+                },{
+                    "question": "Quel est le nom du tableau périodique des éléments ?",
+                    "answer": "La table de Mendeleïev",
+                    "propositions": [
+                        "Le tableau de Mendchève",
+                        "Le tableau de Mandchou",
+                        "La table de Mendeleïev"
+                    ]
+                },{
+                    "question": "Que signifie pH ?",
+                    "answer": "Potentiel hydrogène",
+                    "propositions": [
+                        "Potentiel hydrogène",
+                        "Pourcentage d'Hélium",
+                        "Pourcentage d'hydrogène"
+                    ]
+                },{
+                    "question": "Quel est le nom des éléments qui tournent autour du noyau dans un atome ?",
+                    "answer": "Les électrons",
+                    "propositions": ["Les électrons","Les ions","Les positrons"
+                    ]
+                },{
+                    "question": "Un atome est électriquement :",
+                    "answer": "Neutre",
+                    "propositions": [
+                        "Positif",
+                        "Négatif",
+                        "Neutre"
+                    ]
+                },{
+                    "question": "Quel est le symbole chimique de l'hélium ?",
+                    "answer": "He",
+                    "propositions": [
+                        "He",
+                        "H",
+                        "Hf"
+                    ]
+                },{
+                    "question": "Quelle est la formule chimique du sel ?",
+                    "answer": "NaCl",
+                    "propositions": [
+                        "CH4",
+                        "H20",
+                        "NaCl"
+                    ]
+                },{
+                    "question": "Quelle loi Lavoisier a-t-il énoncée ?",
+                    "answer": "La loi de la conservation de la masse",
+                    "propositions": [
+                        "La loi de l'entropie",
+                        "La loi des proportions constantes",
+                        "La loi de la conservation de la masse"
+                    ]
+                },{
+                    "question": "Quel élément ne se trouve pas dans le noyau d'un atome ?",
+                    "answer": "Neutrinon",
+                    "propositions": [
+                        "Proton",
+                        "Neutrinon",
+                        "Neutron"
+                    ]
+                },{
+                    "question": "Quelle est la charge du noyau d'un atome ?",
+                    "answer": "Positive",
+                    "propositions": [
+                        "Positive",
+                        "Négative",
+                        "Neutre"
+                    ]
+                }
+            ]
+        },
+        "Chercheurs/Médecins": {
+            "quizzs": [{
+                    "question": "Quel chercheur a découvert le vaccin contre la rage ?",
+                    "answer": "Louis Pasteur",
+                    "propositions": [
+                        "Louis Pasteur",
+                        "René Laennec",
+                        "Ambroise Paré"
+                    ]
+                },{
+                    "question": "Qui a découvert la pénicilline ?",
+                    "answer": "Alexander Fleming",
+                    "propositions": [
+                        "Ian Fleming",
+                        "Alexander Fleming",
+                        "Arthur Fleming"
+                    ]
+                },{
+                    "question": "Quels chercheurs ont identifié et isolé le virus du SIDA ?",
+                    "answer": "Luc Montagnier et François Barré-Sinoussi",
+                    "propositions": [
+                        "May Britt et Edvard Moser",
+                        "Gerty Theresa et Carl Cori",
+                        "Luc Montagnier et François Barré-Sinoussi"
+                    ]
+                },{
+                    "question": "Qui a découvert le bacille à l'origine de la tuberculose ?",
+                    "answer": "Robert Koch",
+                    "propositions": ["Jean-Martin Charcot","Robert Koch","Jean-Louis Alibert"
+                    ]
+                },{
+                    "question": "Quel médecin a remplacé la cautérisation des plaies par la ligature des artères ?",
+                    "answer": "Ambroise Paré",
+                    "propositions": [
+                        "Emile Roux",
+                        "Xavier Bichat",
+                        "Ambroise Paré"
+                    ]
+                },{
+                    "question": "Quel médecin a inventé le stéthoscope ?",
+                    "answer": "René Laennec",
+                    "propositions": [
+                        "Albert Schweitzer",
+                        "René Laennec",
+                        "Jean-Martin Charcot"
+                    ]
+                },{
+                    "question": "Qui est considéré comme étant le père de la médecine ?",
+                    "answer": "Hippocrate",
+                    "propositions": [
+                        "Galien",
+                        "Esculape",
+                        "Hippocrate"
+                    ]
+                },{
+                    "question": "Quel médecin a pratiqué la première greffe du coeur ?",
+                    "answer": "Christiaan Barnard",
+                    "propositions": [
+                        "Christiaan Barnard",
+                        "Christian Bernard",
+                        "Christian Bonnard"
+                    ]
+                },{
+                    "question": "Quel médecin a découvert le bacille de la peste ?",
+                    "answer": "Alexandre Yersin",
+                    "propositions": [
+                        "Edward Jenner",
+                        "Alexandre Yersin",
+                        "James Parkinson"
+                    ]
+                },{
+                    "question": "Qui est le père des réflexes conditionnés ?",
+                    "answer": "Ivan Pavlov",
+                    "propositions": [
+                        "Ivan Pavlov",
+                        "Sigmund Freud",
+                        "James Parkinson"
+                    ]
+                }
+            ]
+        },
+        "Capitales Européennes": {
+            "quizzs": [{
+                    "question": "Quelle est la capitale de la Finlande ?",
+                    "answer": "Helsinki",
+                    "propositions": [
+                        "Zagreb",
+                        "Riga",
+                        "Helsinki"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Suisse ?",
+                    "answer": "Berne",
+                    "propositions": ["Zurich","Genève","Berne"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Grèce ?",
+                    "answer": "Athènes",
+                    "propositions": [
+                        "Minsk",
+                        "Athènes",
+                        "Amsterdam"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Suède ?",
+                    "answer": "Stockholm",
+                    "propositions": [
+                        "Stockholm",
+                        "Oslo",
+                        "Helsinki"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Lituanie ?",
+                    "answer": "Vilnius",
+                    "propositions": [
+                        "Riga",
+                        "Tallinn",
+                        "Vilnius"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Croatie ?",
+                    "answer": "Zagreb",
+                    "propositions": [
+                        "Sofia",
+                        "Zagreb",
+                        "Tirana"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Danemark ?",
+                    "answer": "Copenhague",
+                    "propositions": [
+                        "Copenhague",
+                        "Vienne",
+                        "Amsterdam"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de l'Islande ?",
+                    "answer": "Reykjavík",
+                    "propositions": [
+                        "Reykjavík",
+                        "Stockholm",
+                        "Oslo"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Portugal ?",
+                    "answer": "Lisbonne",
+                    "propositions": [
+                        "Amadora",
+                        "Porto",
+                        "Lisbonne"
+                    ]
+                }, {
+                    "question": "Quelle est la capitale de la Norvège ?",
+                    "answer": "Oslo",
+                    "propositions": [
+                        "Oslo",
+                        "Stockholm",
+                        "Riga"
+                    ]
+                }
+            ]
+        },
+        "Capitales Africaines": {
+            "quizzs": [{
+                    "question": "Quelle est la capitale de l’Algérie ?",
+                    "answer": "Alger",
+                    "propositions": [
+                        "Accra",
+                        "Alger",
+                        "Rabat"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de la Côte d’Ivoire ?",
+                    "answer": "Yamoussoukro",
+                    "propositions": ["Yamoussoukro","Abuja","Kinshasa"
+                    ]
+                },{
+                    "question": "Quelle est la capitale de l’Egypte ?",
+                    "answer": "Le Caire",
+                    "propositions": [
+                        "Le Caire",
+                        "Tripoli",
+                        "Rabat"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Sénégal ?",
+                    "answer": "Dakar",
+                    "propositions": [
+                        "Yaoundé",
+                        "Luanda",
+                        "Dakar"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Congo ?",
+                    "answer": "Brazzaville",
+                    "propositions": [
+                        "Monrovia",
+                        "Brazzaville",
+                        "Conakry"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Maroc ?",
+                    "answer": "Rabat",
+                    "propositions": [
+                        "Rabat",
+                        "Accra",
+                        "Asmarra"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Mali ?",
+                    "answer": "Bamako",
+                    "propositions": [
+                        "Bamako",
+                        "Maputo",
+                        "Abuja"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Kenya ?",
+                    "answer": "Nairobi",
+                    "propositions": [
+                        "Libreville",
+                        "Tripoli",
+                        "Nairobi"
+                    ]
+                },{
+                    "question": "Quelle est la capitale du Ghana ?",
+                    "answer": "Accra",
+                    "propositions": [
+                        "Asmarra",
+                        "Accra",
+                        "Lomé"
+                    ]
+                }, {
+                    "question": "Quelle est la capitale du Gabon ?",
+                    "answer": "Libreville",
+                    "propositions": [
+                        "Abuja",
+                        "Libreville",
+                        "Bamako"
+                    ]
+                }
+            ]
+        },
+        "Montagnes": {
+            "quizzs": [{
+                    "question": "Quelle est la hauteur de l'Everest ?",
+                    "answer": "8848m",
+                    "propositions": [
+                        "8204m",
+                        "8848m",
+                        "8988m"
+                    ]
+                },{
+                    "question": "Où se situent les Appalaches ?",
+                    "answer": "Aux Etats-Unis",
+                    "propositions": ["Aux Etats-Unis","Au Mexique","Au Chili"
+                    ]
+                },{
+                    "question": "Quelle montagne sépare la France et l'Espagne ?",
+                    "answer": "Les Pyrénées",
+                    "propositions": [
+                        "Les Voges",
+                        "Les Alpes",
+                        "Les Pyrénées"
+                    ]
+                },{
+                    "question": "Où se trouve le Kilimandjaro ?",
+                    "answer": "Tanzanie",
+                    "propositions": [
+                        "Tanzanie",
+                        "Japon",
+                        "Mexique"
+                    ]
+                },{
+                    "question": "Quelle chaîne de montagne sépare le Chili de l'Argentine ?",
+                    "answer": "La cordillère des Andes",
+                    "propositions": [
+                        "La cordillère australienne",
+                        "Les montagnes Rocheuses",
+                        "La cordillère des Andes"
+                    ]
+                },{
+                    "question": "Où se trouve l'Atlas ?",
+                    "answer": "Maroc",
+                    "propositions": [
+                        "Maroc",
+                        "Algérie",
+                        "Egypte"
+                    ]
+                },{
+                    "question": "Comment s'appelle la célèbre montagne rouge d'Australie ?",
+                    "answer": "Uluru",
+                    "propositions": [
+                        "Alara",
+                        "Uluru",
+                        "Olira"
+                    ]
+                },{
+                    "question": "Quelle est la plus haute montagne du Japon ?",
+                    "answer": "Le mont Fuji",
+                    "propositions": [
+                        "Le mont Fuji",
+                        "Le mont Kita",
+                        "Le mont Aino"
+                    ]
+                },{
+                    "question": "Quelle est la seconde montagne la plus haute du monde ?",
+                    "answer": "Le K2",
+                    "propositions": [
+                        "L'Annapurna",
+                        "Le Makalu",
+                        "Le K2"
+                    ]
+                }, {
+                    "question": "En France, quelle est la hauteur minimale moyenne pour être qualifiée de montagne ?",
+                    "answer": "Entre 600 m et 800 m",
+                    "propositions": [
+                        "Entre 400 m et 600 m",
+                        "Entre 600 m et 800 m",
+                        "Entre 800 m et 1 000 m"
+                    ]
+                }
+            ]
+        },
+        "Fleuves, Rivières (France)": {
+            "quizzs": [{
+                    "question": "Quel est le plus long fleuve de France ?",
+                    "answer": "La Loire",
+                    "propositions": [
+                        "La Loire",
+                        "Le Rhône",
+                        "La Garonne"
+                    ]
+                },{
+                    "question": "Quelle est la plus grande rivière de France ?",
+                    "answer": "La Marne",
+                    "propositions": ["Le Cher","La Dordogne","La Marne"
+                    ]
+                },{
+                    "question": "Quel est le plus petit fleuve de France ?",
+                    "answer": "La Veules",
+                    "propositions": [
+                        "La Meuse",
+                        "La Veules",
+                        "L'Escaut"
+                    ]
+                },{
+                    "question": "Quel fleuve passe à Orléans ?",
+                    "answer": "La Loire",
+                    "propositions": [
+                        "La Seine",
+                        "La Garonne",
+                        "La Loire"
+                    ]
+                },{
+                    "question": "Où se jette le Rhin ?",
+                    "answer": "La mer du Nord",
+                    "propositions": [
+                        "La mer du Nord",
+                        "L'océan Atlantique",
+                        "La Manche"
+                    ]
+                },{
+                    "question": "Quel fleuve passe à Bayonne ?",
+                    "answer": "L'Adour",
+                    "propositions": [
+                        "L'Adour",
+                        "La Dordogne",
+                        "La Garonne"
+                    ]
+                },{
+                    "question": "Quel est le fleuve préféré des cruciverbistes ?",
+                    "answer": "L'Aa",
+                    "propositions": [
+                        "La Ba",
+                        "L'Ab",
+                        "L'Aa"
+                    ]
+                },{
+                    "question": "Quelle rivière passe à Lyon ?",
+                    "answer": "La Saône",
+                    "propositions": [
+                        "La Saône",
+                        "Le Rhône",
+                        "Le Beaujolais"
+                    ]
+                },{
+                    "question": "Quel fleuve se jette à Marseille dans la Méditerranée ?",
+                    "answer": "L'Huveaune",
+                    "propositions": [
+                        "L'Huveaune",
+                        "L'Aude",
+                        "L'Hérault"
+                    ]
+                }, {
+                    "question": "Quel fleuve passe à Limoges ?",
+                    "answer": "La Vienne",
+                    "propositions": [
+                        "La Vienne",
+                        "La Veuls",
+                        "La Vie"
+                    ]
+                }
+            ]
+        },
+        "Paris": {
+            "quizzs": [{
+                    "question": "Quel est le surnom de Paris ?",
+                    "answer": "La ville lumière",
+                    "propositions": [
+                        "La ville lumière",
+                        "La capitale éternelle",
+                        "La ville qui ne dort jamais"
+                    ]
+                },{
+                    "question": "Quelle est la plus grande rue de Paris ?",
+                    "answer": "La rue de Vaugirard",
+                    "propositions": ["La rue de Vaugirard","La rue de Rivoli","Les Champs-Elysées"
+                    ]
+                },{
+                    "question": "Quel est le nom du restaurant qui se trouve au 2ème étage de la Tour Eiffel ?",
+                    "answer": "Le Jules Verne",
+                    "propositions": [
+                        "Le Ciel de Paris",
+                        "Le Tout Paris",
+                        "Le Jules Verne"
+                    ]
+                },{
+                    "question": "Combien de villes portent le nom de Paris dans le monde ?",
+                    "answer": "30",
+                    "propositions": [
+                        "1",
+                        "30",
+                        "60"
+                    ]
+                },{
+                    "question": "Quel nom lui donnaient les romains ?",
+                    "answer": "Lutèce",
+                    "propositions": [
+                        "Lucrèce",
+                        "Lutèce",
+                        "Lugdunum"
+                    ]
+                },{
+                    "question": "Quel est le plus grand espace vert de Paris ?",
+                    "answer": "Le bois de Vincennes",
+                    "propositions": [
+                        "Le bois de Vincennes",
+                        "Le jardin du Luxembourg",
+                        "Le bois de Boulogne"
+                    ]
+                },{
+                    "question": "Combien d'arrondissements compte Paris ?",
+                    "answer": "20",
+                    "propositions": [
+                        "15",
+                        "20",
+                        "25"
+                    ]
+                },{
+                    "question": "Quelle est la plus petite rue de Paris ?",
+                    "answer": "La rue des Degrès",
+                    "propositions": [
+                        "La rue des Degrès",
+                        "La rue du Chat qui pêche",
+                        "La rue des Barres"
+                    ]
+                },{
+                    "question": "Quel monument domine Montmartre ?",
+                    "answer": "Le Sacré Coeur",
+                    "propositions": [
+                        "Le Sacré Coeur",
+                        "L'Arc de Triomphe'",
+                        "Notre Dame"
+                    ]
+                }, {
+                    "question": "Quelle est la devise de Paris ?",
+                    "answer": "Fluctuat nec mergitur",
+                    "propositions": [
+                        "Asper sed liber",
+                        "Causa nostræ lætitia ",
+                        "Fluctuat nec mergitur"
+                    ]
+                }
+            ]
+        },
+        "Grand dauphin": {
+            "quizzs": [{
+                "question": "La racine latine de dauphin est :",
+                "answer": "Delphinus",
+                "propositions": [
+                    "Daulphus",
+                    "Dolphinus",
+                    "Delphinus"
+                ]
+            },{
+                "question": "Combien existent-ils d'espèces de dauphins ?",
+                "answer": "43",
+                "propositions": ["15","23","43"
+                ]
+            },{
+                "question": "Quelle est la taille moyenne d'un grand dauphin ?",
+                "answer": "2 à 4 m",
+                "propositions": [
+                    "2 à 4 m",
+                    "3 à 4 m",
+                    "4 à 5 m"
+                ]
+            },{
+                "question": "Quel est le poids moyen d'un grand dauphin ?",
+                "answer": "150 à 400 kg",
+                "propositions": [
+                    "100 à 300 kg",
+                    "150 à 400 kg",
+                    "250 à 500 kg"
+                ]
+            },{
+                "question": "Comment s'appelle le petit du dauphin ?",
+                "answer": "delphineau",
+                "propositions": [
+                    "delphineau",
+                    "dauphineau",
+                    "daulphineau"
+                ]
+            },{
+                "question": "Quelle est la durée moyenne de gestation ?",
+                "answer": "12 mois",
+                "propositions": [
+                    "10 mois",
+                    "11 mois",
+                    "12 mois"
+                ]
+            },{
+                "question": "Quelle est la durée de vie moyenne d'un grand dauphin ?",
+                "answer": "35 ans",
+                "propositions": [
+                    "25 ans",
+                    "35 ans",
+                    "45 ans"
+                ]
+            },{
+                "question": "Comment s'appelle le trou présent sur la tête du dauphin ?",
+                "answer": "Un évent",
+                "propositions": [
+                    "Un auvent",
+                    "Un évent",
+                    "Un avant"
+                ]
+            },{
+                "question": "Quel est le nombre de delphineau dans une portée ?",
+                "answer": "1",
+                "propositions": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },{
+                "question": "Quel est le principal prédateur du dauphin ?",
+                "answer": "Le requin",
+                "propositions": [
+                    "L'orque",
+                    "L'homme",
+                    "Le requin"
+                ]
+            }
+        ]
+        },
+        "Les océans": {
+            "quizzs": [{
+                "question": "Quel est le nouvel océan reconnu en 2021 ?",
+                "answer": "L’océan Austral ",
+                "propositions": [
+                    "L’océan Arctique",
+                    "L’océan Indien",
+                    "L’océan Austral "
+                ]
+            },{
+                "question": "Combien y-a-t-il d’océan ? ",
+                "answer": "5",
+                "propositions": ["3","4","5"
+                ]
+            },{
+                "question": "Quel est le plus grand océan ?",
+                "answer": "L'océan Pacifique",
+                "propositions": [
+                    "L'océan Pacifique",
+                    "L'océan Atlantique",
+                    "L'océan Indien"
+                ]
+            },{
+                "question": "Dans quel océan se trouve Madagascar ?",
+                "answer": "L’océan Pacifique",
+                "propositions": [
+                    "L’océan Indien",
+                    "L’océan Atlantique",
+                    "L’océan Pacifique"
+                ]
+            },{
+                "question": "Qu’est ce qui différencie un océan d’une mer ?",
+                "answer": "La taille",
+                "propositions": [
+                    "La taille",
+                    "La profondeur",
+                    "L'espacement des terres"
+                ]
+            },{
+                "question": "Quel est la profondeur de la fosse des Mariannes dans l’océan Pacifique ?",
+                "answer": "11 000m",
+                "propositions": [
+                    "5 000m",
+                    "9 000m",
+                    "11 000m"
+                ]
+            },{
+                "question": "Quel est l’océan le moins profond ? ",
+                "answer": "L’océan Arctique",
+                "propositions": [
+                    "L’océan Indien",
+                    "L’océan Arctique",
+                    "L’océan Austral"
+                ]
+            },{
+                "question": "Les océans couvrent quelle surface de la Terre ?",
+                "answer": "70 %",
+                "propositions": [
+                    "50 %",
+                    "70 %",
+                    "80 %"
+                ]
+            },{
+                "question": "Dans quel océan se trouve Cuba ?",
+                "answer": "L’océan Atlantique",
+                "propositions": [
+                    "L’océan Indien",
+                    "L’océan Pacifique",
+                    "L’océan Atlantique"
+                ]
+            },{
+                "question": "Quel cap se trouve à la jonction de l’océan Pacifique et de l’océan Atlantique ?",
+                "answer": "Le cap Horn",
+                "propositions": [
+                    "Le cap Horn",
+                    "Le cap de Bonne Espérance",
+                    "Le cap Leeuwin"
+                ]
+            }
+        ]
+        },
+        "La Terre": {
+            "quizzs": [{
+                "question": "Quel est le diamètre de la Terre ?",
+                "answer": "12 742 km",
+                "propositions": [
+                    "12 742 km",
+                    "22 742 km",
+                    "32 742 km"
+                ]
+            },{
+                "question": "Quelle est la planète la plus proche de la Terre ?",
+                "answer": "Mercure",
+                "propositions": ["Mercure","Vénus","Mars"
+                ]
+            },{
+                "question": "Quel est le plus grand océan ?",
+                "answer": "L'océan Pacifique",
+                "propositions": [
+                    "L'océan Pacifique",
+                    "L'océan Atlantique",
+                    "L'océan Indien"
+                ]
+            },{
+                "question": "En hiver dans l'hémisphère nord, la Terre se trouve ?",
+                "answer": "Au plus près du Soleil",
+                "propositions": [
+                    "Au plus près du Soleil",
+                    "Au plus loin du Soleil",
+                    "A la même distance du Soleil qu'en été"
+                ]
+            },{
+                "question": "Combien y a-t-il en moyenne d'éclairs par seconde sur la Terre ?",
+                "answer": "5",
+                "propositions": [
+                    "5",
+                    "100",
+                    "2000"
+                ]
+            },{
+                "question": "Les forêts couvrent la Terre à hauteur de :",
+                "answer": "30%",
+                "propositions": [
+                    "30%",
+                    "40%",
+                    "60%"
+                ]
+            },{
+                "question": "Les océans recouvrent :",
+                "answer": "70% de la Terre",
+                "propositions": [
+                    "60% de la Terre",
+                    "70% de la Terre",
+                    "80% de la Terre"
+                ]
+            },{
+                "question": "L'atmosphère de la Terre est principalement constituée de :",
+                "answer": "Diazote",
+                "propositions": [
+                    "Diazote",
+                    "Oxygène",
+                    "Argon"
+                ]
+            },{
+                "question": "Quel est le sommet le plus haut du monde ?",
+                "answer": "Le mont Everest",
+                "propositions": [
+                    "L'Annapurna",
+                    "Le K2",
+                    "Le mont Everest"
+                ]
+            },{
+                "question": "Quel est le premier producteur d'oxygène de la Terre ?",
+                "answer": "Le plancton",
+                "propositions": [
+                    "Les forêts",
+                    "Les glaciers",
+                    "Le plancton"
+                ]
+            }
+        ]
+        },
+        "Les félins": {
+            "quizzs": [{
+                "question": "Quel est le plus grand félin ?",
+                "answer": "Le tigre de Sibérie",
+                "propositions": [
+                    "Le lion",
+                    "Le tigre du Bengal",
+                    "Le tigre de Sibérie"
+                ]
+            },{
+                "question": "L'organe de Jacobson chez les chats permet d'accroitre ?",
+                "answer": "L'odorat",
+                "propositions": ["La vue","L'odorat","L'ouïe"
+                ]
+            },{
+                "question": "Quel est le plus petit félin ?",
+                "answer": "Le chat rubigineux",
+                "propositions": [
+                    "L'ocelot",
+                    "Le chat rubigineux",
+                    "Le lynx"
+                ]
+            },{
+                "question": "La mémoire à court terme des tigres durent :",
+                "answer": "30 fois plus longtemps que celle de l'homme",
+                "propositions": [
+                    "5 fois plus longtemps que celle de l'homme",
+                    "10 fois plus longtemps que celle de l'homme",
+                    "30 fois plus longtemps que celle de l'homme"
+                ]
+            },{
+                "question": "Un tigre peut sauter jusqu'à ?",
+                "answer": "4 m de hauteur",
+                "propositions": [
+                    "2 m de hauteur",
+                    "4 m de hauteur",
+                    "6 m de hauteur"
+                ]
+            },{
+                "question": "Quelle est la vitesse de pointe du guépard ?",
+                "answer": "110 km/h",
+                "propositions": [
+                    "90 km/h",
+                    "110 km/h",
+                    "140 km/h"
+                ]
+            },{
+                "question": "Les chats ne peuvent pas détecter le goût :",
+                "answer": "Sucré",
+                "propositions": [
+                    "Salé",
+                    "Sucré",
+                    "Acide"
+                ]
+            },{
+                "question": "Qu'est ce qu'un chat haret :",
+                "answer": "Un chat domestique retourné à l'état sauvage",
+                "propositions": [
+                    "Un chat vivant en Sibérie",
+                    "Un chat domestique",
+                    "Un chat domestique retourné à l'état sauvage"
+                ]
+            },{
+                "question": "Combien la famille des félins comporte d'espèces ?",
+                "answer": "36",
+                "propositions": [
+                    "25",
+                    "30",
+                    "36"
+                ]
+            },{
+                "question": "Les différentes espèces de félin possèdent :",
+                "answer": "Moins de dents que les canidés",
+                "propositions": [
+                    "Moins de dents que les canidés",
+                    "Autant de dents que les canidés",
+                    "Plus de dents que les canidés"
+                ]
+            }
+        ]
+        },
+        "La météo": {
+            "quizzs": [{
+                "question": "Qu'est-ce qu'un anticyclone ?",
+                "answer": "Une zone de pression plus élevée",
+                "propositions": [
+                    "Une zone de pression plus élevée",
+                    "Une zone de pression moins élevée",
+                    "Une zone de mauvais temps"
+                ]
+            },{
+                "question": "Qu'est-ce qui différencie un cyclone d'un  ouragan ?",
+                "answer": "Leur situation géographique",
+                "propositions": ["Leur situation géographique","La vitesse des vents","La saison"
+                ]
+            },{
+                "question": "Avec quel instrument mesure-t-on la vitesse du vent ?",
+                "answer": "Un anénomètre",
+                "propositions": [
+                    "Un anénomètre",
+                    "Un sextant",
+                    "Un pluviomètre"
+                ]
+            },{
+                "question": "Lequel de ces vents est un vent chaud ?",
+                "answer": "Le sirocco",
+                "propositions": [
+                    "La bise",
+                    "Le sirocco",
+                    "Le blizzard"
+                ]
+            },{
+                "question": "Quelle est la température la plus élevée enregistrée en France ?",
+                "answer": "46",
+                "propositions": [
+                    "36",
+                    "46",
+                    "56"
+                ]
+            },{
+                "question": "Un cumulonimbus est ?",
+                "answer": "Un nuage d'orage",
+                "propositions": [
+                    "Un nuage à plus de 5000m",
+                    "Un nuage d'orage",
+                    "Un nuage d'averse brève"
+                ]
+            },{
+                "question": "Un radar permet de détecter :",
+                "answer": "La pluie",
+                "propositions": [
+                    "Les tornades",
+                    "La foudre",
+                    "La pluie"
+                ]
+            },{
+                "question": "Quelle est l'échelle de mesure des cyclones ?",
+                "answer": "L'échelle de Fujita",
+                "propositions": [
+                    "L'échelle de Fujita",
+                    "L'échelle de Richter",
+                    "L'échelle de Beaufort"
+                ]
+            },{
+                "question": "Où se forment les cyclones ?",
+                "answer": "Sur les océans",
+                "propositions": [
+                    "Sur les continents",
+                    "Sur les océans",
+                    "Aux pôles"
+                ]
+            },{
+                "question": "Quelle est la température la plus basse enregistrée en France ?",
+                "answer": "-36,7",
+                "propositions": [
+                    "-20,5",
+                    "-30,2",
+                    "-36,7"
+                ]
+            }
+        ]
+        },
+        "Basket": {
+            "quizzs": [{
+                "question": "En quelle année a été créée la NBA ? ",
+                "answer": "1949",
+                "propositions": [
+                    "1921",
+                    "1965",
+                    "1949"
+                ]
+            },{
+                "question": "Quel est le nombre de joueurs par équipe ?",
+                "answer": "5",
+                "propositions": ["4","5","7"
+                ]
+            },{
+                "question": "Combien de pas un joueur peut-il faire sans dribbler ?",
+                "answer": "2",
+                "propositions": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },{
+                "question": "Quel joueur a marqué plus de 100 points en un match ?",
+                "answer": "Wilt Chamberlain",
+                "propositions": [
+                    "Kareem Abdul-Jabbar",
+                    "Michael Jordan",
+                    "Wilt Chamberlain"
+                ]
+            },{
+                "question": "Quelle est la durée d'un quart-temps ?",
+                "answer": "10 mn",
+                "propositions": [
+                    "7 mn",
+                    "10 mn",
+                    "15 mn"
+                ]
+            },{
+                "question": "Quel joueur a marqué au cours de sa carrière le plus grand nombre de point ?",
+                "answer": "Kareem Abdul-Jabbar",
+                "propositions": [
+                    "Michael Jordan",
+                    "Wilt Chamberlain",
+                    "Kareem Abdul-Jabbar"
+                ]
+            },{
+                "question": "En 1992, la Dream Team a remporté ses matchs avec, en moyenne, combien de points d'écart ?",
+                "answer": "43 points",
+                "propositions": [
+                    "33 points",
+                    "43 points",
+                    "53 points"
+                ]
+            },{
+                "question": "Combien de temps un attaquant peut rester dans la raquette ?",
+                "answer": "3 secondes",
+                "propositions": [
+                    "3 secondes",
+                    "5 secondes",
+                    "8 secondes"
+                ]
+            },{
+                "question": "Combien de points vaut un panier dans la raquette ?",
+                "answer": "2",
+                "propositions": [
+                    "1",
+                    "2",
+                    "3"
+                ]
+            },{
+                "question": "Combien de franchises participent au championnat NBA ?",
+                "answer": "30",
+                "propositions": [
+                    "30",
+                    "36",
+                    "42"
+                ]
+            }
+        ]
+        },
+        "Football": {
+            "quizzs": [{
+                "question": "Quand la FIFA a-t-elle était créée ?",
+                "answer": "1904",
+                "propositions": [
+                    "1871",
+                    "1904",
+                    "1925"
+                ]
+            },{
+                "question": "Quel joueur a marqué le plus de buts dans sa carrière ? ",
+                "answer": "Cristiano Ronaldo",
+                "propositions": ["Cristiano Ronaldo","Josef Bican","Lionel Messi"
+                ]
+            },{
+                "question": "Qu’est ce qui n’est pas obligatoire pour la cage de but ?",
+                "answer": "Les poteaux doivent être ronds",
+                "propositions": [
+                    "Sa couleur doit être blanche",
+                    "Sa longueur doit être de 7,32m",
+                    "Les poteaux doivent être ronds"
+                ]
+            },{
+                "question": "Quel joueur a gagné le plus de coupes du monde ?",
+                "answer": "Pelé",
+                "propositions": [
+                    "Dafu",
+                    "Pelé",
+                    "Ronaldo"
+                ]
+            },{
+                "question": "Quelle est la longueur d’un terrain de football international ?",
+                "answer": "Entre 100 et 110m",
+                "propositions": [
+                    "Entre 100 et 110m",
+                    "110 m",
+                    "Entre 90 et 120m"
+                ]
+            },{
+                "question": "Quel gardien a marqué le plus de but ? ",
+                "answer": "Rogério Mücke Ceni",
+                "propositions": [
+                    "Jose Luis Chilavert",
+                    "Jorge Campos",
+                    "Rogério Mücke Ceni"
+                ]
+            },{
+                "question": "Quel est le poids d’un ballon de football ?",
+                "answer": "Entre 410 et 450 grammes",
+                "propositions": [
+                    "Entre 310 et 350 grammes",
+                    "Entre 410 et 450 grammes",
+                    "Entre 510 et 550 grammes"
+                ]
+            },{
+                "question": "Quel est le club dont Elton John a été propriétaire ?",
+                "answer": "Watford",
+                "propositions": [
+                    "Fulham",
+                    "Wolverhampton",
+                    "Watford"
+                ]
+            },{
+                "question": "Qu'est ce qui n’existait pas avant 1882 ?",
+                "answer": "La barre transversale",
+                "propositions": [
+                    "La surface de réparation",
+                    "La ligne de 6 m",
+                    "La barre transversale"
+                ]
+            },{
+                "question": "Quelle équipe a marqué le plus de buts sur une saison ?",
+                "answer": "Real Madrid",
+                "propositions": [
+                    "Real Madrid",
+                    "FC Barcelone",
+                    "PSG"
+                ]
+            }
+        ]
+        },
+        "Tennis": {
+            "quizzs": [{
+                "question": "Au tennis, quand une balle rebondit en dehors du terrain on dit qu'elle est ?",
+                "answer": "Out",
+                "propositions": [
+                    "Faute",
+                    "Out",
+                    "Dehors"
+                ]
+            },{
+                "question": "En double, quelle partie du terrain est ajoutée par rapport au simple ? ",
+                "answer": "Les couloirs",
+                "propositions": ["Les carrés","La ligne de fond","Les couloirs"
+                ]
+            },{
+                "question": "Quel joueur aurait cassé, de colère, plus de 1000 raquettes au cours de sa carrière ?",
+                "answer": "Marat Safin",
+                "propositions": [
+                    "John McEnroe",
+                    "Marat Safin",
+                    "Jimmy Connors"
+                ]
+            },{
+                "question": "En grand chelem, combien faut-il de sets pour gagner un match ?",
+                "answer": "3",
+                "propositions": [
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },{
+                "question": "Lors d'un jeu, si chaque joueur gagne 3 échanges, quel est le score ?",
+                "answer": "Egalité",
+                "propositions": [
+                    "15, 40",
+                    "Egalité",
+                    "30, 40"
+                ]
+            },{
+                "question": "Qui a été le premier numéro un mondial à la création du classement ATP ? ",
+                "answer": "Ilie Nastase",
+                "propositions": [
+                    "Andre Agassi",
+                    "Jimmy Connors",
+                    "Ilie Nastase"
+                ]
+            },{
+                "question": "Quels sont les prénoms des soeurs Williams ?",
+                "answer": "Venus et Serena",
+                "propositions": [
+                    "Venus et Rihanna",
+                    "Venus et Sabrina",
+                    "Venus et Serena"
+                ]
+            },{
+                "question": "Quel est le plus jeune vainqueur de Roland-Garros ?",
+                "answer": "Michael Chang",
+                "propositions": [
+                    "Michael Chang",
+                    "Yannick Noah",
+                    "Rafael Nadal"
+                ]
+            },{
+                "question": "En quelle année le tournoi de Roland-Garros a été créé ?",
+                "answer": "1891",
+                "propositions": [
+                    "1850",
+                    "1891",
+                    "1903"
+                ]
+            },{
+                "question": "Quel est le record de vitesse pour un service ?",
+                "answer": "263 km/h",
+                "propositions": [
+                    "205 km/h",
+                    "263 km/h",
+                    "287 km/h"
+                ]
+            }
+        ]
+        },
+        "Golf": {
+            "quizzs": [{
+                "question": "Quel golfeur a dominé le golf masculin dans les années 2000 ?",
+                "answer": "Tiger Wood",
+                "propositions": [
+                    "Payne Stewart",
+                    "Curtis Strange",
+                    "Tiger Wood"
+                ]
+            },{
+                "question": "Quel est le nombre de trous sur un parcours de golf classique ? ",
+                "answer": "18",
+                "propositions": ["9","18","21"
+                ]
+            },{
+                "question": "Comment s'appellent les zones de sable sur un parcours de golf ?",
+                "answer": "Bunker",
+                "propositions": [
+                    "Green",
+                    "Bunker",
+                    "Fairway"
+                ]
+            },{
+                "question": "Comment s'appelle le nombre de coups idéal fixé pour un trou ?",
+                "answer": "Par",
+                "propositions": [
+                    "Part",
+                    "Bogey",
+                    "Par"
+                ]
+            },{
+                "question": "Comment s'appelle un trou fait avec 3 coups en moins que le par ?",
+                "answer": "Albatros",
+                "propositions": [
+                    "Albatros",
+                    "Eagle",
+                    "Birdie"
+                ]
+            },{
+                "question": "Qui est autorisé à donner des conseils au joueur sur le parcours ? ",
+                "answer": "Le caddie",
+                "propositions": [
+                    "Son adversaire",
+                    "Le caddie",
+                    "L'arbitre"
+                ]
+            },{
+                "question": "Quel club faut-il utiliser pour parcourir la plus grande distance ?",
+                "answer": "Un bois",
+                "propositions": [
+                    "Un fer",
+                    "Un putter",
+                    "Un bois"
+                ]
+            },{
+                "question": "Quelle est l'utilité des trous sur la balle de golf ?",
+                "answer": "Améliorer sa portance",
+                "propositions": [
+                    "Améliorer sa portance",
+                    "Assurer une bonne accroche sur le club",
+                    "Evacuer l'eau"
+                ]
+            },{
+                "question": "Comment s'appelle le mouvement du joueur pour taper la balle ?",
+                "answer": "Un swing",
+                "propositions": [
+                    "Un spin",
+                    "Un slice",
+                    "Un swing"
+                ]
+            },{
+                "question": "Quelle est la langue officielle du golf ?",
+                "answer": "L'anglais",
+                "propositions": [
+                    "L'espagnol",
+                    "Le français",
+                    "L'anglais"
+                ]
+            }
+        ]
+        },
+        "Sports collectifs": {
+            "quizzs": [{
+                "question": "Dans quel sport appelle-t-on la finale: \"Super Bowl\" ?",
+                "answer": "Football américain",
+                "propositions": [
+                    "BaseBall",
+                    "Rugby",
+                    "Football américain"
+                ]
+            },{
+                "question": "Au rugby à XV, combien de points vaut un essai ? ",
+                "answer": "5 points",
+                "propositions": ["2 points","5 points","8 points"
+                ]
+            },{
+                "question": "Une équipe de polo est constituée de combien de joueurs ?",
+                "answer": "4",
+                "propositions": [
+                    "4",
+                    "5",
+                    "6"
+                ]
+            },{
+                "question": "Au volley ball, combien de points faut-il pour gagner un set ?",
+                "answer": "25",
+                "propositions": [
+                    "12",
+                    "20",
+                    "25"
+                ]
+            },{
+                "question": "Dans quel sport croise-t-on le bouclier de Brennus ?",
+                "answer": "Rugby",
+                "propositions": [
+                    "Tennis",
+                    "Rugby",
+                    "Football"
+                ]
+            },{
+                "question": "Quel est le nombre de joueurs par équipe au hockey sur glace ? ",
+                "answer": "6",
+                "propositions": [
+                    "4",
+                    "6",
+                    "8"
+                ]
+            },{
+                "question": "Comment se déroule un match de waterpolo ?",
+                "answer": "4 périodes de 8 minutes",
+                "propositions": [
+                    "6 périodes de 4 minutes",
+                    "5 périodes de 5 minutes",
+                    "4 périodes de 8 minutes"
+                ]
+            },{
+                "question": "Quel est le nombre de quarts-temps lors d'un match de basketball ?",
+                "answer": "4",
+                "propositions": [
+                    "3",
+                    "4",
+                    "5"
+                ]
+            },{
+                "question": "Au baseball, lorsque le batteur envoie la balle en dehors du terrain on parle de :",
+                "answer": "home run",
+                "propositions": [
+                    "shortstop",
+                    "outfield",
+                    "home run"
+                ]
+            },{
+                "question": "Au handball, combien de pas peut faire un joueur sans dribbler ?",
+                "answer": "3",
+                "propositions": [
+                    "2",
+                    "3",
+                    "4"
+                ]
+            }
+        ]
+        },
+        "Films d'action": {
+            "quizzs": [{
+                "question": "Quel film a révélé Mel Gibson en 1979 ? ",
+                "answer": "Mad Max",
+                "propositions": [
+                    "Forever young",
+                    "Mad Max",
+                    "L'arme fatale"
+                ]
+            },{
+                "question": "Quel acteur joue le rôle du père d'Harrison Ford dans La dernière croisade ?",
+                "answer": "Sean Connery",
+                "propositions": ["Al Pacino","Anthony Hopkins","Sean Connery"
+                ]
+            },{
+                "question": "Pour rendre Terminator plus réel, Schwarzenegger a décidé :",
+                "answer": "de ne pas cligner des yeux",
+                "propositions": [
+                    "de serrer en permanence les dents",
+                    "de limiter sa respiration",
+                    "de ne pas cligner des yeux"
+                ]
+            },{
+                "question": "Pour quel film Quentin Tarantino a reçu la Palme d'Or ?",
+                "answer": "Pulp Fiction",
+                "propositions": [
+                    "Reservoir Dogs",
+                    "Pulp Fiction",
+                    "Inglorious Bastard"
+                ]
+            },{
+                "question": "Quel Oscar n'a pas obtenu Jurassic Park ?",
+                "answer": "Oscar du meilleur film",
+                "propositions": [
+                    "Oscar des meilleurs effets visuels",
+                    "Oscar du meilleur son",
+                    "Oscar du meilleur film"
+                ]
+            },{
+                "question": "En quelle année est sorti le film La communauté de l'anneau ?",
+                "answer": "2001",
+                "propositions": [
+                    "2001",
+                    "1999",
+                    "2002"
+                ]
+            },{
+                "question": "Quel James Bond se déroule en partie sur la Tour Eiffel ?",
+                "answer": "Dangereusement votre",
+                "propositions": [
+                    "Dangereusement votre",
+                    "Permis de tuer",
+                    "Moonraker"
+                ]
+            },{
+                "question": "Quel acteur a joué le plus de fois James Bond ?",
+                "answer": "Roger Moore",
+                "propositions": [
+                    "Roger Moore",
+                    "Sean Connery",
+                    "Pierce Brosnan"
+                ]
+            },{
+                "question": "Le réalisateur des trois John Wick connaissait bien Keanu Reeves car :",
+                "answer": "Il était sa doublure dans Matrix",
+                "propositions": [
+                    "Ils sont amis d'enfance",
+                    "Il était sa doublure dans Matrix",
+                    "Ils sont cousins"
+                ]
+            },{
+                "question": "Quel acteur souffre de prosopagnosie (trouble de la reconnaissance des visages) ?",
+                "answer": "Brad Pitt",
+                "propositions": [
+                    "Brad Pitt",
+                    "George Clooney",
+                    "Jack Nicholson"
+                ]
+            }
+        ]
+        },
+        "Séries télés": {
+            "quizzs": [{
+                "question": "Quelle est la série TV qui compte le plus de saisons ? ",
+                "answer": "Haine et passion",
+                "propositions": [
+                    "Dallas",
+                    "Haine et passion",
+                    "Les feux de l'amour"
+                ]
+            },{
+                "question": "Dans quelle série George Clooney a-t-il débuté ?",
+                "answer": "Urgences",
+                "propositions": ["Melrose Place","Ally Mc Beal","Urgences"
+                ]
+            },{
+                "question": "Dans quelle série Leonardo DiCaprio a-t-il joué à ses débuts ?",
+                "answer": "Santa Barbara",
+                "propositions": [
+                    "Santa Barbara",
+                    "Sauvé par le gong",
+                    "Punky Brewster"
+                ]
+            },{
+                "question": "Qui a été président des USA dans une série ?",
+                "answer": "Martin Sheen",
+                "propositions": [
+                    "Michael Douglas",
+                    "Alec Baldwin",
+                    "Martin Sheen"
+                ]
+            },{
+                "question": "Dans quelle série TV américaine Hugo Becker a-t-il joué ?",
+                "answer": "Gossip girls",
+                "propositions": [
+                    "Gossip girls",
+                    "Les frères Scott",
+                    "Nip/Tuck"
+                ]
+            },{
+                "question": "De quelle série les Inconnus ont-ils fait une parodie ?",
+                "answer": "Tendresse et passion",
+                "propositions": [
+                    "Tendresse et passion",
+                    "Amour, gloire et beauté",
+                    "K2000"
+                ]
+            },{
+                "question": "Qui a joué le rôle du petit ami de Monica dans Friends ?",
+                "answer": "Tom Selleck",
+                "propositions": [
+                    "Brad Pitt",
+                    "Bruce Willis",
+                    "Tom Selleck"
+                ]
+            },{
+                "question": "Dans quel secteur d'activité officient les employés dans The Office ?",
+                "answer": "La papeterie",
+                "propositions": [
+                    "La lessive",
+                    "La papeterie",
+                    "Les chaussettes"
+                ]
+            },{
+                "question": "Combien de saisons composent La petite maison dans la prairie ?",
+                "answer": "9",
+                "propositions": [
+                    "9",
+                    "10",
+                    "12"
+                ]
+            },{
+                "question": "Quelle actrice joue le rôle d'une sexologue dans une série anglaise ?",
+                "answer": "Gillian Anderson",
+                "propositions": [
+                    "Gillian Anderson",
+                    "Jamie Lee Curtis",
+                    "Gwyneth Paltrow"
+                ]
+            }
+        ]
+        },
+        "Les Rolling Stones": {
+            "quizzs": [{
+                "question": "Lequel de ses membres ne faisait pas partie du groupe à sa création ? ",
+                "answer": "Charlie Watts",
+                "propositions": [
+                    "Keith Richards",
+                    "Charlie Watts",
+                    "Ian Stewart"
+                ]
+            },{
+                "question": "Comment est mort Brian Jones ?",
+                "answer": "Noyé dans sa piscine",
+                "propositions": ["Noyé dans sa piscine","Dans un accident de voiture","D'une overdose"
+                ]
+            },{
+                "question": "Comment Keith Richards et Mick Jagger se sont-ils connus ?",
+                "answer": "A la maternelle",
+                "propositions": [
+                    "Ils faisaient partie du même club de football",
+                    "A une soirée organisée par un ami commun",
+                    "A la maternelle"
+                ]
+            },{
+                "question": "Lequel de ces faits concernant les liens entre les Beatles et les Rolling Stones est faux ?",
+                "answer": "Paul McCartney a déclaré: laisseriez-vous votre fille sortir avec un Rolling Stones?",
+                "propositions": [
+                    "Les Beatles ont fait les chœurs sur une chanson des Rolling Stones",
+                    "McCartney a déclaré: laisseriez-vous votre fille sortir avec un Rolling Stones?",
+                    "Ils avaient des influences musicales communes"
+                ]
+            },{
+                "question": "Laquelle de ces actrices apparaît dans le clip Bridges to babylon ?",
+                "answer": "Angelina Jolie",
+                "propositions": [
+                    "Sharon Stone",
+                    "Naomi Watts",
+                    "Angelina Jolie"
+                ]
+            },{
+                "question": "Au début de leur carrière, pour qu’elle marque Keith Richards et Mick Jagger ont-ils enregistré un jingle ?",
+                "answer": "Rice Krispies",
+                "propositions": [
+                    "Rice Krispies",
+                    "Philipp Morris",
+                    "Tesco"
+                ]
+            },{
+                "question": "Combien de personnes ont assisté au concert de Copacabana à Rio de Janeiro a en 2006 ?",
+                "answer": "1 500 000",
+                "propositions": [
+                    "1 000 000",
+                    "1 200 000",
+                    "1 500 000"
+                ]
+            },{
+                "question": "En quelle année est sorti le 1er album des Rolling Stones ?",
+                "answer": "1964",
+                "propositions": [
+                    "1963",
+                    "1964",
+                    "1965"
+                ]
+            },{
+                "question": "En 50 ans de carrière, combien de disques ont vendu les Rolling Stones ?",
+                "answer": "200 000 000",
+                "propositions": [
+                    "150 000 000",
+                    "200 000 000",
+                    "250 000 000"
+                ]
+            },{
+                "question": "En quelle année les Rolling Stones sont-ils entrés au Hall of Fame ?",
+                "answer": "1989",
+                "propositions": [
+                    "1975",
+                    "1983",
+                    "1989"
+                ]
+            }
+        ]
+        },
+        "Tintin": {
+            "quizzs": [{
+                "question": "Quand Hergé a-t-il créé Tintin ? ",
+                "answer": "1929",
+                "propositions": [
+                    "1929",
+                    "1936",
+                    "1942"
+                ]
+            },{
+                "question": "Où est caché le trésor de Rackham le Rouge ?",
+                "answer": "Dans le château de Moulinsart",
+                "propositions": ["Dans l'océan","Sur une île","Dans le château de Moulinsart"
+                ]
+            },{
+                "question": "Quel est le prénom du professeur Tournesol ?",
+                "answer": "Tryphon",
+                "propositions": [
+                    "Tryphon",
+                    "Théodore",
+                    "Hyppolite"
+                ]
+            },{
+                "question": "De quel chateau français est inspiré le château de Moulinsart ?",
+                "answer": "Le château de Cheverny",
+                "propositions": [
+                    "Le château de Versailles",
+                    "Le château de Chambord",
+                    "Le château de Cheverny"
+                ]
+            },{
+                "question": "Dans quel album le capitaine Haddock apparait-il pour la première fois ?",
+                "answer": "Le crabe aux pinces d'or",
+                "propositions": [
+                    "Le trésor de Rackham le rouge",
+                    "L'étoile mystérieuse",
+                    "Le crabe aux pinces d'or"
+                ]
+            },{
+                "question": "Quel est le dernier album de Tintin ?",
+                "answer": "Tintin chez les Picaros",
+                "propositions": [
+                    "Tintin chez les Picaros",
+                    "Vol 714 pour Sydney",
+                    "Les bijoux de la Castafiore"
+                ]
+            },{
+                "question": "Quel est le prénom du capitaine Haddock ?",
+                "answer": "Archibald",
+                "propositions": [
+                    "Anatole",
+                    "Archibald",
+                    "Artaban"
+                ]
+            },{
+                "question": "Dans l'album \"Coke en stock\", que signifie \"Coke\" ?",
+                "answer": "Des esclaves",
+                "propositions": [
+                    "De la drogue",
+                    "Des esclaves",
+                    "Du pétrole"
+                ]
+            },{
+                "question": "Sur la couverture de quel album voit-on Tintin avec une arme ?",
+                "answer": "Vol 714 pour Sidney",
+                "propositions": [
+                    "L'affaire Tournesol",
+                    "L'oreille cassée",
+                    "Vol 714 pour Sidney"
+                ]
+            },{
+                "question": "Qu'est-ce qui différencie Dupont et Dupond physiquement ?",
+                "answer": "La moustache",
+                "propositions": [
+                    "Le chapeau",
+                    "La moustache",
+                    "Le nez"
+                ]
+            }
+        ]
+        },
+        "Les Beatles": {
+            "quizzs": [{
+                "question": "De quelle ville les Beatles sont-ils originaires ? ",
+                "answer": "Liverpool",
+                "propositions": [
+                    "Londres",
+                    "Manchester",
+                    "Liverpool"
+                ]
+            },{
+                "question": "John Lennon, Paul McCartney, Ringo Starr et ...",
+                "answer": "George Harrison",
+                "propositions": ["George Peterson","George Harrison","George Smith"
+                ]
+            },{
+                "question": "Quelle chanson commence avec des mesures de \"La Marseillaise\" ?",
+                "answer": "All you need is love",
+                "propositions": [
+                    "Yellow submarine",
+                    "All you need is love",
+                    "Yesterday"
+                ]
+            },{
+                "question": "Quel est le nom de la compagne de John Lennon ?",
+                "answer": "Yoko Ono",
+                "propositions": [
+                    "Yoto Pono",
+                    "Yoco Oni",
+                    "Yoko Ono"
+                ]
+            },{
+                "question": "Quel est leur titre le plus repris dans le monde ?",
+                "answer": "Yesterday",
+                "propositions": [
+                    "Yesterday",
+                    "Let it be",
+                    "Something"
+                ]
+            },{
+                "question": "Où a été prise la photographie où l'on voit les Beatles sur un passage piéton ?",
+                "answer": "Abbey Road",
+                "propositions": [
+                    "Abbey Road",
+                    "Oxford Street",
+                    "Regent Street"
+                ]
+            },{
+                "question": "En 1985, qui a racheté les droits sur les chansons du groupe ?",
+                "answer": "Michael Jackson",
+                "propositions": [
+                    "Michael Jackson",
+                    "Paul McCartney",
+                    "John Lenon"
+                ]
+            },{
+                "question": "Quel est le nom du dernier album des Beatles ?",
+                "answer": "Abbey Road",
+                "propositions": [
+                    "Let it be",
+                    "Help",
+                    "Abbey Road"
+                ]
+            },{
+                "question": "Quelle est l'origine du nom Beatles ?",
+                "answer": "Un jeux de mot entre \"beat\" et \"beetles\"",
+                "propositions": [
+                    "Une jeux de mot entre \"beast\" et \"turtle\"",
+                    "Un jeux de mot entre \"beat\" et \"beetles\"",
+                    "Un nom choisi dans l'annuaire"
+                ]
+            },{
+                "question": "En quelle année les Beatles se sont-ils séparés ?",
+                "answer": "1970",
+                "propositions": [
+                    "1968",
+                    "1970",
+                    "1972"
+                ]
+            }
+        ]
+        }
+    }
+    
+    
+    
+
+
+
